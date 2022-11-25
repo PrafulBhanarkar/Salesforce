@@ -1,0 +1,7 @@
+Quick find box --> process builder --> clone --> select --> Action name: Record for Robot 
+--> field: Date - formula - CASE(MOD([Opportunity].CloseDate + 180 - DATE(1900, 1, 7), 7),0, [Opportunity].CloseDate+181,6, [Opportunity].CloseDate+182, 
+[Opportunity].CloseDate+180)
+
+=========================================================
+Note : Update the formula and go for the challenge.
+=========================================================
