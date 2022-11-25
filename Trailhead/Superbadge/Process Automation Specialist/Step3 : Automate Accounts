@@ -1,0 +1,26 @@
+Setup --> object manager --> account --> field and relationship --> new --> rollup summary --> field label : Number of deals --> next --> summarized object : opportunities 
+--> count --> select : all record should be included in the calculation --> next --> next --> save & new
+
+rollup summary --> field label : Number of won deals --> next --> summarized object : opportunities --> count --> select : Only records meeting certain criteria should be included in the calculation 
+--> Stage : equals : closed won --> next --> next --> save & new
+
+rollup summary --> field label : Last won deal date --> next --> summarized object : opportunities --> Max --> Field Aggregate : Closed date 
+--> select : Only records meeting certain criteria should be included in the calculation --> Stage : equals : closed won --> next --> next --> save & new
+
+rollup summary --> field label : Amount of won deals --> next --> summarized object : opportunities --> sum --> Field Aggregate : amount --> select : Only records meeting certain criteria should be included in the calculation 
+--> Stage : equals : closed won --> next --> next --> save & new
+
+Formula --> next --> field label : Deal win percent --> Percent --> decimal : 2 --> Formula : number of won deals / number of deals --> next --> next --> save & new
+
+Formula --> next --> field label : Call for Service --> text --> 
+Formula : IF(DATE(YEAR( Last_won_deal_date__c )+2,MONTH(Last_won_deal_date__c ),DAY( Last_won_deal_date__c ))<=TODAY(),"Yes","No")  --> next --> next --> save.
+
+
+Account --> field and relationship --> validation rule --> new --> Name: US Address --> Formula : OR(AND(LEN(BillingState) > 2, 
+NOT(CONTAINS("AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:WA:WV:WI:WY", BillingState ))
+),AND(LEN(ShippingState) > 2, NOT(CONTAINS("AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:WA:WV:WI:WY", ShippingState))
+),NOT(OR(BillingCountry ="US",BillingCountry ="USA",BillingCountry ="United States", ISBLANK(BillingCountry))),
+NOT(OR(ShippingCountry ="US",ShippingCountry ="USA",ShippingCountry ="United States", ISBLANK(ShippingCountry)))) 
+--> Error Massage : Billing address need to validate for US State --> save & new
+
+Name: Name Change --> Formula : ISCHANGED( Name ) && ( OR( ISPICKVAL( Type ,'Customer - Direct') ,ISPICKVAL( Type ,'Customer - Channel') ))--> Error Massage : You cannot change Account Name for "customer direct" or "customer channel" --> save.
