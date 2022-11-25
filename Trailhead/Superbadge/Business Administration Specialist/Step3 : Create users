@@ -1,0 +1,40 @@
+1.	Create users
+      I.	Name : Ada Balewa 
+      Title : Product Support Specialist 
+      Active : Yes
+      User License : Chatter Free
+      Profile : Chatter Moderator User
+
+
+      II.	Name : Lincoln Ulrich
+      Title : Account Executive
+      Active : No
+      User License : Salesforce
+      Profile : Standard User profile
+      Role : Customer Support, North America
+      	Marketing user
+
+      III.	Name : Lance Park
+      Title : 	Sales Representative
+      Active : No
+      User License : Salesforce
+      Profile : Custom: Sales Profile
+      Role : Western sales team
+      Language : Spanish(Mexico)
+
+      IV.	Name : Erin Donaghue
+      Title : 	Sales Representative
+      Active : No
+      User License : Salesforce
+      Profile : Custom: Sales Profile
+      Role : Eastern Sales Team
+
+      V.	Name : Shinje Tashi
+      Title : Tashi 	Sales Data Quality Specialist
+      Active : Yes
+      User License : Salesforce
+      Profile : Standard User profile
+      Role : CEO 
+
+2.	Permission Sets --> Create New Permission Set --> Bilingual Pilot --> Object Setting --> Account --> select language preference (Read access only) --> 
+    save --> Manage Assignments --> Shinje Tashi --> add Assignment.
