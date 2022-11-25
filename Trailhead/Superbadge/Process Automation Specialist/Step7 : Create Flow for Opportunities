@@ -1,0 +1,17 @@
+Quick find box --> flows --> new flow --> screen flows --> free form --> drag & drop : Screen --> Label: Product Quick Search --> select radio button --> label: Product type, choice: new choice resource : select choice 
+--> API: RainbowBot --> choice label description : RainbowBot --> data type: text --> choice value : RainbowBot --> done.
+
+Add choice --> new choice resource : select choice --> API: CloudyBot --> choice label description : CloudyBot --> data type: text --> choice value : CloudyBot --> done.
+
+Add choice --> new choice resource : select choice --> API: AssemblySystem --> choice label description : Assembly System --> data type: text 
+--> choice value : Assembly System --> done => Connect start flow to screen
+
+Get record --> Label : Product --> object : Product --> condition requirement : all conditions are met (AND) --> field : name equals product type --> how many records to store : All records 
+--> how to store record data : choose field and assign variables (advanced) --> record collection : new resource --> resource type : Variable --> API : FilterResult 
+--> data type : Record --> select : allow multiple values (collection) --> object: product --> done --> field : name --> done => Connect screen to get records
+
+Drag & drop : Screen --> Label: Final Screen --> select display text --> API: Display --> insert resource : Filter Result --> done => Connect get records to screen 
+--> save --> Flow label : Product Quick Search --> save --> run --> activate --> run (check the unique id is occure or not) 
+
+Object manager --> opportunity --> lightning record page --> new --> record page --> next --> Product Quick Search 1 --> object : opportunity --> next --> finish --> drag & drop : Flow 
+--> flow : Product quick search --> layout : one column --> save --> activate --> assign as org default --> desktop and phone --> save --> save
