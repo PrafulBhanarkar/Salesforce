@@ -1,0 +1,8 @@
+Group --> New Group --> Name (Residential Sales Product Collaboration) --> Description (This collaboration space is for Residential Sales team members to ask product questions of one another and the Product Support Specialist team.) 
+-->Information (As a reminder, monthly webinars with the Product Support Specialist team are on the second Tuesday at 3:00 PM MT. Ask Lincoln Ulrich for the invite. For more information about using Salesforce, check out the Trailhead CRM Basics module.) 
+--> Manage Members Add (Ada Balewa, Shinje Tashi) --> Next
+
+Post --> @ Ada Balewa Thank you so much for helping the team out like this. Without your brains, we couldn’t shine so brightly! --> Share
+Members --> view all Members --> Edit Membership Ada Balewa --> Manager
+Poll --> Question (Which product are you most comfortable selling?) --> add options for choices (Home Array, Home Battery, Home Starter Kit, and Home Starter Kit Deluxe) 
+--> Ask
