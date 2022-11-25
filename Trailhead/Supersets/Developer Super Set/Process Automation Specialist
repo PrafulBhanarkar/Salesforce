@@ -1,0 +1,8 @@
+5.	What should an app builder use to verify that data a user enters in a field meets specified criteria?
+Solution : C.	Validation rules
+
+6.	What type of flow element is used to iterate over items in a collection variable?
+Solution : A.	Loop
+
+7.	Which automation tool should an app builder use to look up, create, update, and delete records for multiple objects?
+Solution : B.	Flow
