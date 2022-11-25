@@ -1,0 +1,12 @@
+Developer Console --> Open class “WarehouseSyncSchedule” -->
+
+Code:
+
+global with sharing class WarehouseSyncSchedule implements Schedulable{
+    global void execute(SchedulableContext ctx){
+        System.enqueueJob(new WarehouseCalloutService());
+    }
+}
+
+
+Quick find box --> Apex Classes --> click Schedule Apex and Job Name = WarehouseSyncScheduleJob , Apex Class = WarehouseSyncSchedule --> Select all days --> set time & Save.
