@@ -1,0 +1,8 @@
+1.	Where are Apex triggers stored on the platform?
+Solution : A.	In object management settings for each object.
+
+2.	What is used to run a process in a separate thread at a later time?
+Solution : B.	Asynchronous Apex
+
+3.	What is the least amount of unit test coverage is required?
+Solution : C.	75%
