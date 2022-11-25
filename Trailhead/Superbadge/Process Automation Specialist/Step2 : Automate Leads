@@ -1,0 +1,20 @@
+1.	Install the package : 04t46000001Zch4
+2.	Because this superbadge involves USD currency, you may need to update your personal preferences
+3.	go to Personal | Language & Time Zone and change the Locale to English (United States) and the Language to English and click Save.
+    =====================================================
+    •	Note : Don’t use Workflow to solve any challenges.
+    =====================================================
+
+Setup --> Object Manager --> Lead --> validation rule --> new --> 
+Name : Country Name,  
+Formula : OR(AND(LEN(State) > 2, NOT(CONTAINS("AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:WA:WV:WI:WY", State )) ), NOT(OR(Country ="US",Country ="USA",Country ="United States", ISBLANK(Country))))
+--> Check syntax --> Error Massage : Given value is not applicable --> top page --> save
+
+Home --> Quick find box --> queues --> new --> Name: Assembly System Sales --> Selected object : Lead --> save
+
+Home --> Quick find box --> queues --> new --> Name: Rainbow Sales --> Selected object : Lead --> Save
+
+Home --> Quick find box --> Lead Assignment Rules --> new --> rulename: LRule1 --> active --> Rule Entry --> New rule entry 
+--> sort order :1, field: Lead Source equal web --> step 3 : queue --> rainbow sales --> save & new.
+
+sort order :2, field: Lead Source not equal web --> step 3 : queue --> Assembly system sales --> save.
