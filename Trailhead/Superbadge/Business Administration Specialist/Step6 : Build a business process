@@ -1,0 +1,11 @@
+Setup --> sales --> Sales Process --> New (Residential Opportunities) --> add Stages (Prospecting, Value Proposition, Proposal/Price Quote, Negotiation/Review, 
+Closed Won, Closed Lost) and remove unwanted list
+
+Object Manager --> Opportunity --> Page Layouts --> Remove (Lead Source, Primary Campaign Source, Delivery/Installation Status, Main Competitor(s), Current Generator(s) --> 
+And adding(Quantity) --> Save
+
+Object Manager --> Opportunity --> Compact Layouts --> New --> Lable (Residential Opportunity Compact View) --> Add (Account Name, Probability, Stage, Amount) --> Save
+
+Object Manager --> Opportunity --> Record Type --> New --> Lable (Residential Opportunity) --> Sales Process (Residential Opportunities) --> 
+Description (For residential sales opportunities requiring that special Residential Sales touch) --> Active --> 
+Select Profile (Custom Sales Profile & System Administrator) --> Next --> Apply one layout to all profiles (Residential Opportunity Page) --> Save
