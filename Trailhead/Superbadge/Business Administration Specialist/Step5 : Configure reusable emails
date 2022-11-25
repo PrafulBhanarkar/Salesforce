@@ -1,0 +1,21 @@
+Profile --> Settings --> Email --> Email Setting --> Email Signature (Residential Sales Team
+Ursa Major Solar, Inc.
+We take a bite out of your energy bill.) --> Save
+
+Setup --> Email --> Classic Letterhead --> Next --> Create new letter head --> Letterhead Label(Residential Sales Letterhead) --> select logo from branding folder --> 
+Top Line, Middle Line, and Bottom Line Color (106935) color code.
+
+Setup --> Email --> Classic Email Templetes --> new folder (Residential Sales Emails) --> under the folder :
+New Template --> HTML --> Folder (Residential Sales Emails) --> Email Template Name (Residential Sales Welcome Email) --> Classic Letterhead (Residential Sales Letterhead) --> 
+Email Layout (Free Form Letter) --> Encoding (UTF-8) --> Email Subject (Welcome from Ursa Major Solar!) --> Next
+
+Select Field Type (Contact Field) --> Select Field (Name) --> Copy Merge Field Value ([contact name merge field] => {!Contact.Name}) --> Click on Lock Symbol --> Next
+
+New Template --> HTML --> Folder (Residential Sales Emails) --> Email Template Name (Residential Sales Correspondence) --> Classic Letterhead (Residential Sales Letterhead) --> 
+Email Layout (Free Form Letter) --> Encoding (UTF-8) --> Email Subject (**REPLACE WITH YOUR SUBJECT**) --> Next
+
+Select Field Type (Contact Field) --> Select Field (Name) --> Copy Merge Field Value (Hello [contact name merge field] => {!Contact.Name}) --> Next --> Save
+
+===============================================================================
+Note: Residential Sales Emails folder Access to "Read Only" from Read/Write  
+===============================================================================
