@@ -1,0 +1,19 @@
+Setup --> object manager --> opportunities --> field and relationship --> new --> checkbox --> next --> Lable: Approved --> next --> next --> save.
+Quick find box --> Sales process (used to create stages of opportunities) --> new --> Name: RB Robotics Sales Process --> save --> remove:
+Need Analysis
+Value Praposition
+Id decision makers
+Perception Analysis --> save (Active).
+
+Setup --> object manager --> opportunities --> Validation Rules --> new --> Name: RB High Value Opp --> active --> 
+Formula : IF(( Amount > 100000 && Approved__c <> True && ISPICKVAL( StageName,'Closed Won') ),True,False) --> 
+Error Msg: Appropriate values should be given --> top of page --> save.
+
+Setup --> object manager --> opportunities --> Record Types --> new --> Name : RB Robotics Process RT --> Sales Process : RB Robotics Sales Process --> Active --> next 
+--> next --> Layout : Opportunity Layout --> save
+
+==================================================================================================================================================
+Note: if error occure for awating approval that time required only :: That time use below process otherwise 13 point is sufficient
+==================================================================================================================================================
+Setup --> object manager --> opportunities --> fields & relationship --> Opportunity Stages Picklist Values --> new --> Awaiting Approval --> Probablity : 20 
+--> Select : RB Robotics sales process --> Save
