@@ -1,0 +1,80 @@
+Quick find box --> user --> new --> Last Name: Nushi Davoud --> Role : CEO --> user license: Salesforce platform --> standard profile: Standard platform user --> save.
+
+Setup --> quick find --> approval process --> Manage approval process: opportunity --> create new approval process : use jump start wizard --> Name : Prospect Approval 
+--> Email Templete: sales opportunity approval --> field : Opportunity:stage equal negotiation/review & Opportunity amount greater than 100000 --> Next Automated Approver Determined By: Manager 
+--> Approval Assignment Email Template --> SALES: Opportunity Needs Approval
+
+approver : let the submitter choose the approver manually --> save --> ok Activate --> view approval process --> Initial submission actions --> add new : field update 
+--> Name: Approval, field update: Stage --> specified values :  awaiting approvals --> save
+
+Approval Steps --> edit --> Name : Approval for Prospect, Unique name: Approval --> save
+
+Approval Steps --> edit --> next --> criteria are met else record reject --> next --> automatically assign to approvals --> user: Nushi Davoud --> save.
+
+Final approval actions --> add new : Email alert --> Description : Sales: Opportunity Approval Request mail --> template: Sales: Opportunity Approval Status Email --> user: Nushi Davoud --> save
+
+Final approval actions --> add new : field update --> Approved check --> field update: Approved --> true --> save
+
+Final approval actions --> add new : field update --> Stage-Closed Won --> field update: stage --> a specific value : Closed won --> save 
+
+Final rejection actions --> add new : Email alert --> Description :Sales Approval Email --> clsssic : RB Robotics Template --> sales: Opportunity needs Approval --> user: Nushi Davoud --> save
+
+Final rejection actions --> add new : field update --> Name: State Nego --> field to update:Stage --> a specific value : Negotiation/Review --> save 
+
+Recall Acation --> Add new : field update --> Name: StageClosedWon --> field to update:Stage --> a specific value : Closed won --> save
+
+Recall Acation --> Add new : field update --> Name: ApprovedCheck --> field to update:Approved --> true --> save
+
+Quick find box --> Email Alerts --> Create new email alert --> Description: Email alert on opportunity --> Object: Opportunity --> email template --> Classic:RB Robotics --> Finance account creation --> Recipients: Integration User & Nushi Davoud --> save
+
+Quick find box --> Process Builder --> new --> continue in process builder --> Name: Automate Opportunity --> Process start when : Record Changes
+
+Add Object --> Object: Opportunity --> only when record is created.
+
+Add Crietria --> Name: Customer --> Condition are met --> Field: Opportunity-accountID-Account Type equals Picklist customer Direct.
+
+Field: Opportunity-accountID-Account Type equals Picklist customer Channel
+
+Field: Opportunity-accountID- does not equals global constant $GlobalConstantNull. --> Customized the logic --> Logic : (1 OR 2) AND 3 --> Save.
+
+Add Action --> Action type: Email Alert, Action name: Alert to Finance, Email alert: Email_alert_on_Opportunity --> Save 
+
+Add Crietria --> Name: Prospect Account --> Condition are met --> Field: Opportunity-accountID-Account Type equals Picklist Prospect.
+
+Field: Opportunity- AccountID- accounted does not equals global constant $GlobalConstantNull.
+
+Field: Opportunity-stage equals Picklist Prospecting --> Save.
+
+Add Action --> Action type: create record, Action name: Send Marketing Material, record type: task --> 
+
+Field: Due Date Only – Formula – TODAY() + 7
+
+Field: Assigned to ID – field reference – opportunity : Account ID : Owner ID 
+
+Field:Priority – Picklist - High
+
+Field:Status – Picklist – In Progress
+
+Field:Subject – string – Send Marketing Materials
+
+Field:Related to ID – field reference – opportunity : opportunity ID
+
+========================================================================
+Note : all condition should be in Evaluate to the next crietria
+========================================================================
+
+Add Crietria --> Name: Negotiation or Review --> Condition are met --> Field: Opportunity- stage  equals Picklist Negotiation or Review.
+
+Add Action --> Action type: Submit for approval, Action name: Approval Pro, Object:Opporunity, Approval Process- Specific Approval Process : Prospect Approval - Prospect_Approval --> Yes --> Submitter:Current user --> save
+
+Add Crietria --> Name: Closed Won Deal --> No criteria—just execute the actions!
+
+Add Action --> Action type: create record, Action name: Record for Robot, record type: Robot setup --> field: Opportunity - field reference - Opportunity:Opportunity.Id
+
+field: Date - formula - CASE(MOD([Opportunity].CloseDate - DATE(1900, 1, 7), 7),0, [Opportunity].CloseDate+182,1, [Opportunity].CloseDate+181,2, [Opportunity].CloseDate+180,3, [Opportunity].CloseDate+180,4, [Opportunity].CloseDate+180,5, [Opportunity].CloseDate+180,6, [Opportunity].CloseDate+180,null)
+
+Add Action --> Action type: Email Alerts, Action name: Send for Closed Deal --> Email alert : Email_alert_on_opportunity
+
+Quick find box --> Approval Process --> Opportunity: Prospect Approval --> Initial submitter : User: Nushi Davoud
+
+Quick find box --> user --> edit system admin profile --> assign manager : Nushi Davoud
