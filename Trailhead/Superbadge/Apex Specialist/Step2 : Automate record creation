@@ -1,0 +1,93 @@
+Setup --> Object Manager --> Case --> field and relationship --> choose “Type” --> add Picklist Values (New) --> Repair & Routine Maintenance.
+
+Setup --> Object Manager --> Case --> Case Page Layouts --> Page Layout Assignment --> select “System Admin” & Choose “Case (HowWeRoll) Layout”
+
+Setup --> Quick find box --> Rename Tabs and Labels --> Edit Cases --> Rename “Maintenance Request”
+
+Setup --> Object Manager --> Product --> Product Page Layouts --> Page Layout Assignment --> select “System Admin” & Choose “Product (HowWeRoll) Layout”
+
+Setup --> Quick find box --> Rename Tabs and Labels --> Edit Product --> Rename “Equipment”
+
+AppLuncher --> find “Create Default Data” --> Create Data.
+
+AppLuncher --> find “How We Roll Maintenance” & Open app --> Maintance requests --> open both case --> add Case origin : Phone --> in Feed --> close case : Closed --> save.
+
+//Create Lookup relationship between Maintance request & Equipment
+
+Setup --> Object Manager --> Maintenance Request --> field and relationship --> New --> Lookup --> Equipment --> Next --> Next --> Next --> Save.
+
+====================================================================================================================================
+Developer Console --> open trigger “MaintenanceRequest” -->
+Code: 
+
+trigger MaintenanceRequest on Case (before update, after update) {
+    // ToDo: Call MaintenanceRequestHelper.updateWorkOrders
+    if(Trigger.isUpdate && Trigger.isAfter){
+        MaintenanceRequestHelper.updateWorkOrders(Trigger.New, Trigger.OldMap);
+    }
+}
+
+====================================================================================================================================
+Developer Console --> Open class “MaintenanceRequestHelper” -->
+Code :
+
+public with sharing class MaintenanceRequestHelper {
+    
+    public static void updateWorkOrders(List<Case>updateWorkOrders, Map<Id,Case>nonUpdCaseMap){
+    Set<Id>validIds = New Set<Id>();
+        
+        For(Case C : updateWorkOrders){
+            if(nonUpdCaseMap.get(C.Id).status != 'Closed' && C.Status == 'Closed'){
+                if(C.Type=='Repair' || C.Type=='Routine Maintenance'){
+                    validIds.add(C.Id);
+                }
+            }
+        }
+        
+        if(!ValidIds.isEmpty()){
+            List<Case> newCases = New List<Case>();
+            Map<Id, Case> closedCasesM = new Map<Id, Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,(SELECT Id,Equipment__c,Quantity__c FROM Equipment_Maintenance_Items__r) 
+                                                         FROM Case WHERE Id IN :validIds]);
+            Map<Id,Decimal> maintenanceCycles = new Map<ID,Decimal>();
+            AggregateResult[] results = [SELECT Maintenance_Request__c, MIN(Equipment__r.Maintenance_Cycle__c)cycle FROM Equipment_Maintenance_Item__c WHERE Maintenance_Request__c IN :ValidIds GROUP BY Maintenance_Request__c];
+ for (AggregateResult ar : results){ 
+            maintenanceCycles.put((Id) ar.get('Maintenance_Request__c'), (Decimal) ar.get('cycle'));
+        }
+            
+            for(Case cc : closedCasesM.values()){
+                Case nc = new Case (
+                    ParentId = cc.Id,
+                Status = 'New',
+                    Subject = 'Routine Maintenance',
+                    Type = 'Routine Maintenance',
+                    Vehicle__c = cc.Vehicle__c,
+                    Equipment__c =cc.Equipment__c,
+                    Origin = 'Web',
+                    Date_Reported__c = Date.Today()
+                    
+                );
+                
+                If (maintenanceCycles.containskey(cc.Id)){
+                    nc.Date_Due__c = Date.today().addDays((Integer) maintenanceCycles.get(cc.Id));
+                } else {
+                    nc.Date_Due__c = Date.today().addDays((Integer) cc.Equipment__r.maintenance_Cycle__c);
+                }
+                
+                newCases.add(nc);
+            }
+            
+           insert newCases;
+            
+           List<Equipment_Maintenance_Item__c> clonedWPs = new List<Equipment_Maintenance_Item__c>();
+           for (Case nc : newCases){
+                for (Equipment_Maintenance_Item__c wp : closedCasesM.get(nc.ParentId).Equipment_Maintenance_Items__r){
+                    Equipment_Maintenance_Item__c wpClone = wp.clone();
+                    wpClone.Maintenance_Request__c = nc.Id;
+                    ClonedWPs.add(wpClone);
+                    
+                }
+            }
+            insert ClonedWPs;
+        }
+    }
+}
