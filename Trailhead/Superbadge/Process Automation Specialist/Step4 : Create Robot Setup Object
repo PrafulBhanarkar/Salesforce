@@ -1,0 +1,17 @@
+Setup --> object manager --> new object --> Robot setup name --> data type : auto number --> format : ROBOT SETUP-{0000} --> starting number : 0 --> save
+
+Robot setup name --> field and relationship --> new --> date --> Field lable: Date --> next --> next --> save & new
+
+text --> Field lable: Notes --> Length :255 --> next --> next --> save & new
+
+Formula --> Field lable: Day of the Week --> text --> Formula: CASE( WEEKDAY( Date__c ),
+1,"Sunday",
+2,"Monday",
+3,"Tuesday",
+4,"Wednesday",
+5,"Thursday",
+6,"Friday",
+7,"Saturday",
+Text( WEEKDAY( Date__c ) ) ) --> next --> next --> save.
+
+field and relationship --> new --> MDR --> related : opportunities --> next --> Field label:Opportunities --> next --> next --> next --> save.
