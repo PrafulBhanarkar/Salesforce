@@ -1,0 +1,47 @@
+Reports:
+      1.	Reports --> New Folder --> Residential Reports --> Save.
+          I.	Under the Residential Reports Folder --> New Report --> Account --> next --> Rename Report to “Accounts by Market” --> column --> add bucket column --> 
+              Field (Type) --> Bucket Name (Market) --> Add 2 Buckets --> Utility (Customer - Direct and Customer – Channel) & Residential (Residential) --> 
+              Bucket remaining values as Other (Checkbox checked).
+          II.	(Market) as Rows --> (Ratings) as columns.
+          III.	Disable the Detail Row
+          IV.	Save and new --> Account by Market --> select folder Residential Reports --> Save
+
+      2.	New Report --> Account --> next --> Rename Report to “High Value Residential”
+          I.	filters --> Show me (all Account) , Created date (All Time), Type (equal Residential).
+          I.	Outline --> (Account Name) as Rows --> (Annual Revenue) as columns.
+          II.	Save and new --> High Value Residential --> select folder Residential Reports --> Save
+
+      3.	New Report --> Account --> next --> Rename Report to “Rated Accounts by State”
+          I.	Outline --> (Billing State/Province) as Group Rows --> (Ratings) as Group columns --> (Type) as Columns
+          II.	filters --> Show me (all Account) , Created date (All Time), Type (equal Residential).
+          III.	Save and new --> Rated Accounts by State --> select folder Residential Reports --> Save
+
+      4.	New Report --> Cases --> next --> Rename Report to “Open Support Cases”
+          I.	Outline --> (Account Name & Priority) as Group Rows --> (Case Owner / Subject / Case Reason) as Columns
+          II.	filters --> Show me (all Cases) , Opened date (All Time), Unit (Hour) --> Closed (equals False).
+          III.	Save and new --> Open Support Cases --> select folder Residential Reports --> Save
+      
+      
+Dashboards:
+1.	Dashboard --> New Folder --> Residential Dashboards --> Save.
+
+          I.	New Dashboard --> Name Dashboard to “Team Scoreboard”  --> Select Folder --> Residential Dashboards --> Save.
+          II.	+Component --> Account by Market --> select --> select (Donut chart), Value (Reccord count), sliced by (Market), 
+              sort by (Record count –down arrow), Max Values Displayed (2), title (Account Distribution), subtitle (Number of Accounts by Industry Type), 
+              Chart size: (6 cells wide and 11 cells high) adjust size with box.
+          III.	+Component --> High Value Residential --> select --> select (Lightning Table), sort by (Annual Revenue –down arrow), Max Values Displayed (10), 
+                title (Top Accounts), subtitle (Top 10 High Value Residential Accounts), Chart size: (6 cells wide and 11 cells high) adjust size with box. 
+          IV.	+Component --> Rated Accounts by State --> select --> select (Stacked Vertical Bar Chart), Max Values Displayed (15), title (Ratings by State), 
+              subtitle (Rated Distribution of Accounts by State), Chart size: (12 cells wide and 8 cells high) adjust size with box. 
+
+      A.	New Dashboard --> Name Dashboard to “Rep Scoreboard” --> Select Folder --> Residential Dashboards --> Save.
+      B.	+Component --> High Value Residential --> select --> select (Lightning Table), sort by (Annual Revenue –down arrow), Max Values Displayed (5), 
+          title (My Top Accounts), subtitle (Top 5 High Value Residential Accounts), Chart size: (4 cells wide and 7 cells high) adjust size with box
+      C.	+Component --> Open Support Cases --> select --> select (Lightning Table), Max Values Displayed (15), title (Open Support Cases), 
+          subtitle (My Customers’ Open Support Cases), Chart size: (4 cells wide and 7 cells high) adjust size with box
+      D.	+Component --> Rated Accounts by State --> select --> select (Stacked Vertical Bar Chart), Max Values Displayed (10), title (My Accounts by State), 
+          subtitle (Distribution of My Accounts by State), Chart size: (4 cells wide and 7 cells high) adjust size with box
+
+
+Gear Icon(Setting) --> view dashboard as (The Dashboard Viewer)
