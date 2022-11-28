@@ -1,0 +1,5 @@
+1.	What are the mechanisms by which you can activate a session-based permission set?
+Solution : C.	Use SOAP API objects and fields or a declarative tool like Flow.
+
+2.	True or false: You can use Flow to activate a session-based permission set even if you don't know how to code.
+Solution : A.	True
