@@ -1,0 +1,5 @@
+1.	How can you make it easy for your end users to activate a permission set, without using any markup?
+Solution : C.	Create a Lightning app page.
+
+2.	How do you create a Lightning app page that references a flow?
+Solution : A.	Use Lightning App Builder to create a Lightning app page and add a Flow component to your page.
