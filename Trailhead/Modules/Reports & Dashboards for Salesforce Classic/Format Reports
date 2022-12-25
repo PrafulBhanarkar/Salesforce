@@ -1,0 +1,20 @@
+Create a leads report
+Make a report that shows you a count of leads grouped by source and rating.
+      Name the report Matrix of Leads and save it in any folder
+      The new report should be of type Leads
+      The report should show My Leads, the format should be Matrix, and the date range should be for All Time
+      Column grouping should be by Rating
+      Row grouping should be by Lead Source
+      We won't test for this, but hide details to simplify display
+====================================================================================================================================================================
+Classic : Report --> lead --> lead --> create -->
+Show : My Leads
+Range : All Time
+show (Preview) : Details (deselect)
+Drag & Drop 
+Column : Rating
+Row : Lead Source
+Format : Matrix
+
+Save --> Report Name :Matrix of Leads --> save
+====================================================================================================================================================================
