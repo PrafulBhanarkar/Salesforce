@@ -15,6 +15,7 @@ Drag & Drop
 Column : Rating
 Row : Lead Source
 Format : Matrix
+Create grouping : Status (Drag & Drop)
 
 Save --> Report Name :Matrix of Leads --> save
 ====================================================================================================================================================================
