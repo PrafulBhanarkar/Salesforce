@@ -1,0 +1,15 @@
+Create a report that shows opportunities
+Create a report to show opportunities.
+      Name the report Opportunities Updates and save it in any folder
+      The new report should be of type Opportunities
+      The report format should be Tabular, and the date range should be for All Time
+      The report should include these columns: Opportunity Name, Type, Amount, and Close Date
+NOTE: If you delete your report and empty your recycle bin, the report name Opportunities Updates won't be available anymore.
+      Don't worry! Just add a number to the end of the report (e.g., Opportunities Updates1)
+============================================================================================================================================================
+Classic : Reports --> New Reports --> Opportunities --> Opportunities --> Start Report --> Name:Opportunities Updates --> 
+          Remove all columns & add 
+          columns: Opportunity Name, Type, Amount, and Close Date
+          date range: should be for All Time
+ Save --> Run Report
+ ============================================================================================================================================================
