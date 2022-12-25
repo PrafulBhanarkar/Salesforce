@@ -1,0 +1,18 @@
+Create a report and dashboard to show Cases by status
+Create a report that meets the following criteria, and then create a dashboard off of that report.
+      Name the report Cases by Status and save it in any folder
+      The report should be of type Cases
+      The report format should be Summary
+      The report should be grouped by the case Status field
+      Show details on the report by enabling Details (this makes column data visible and editable)
+      Create a Dashboard named Cases Dashboard and use the Cases by Status report as the source report
+      Add any dashboard component you want
+      Save and run the dashboard
+========================================================================================================================================================
+Classic : Report --> Customer Support Report : Cases --> Create
+Format : Summary
+Show : Details
+Save
+
+Dashboard --> Data Source : Cases by Status (Drag & Drop) --> Components: take any 
+========================================================================================================================================================
