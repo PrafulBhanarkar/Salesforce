@@ -1,0 +1,26 @@
+Create and share a dashboard
+Create a report of opportunities grouped by type. Then share a snapshot on Chatter.
+
+To get started
+
+Turn on feed tracking for dashboards and enable dashboard component snapshots, as specified in this unit.
+
+      Name the report Opportunities by Type and save it in any folder
+      The report must be of type Opportunities
+      The report format must be Summary, and the date range should be for All Time
+      The report must be grouped by Type
+      Create a dashboard named Opportunities Dashboard and save it in any folder
+      Create a dashboard component using the Opportunities by Type report (use any component you want)
+      Post a snapshot of your dashboard component to the dashboard Chatter feed
+      =======================================================================================================================
+      setup --> Report and Dashboard User Interface Settings --> Enable Dashboard Component Snapshots (Check) --> Save
+      
+      Report --> Opportunities --> Opportunities --> create
+      format : Summary
+      date range : All Time
+      grouped by : Type
+      Suscribe
+      Save --> Name : Opportunities by Type --> Save.
+      
+      Dashboard --> Report :Opportunities by Type --> Component : Take Any --> save --> Name : Opportunities Dashboard --> Save
+      
