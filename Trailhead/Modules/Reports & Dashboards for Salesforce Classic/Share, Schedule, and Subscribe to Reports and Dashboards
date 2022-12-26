@@ -14,6 +14,7 @@ Turn on feed tracking for dashboards and enable dashboard component snapshots, a
       Post a snapshot of your dashboard component to the dashboard Chatter feed
       =======================================================================================================================
       setup --> Report and Dashboard User Interface Settings --> Enable Dashboard Component Snapshots (Check) --> Save
+      setup --> feed tracking --> Dashboard --> Enable Feed Tracking --> Enable all fields --> Save
       
       Report --> Opportunities --> Opportunities --> create
       format : Summary
@@ -24,3 +25,7 @@ Turn on feed tracking for dashboards and enable dashboard component snapshots, a
       
       Dashboard --> Report :Opportunities by Type --> Component : Take Any --> save --> Name : Opportunities Dashboard --> Save
       
+      (Expand and share the dashboard to chatter feed)
+      
+     
+    
