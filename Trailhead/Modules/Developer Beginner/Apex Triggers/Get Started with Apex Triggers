@@ -1,0 +1,28 @@
+Code:
+
+trigger AccountAddressTrigger on Account (before insert, before update) {
+      for (account a : trigger.new){
+        if (a.Match_Billing_Address__c == true){
+            a.ShippingPostalCode = a.BillingPostalCode;
+        }
+    }
+}
+
+
+Note: 
+•	Please check you any trigger you have on Account object which is creating opportunity ? If yes then please deactivate the trigger and try again.
+•	Please try to de-activate all other triggers and validation rules on Account object and try again.
+
+
+Error: 
+Challenge not yet complete in My Trailhead Playground 1
+We updated an account that had 'Match_Billing_Address__c' set to false. We expected the Apex trigger not to fire, but it did.
+Make sure the Apex trigger fires only if 'Match_Billing_Address__c' is true.
+
+System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, 
+AddRelatedRecord: execution of AfterInsert caused by: System.DmlException: Insert failed. First exception on row 0; 
+first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Discount_percent__c]: [Discount_percent__c]
+
+Solution: 
+It look like you created any trigger "AddRelatedRecord" which is creating some record and in that record Discount_percent__c field required field
+Please deactivate that trigger or Edit "Discount_percent__c" field and remove required checkbox. (available in Opportunity)
