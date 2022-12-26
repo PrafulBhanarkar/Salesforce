@@ -1,0 +1,5 @@
+1.	True or false: You can create custom fields only on standard Salesforce objects.
+Solution : B.	False
+
+2.	Why is it important to define a data type when you create a custom field?
+Solution : C.	The data type determines how the field is formatted, such as by menu items, text, numbers, or currency.
