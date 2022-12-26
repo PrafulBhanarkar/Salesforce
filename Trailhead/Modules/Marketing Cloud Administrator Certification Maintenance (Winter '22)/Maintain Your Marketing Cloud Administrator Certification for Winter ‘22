@@ -1,0 +1,20 @@
+1.	What is required for a SmartCapture form to perform an Upsert?
+Solution : A.	A primary key
+
+2.	Why would the Einstein Engagement Scoring thresholds be adjusted?
+Solution : A.	To align to an organization's specific benchmarks
+
+3.	What object or activity can be included when a package is created and deployed with Marketing Cloud Package Manager?
+Solution : C.	API Event
+
+4.	What does the Einstein Copy Insights dashboard show?
+Solution : B.	How a subject line is likely to perform in comparison to previous subject lines
+
+5.	What is now an option for file transfer activities when exporting data out of Marketing Cloud?
+Solution : D.	AWS S3
+
+6.	What is a setup option that enables admins to have direct control over compliance settings in Email Studio?
+Solution : C.	Profile link check
+
+7.	What new feature is available for the Journey Builder Triggered Send Queue?
+Solution : A.	Delete
