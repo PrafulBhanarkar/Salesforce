@@ -13,6 +13,8 @@ Turn on feed tracking for dashboards and enable dashboard component snapshots, a
       Create a dashboard component using the Opportunities by Type report (use any component you want)
       Post a snapshot of your dashboard component to the dashboard Chatter feed
       =======================================================================================================================
+                                    All the process must be followed only from Classic platform
+                                    
       setup --> Report and Dashboard User Interface Settings --> Enable Dashboard Component Snapshots (Check) --> Save
       setup --> feed tracking --> Dashboard --> Enable Feed Tracking --> Enable all fields --> Save
       
@@ -26,6 +28,3 @@ Turn on feed tracking for dashboards and enable dashboard component snapshots, a
       Dashboard --> Report :Opportunities by Type --> Component : Take Any --> save --> Name : Opportunities Dashboard --> Save
       
       (Expand and share the dashboard to chatter feed)
-      
-     
-    
