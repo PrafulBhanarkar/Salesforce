@@ -1,0 +1,29 @@
+Code: 
+=================================================================================================================================================
+Apex Class Code: 
+
+public class ContactAndLeadSearch {
+public static list<list<sObject>> searchContactsAndLeads (string searchword) {
+
+list<list<sObject>> search = 
+      [find : searchword in all fields returning lead(firstname,lastname), contact(firstname,lastname)];
+      return search;        
+    }
+}
+=================================================================================================================================================
+Anonymous window Code:
+
+List<List<sObject>> searchContactsAndLeads = [FIND :'smith' IN ALL FIELDS
+                    RETURNING Lead(Name,FirstName,LastName),Contact(FirstName,LastName)];
+
+Lead[] searchLeads = (Lead[])searchContactsAndLeads[0];
+Contact[] searchContacts = (Contact[])searchContactsAndLeads[1];
+
+System.debug('Found the following Leads.');
+for (Lead L : searchLeads) {
+    System.debug(L.LastName + ', ' + L.FirstName);
+}
+System.debug('Found the following contacts.');
+for (Contact c : searchContacts) {
+    System.debug(c.LastName + ', ' + c.FirstName);
+}
