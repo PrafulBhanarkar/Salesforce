@@ -1,0 +1,21 @@
+Install an AppExchange dashboard package and make updates to one of the dashboards
+You’ve been asked to create a new Lead trending dashboard. Rather than creating the dashboard from scratch, 
+install a CRM adoption dashboard package from AppExchange in your Trailhead Playground and update one of the dashboard components as specified below. 
+(Note: While it's a best practice to clone a dashboard before you modify it, for this example, you can go ahead and edit the dashboard directly.)
+
+      If you're having trouble installing this app, check out Install a Package or App to Complete a Trailhead Challenge on Trailhead Help.
+      In your Trailhead Playground, install the Sales Adoption Dashboards from AppExchange
+      Package ID: 04t4x000000pALsAAM
+      Refresh the 3 - Sales & Marketing Adoption dashboard in the Salesforce Adoption Dashboards folder at least once
+      In the 3 - Sales & Marketing Adoption dashboard, edit the New LEAD Trend by Source component and uncheck the Use chart as defined in source report option
+      Change the dashboard component for New LEAD Trend by Source to a pie chart and set the wedges to Lead Source
+      Save your changes
+=====================================================================================================================================================================
+App Luncher --> Search (Install package) --> 04t4x000000pALsAAM --> install (All Users)--> Done
+
+Install package --> Salesforce Adoption Dashboards --> 3 - Sales & Marketing Adoption --> Refresh.
+
+Classic Platform
+Dashboard : Salesforce Adoption Dashboards --> 3 - Sales & Marketing Adoption --> edit --> New LEAD Trend by Source --> edit attributes 
+--> (Uncheck) Use chart as defined in source report --> Select Type : Pie Chart --> wedges : Lead Source --> Ok --> Save --> Close --> Save & Close
+=====================================================================================================================================================================
