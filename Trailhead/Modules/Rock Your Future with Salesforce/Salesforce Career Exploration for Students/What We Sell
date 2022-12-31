@@ -1,0 +1,17 @@
+Setup --> Object Manager --> Create --> Custom Object -->
+Label: Animal
+Plural Label: Animals
+Object Name: Animal
+Record Name: Animal Name
+Data Type: Text
+                                Create a custom tab:
+Object: Animal
+Choose any tab style
+======================================================================================
+Setup --> Home --> App Manager --> New Lightning App -->
+App Name: Pet Store
+Description: App to track animals in my pet store.
+Include item: Animals
+Assign to User Profile: System Administrator
+
+--> Save.
