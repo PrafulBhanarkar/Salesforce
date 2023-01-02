@@ -1,0 +1,30 @@
+================================================================================================================================================================
+Create the Battle Station object 
+
+Gear icon --> Setup -->
+
+Click the Object Manager tab next to the Home tab.
+Click on Create dropdown at the right side and then select Custom Object.
+On the Custom Object Definition page, create the object as follows:
+    Label: Battle Station
+    Plural Label: Battle Stations
+    Record Name: Battle Station Name
+    Check the Allow Reports checkbox
+    Check the Allow Search checkbox
+    Click Save.
+Now create a custom tab. Click the Home tab, enter Tabs in Quick Find and select Tabs.
+Under Custom Object Tabs, click New.
+For Object, select Battle Station.
+For Tab Style, select any icon.
+Leave all defaults as is. Click Next, Next, and Save.
+Now we need to enable Feed Tracking for the Battle Station object. From Setup, enter Feed in the Quick Find and select Feed Tracking. 
+    Click on Battle Station, and check the Enable Feed Tracking checkbox. Check the Battle Station Name and Owner checkboxes. Click Save. 
+================================================================================================================================================================
+Create the Battle Station Construction app
+From Setup, enter App Manager in the Quick Find and select App Manager.
+Click New Lightning App. Enter Battle Station Construction as the App Name, then click Next.
+Under App Options, leave the default selections and click Next.
+Under Utility Items, leave as is and click Next.
+From Available Items, select Battle Stations, Reports, and Dashboards and move them to Selected Items. Click Next.
+From Available Profiles, select System Administrator and move it to Selected Profiles. Click Save & Finish.
+To verify your changes, click theApp Launcher icon in the Lightning Experience header App Launcher, type Battle and select the Battle Station Construction app.
