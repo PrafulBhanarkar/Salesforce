@@ -1,0 +1,90 @@
+Battle Station Custom Object
+Setup --> Object Manager --> Search: Battle Station --> Fields & Relationships --> New.
+=========================================================================================================================
+Step 1: Add a Project Status field
+Data type : Picklist --> Field Label: Project Status --> values for the picklist (one per line):
+Green
+Yellow
+Red
+Complete
+Display values alphabetically, not in the order entered --> Unchecked.
+Use first value as default value --> Checked.
+Restrict picklist to the values defined in the value set box --> Unchecked.
+Leave the defaults for the remaining fields --> Next --> Next --> Save & New 
+
+=========================================================================================================================
+Step 2: Add a Weapons Status field
+Data type : Picklist --> Field Label: Weapons Status --> values for the picklist (one per line):
+Not Yet Operational
+Fully Operational
+Display values alphabetically, not in the order entered --> Unchecked.
+Use first value as default value --> Checked.
+Restrict picklist to the values defined in the value set box --> Unchecked.
+Leave the defaults for the remaining fields --> Next --> Next --> Save.
+
+================================================================================================================================================================
+Resource Custom Object
+Setup --> Object Manager --> create --> custom object -->
+    Label: Resource
+    Plural Label: Resources
+    Record Name: Resource Name
+    Check the Allow Reports checkbox --> Save.
+    
+Setup --> Home --> Tabs --> New --> Object: Resource (For Tab Style, select any icon) --> Leave all defaults as is --> Next --> Next --> Save.
+================================================================================================================================================================
+Object Manager --> Resource --> Fields & Relationships --> New.
+
+Step 1: Add a Quantity field
+Data Type : Number --> Next -->Field Label: Quantity
+Ensure that there is always a number entered for this field by checking the Required checkbox --> Checked
+Leave the defaults for the remaining fields --> Next --> Next --> Save & New 
+
+================================================================================================================================================================
+Step 2: Add a Utilization field
+Data Type : Percent --> Next --> Field Label: Utilization
+Ensure that there is always a percentage entered for this field by checking the Required checkbox --> Checked
+Leave the defaults for the remaining fields --> Next --> Next --> Save & New 
+
+================================================================================================================================================================
+Step 3: Add a Battle Station field (Master-Detail Relationship)
+Data Type: Master-Detail Relationship --> Related To : Battle Station --> Next --> Field Label: Should default to Battle Station
+--> Field Name: Battle_Station --> Leave the defaults for the remaining fields --> Next --> Next --> Next --> Next --> Save.
+
+================================================================================================================================================================
+Supplies Custom Object
+Setup --> Object Manager --> create --> custom object -->
+Label: Supply
+Plural Label: Supplies
+Check the Allow Reports checkbox --> Save.
+
+Setup --> Home --> Tabs --> New --> Object: Supply (For Tab Style, select any icon) --> Leave all defaults as is --> Next --> Next --> Save.
+================================================================================================================================================================
+Object Manager --> Supply --> Fields & Relationships --> New.
+
+Step 1: Add a Quantity field
+Data Type : Number --> Next -->Field Label: Quantity
+Ensure that there is always a number entered for this field by checking the Required checkbox --> Checked
+default value : 2 --> Leave the defaults for the remaining fields --> Next --> Next --> Save & New 
+================================================================================================================================================================
+Step 2: Add a Unit Cost field
+Data Type : Currency --> Next -->Field Label: Unit Cost --> Length: 16 --> Decimal Places: 2
+Ensure that there is always a number entered for this field by checking the Required checkbox --> Checked
+Leave the defaults for the remaining fields --> Next --> Next --> Save & New 
+================================================================================================================================================================
+Step 3: Add a Total Cost field (Formula Field)
+Data Type: Formula --> Next -->
+Field Label: Total Cost
+Field Name: Total_Cost
+Formula Return Type: Currency
+Decimal Places: 2 --> Next.
+
+formula: Quantity__c * Unit_Cost__c.
+
+Check Syntax to make sure the formula has the correct syntax --> Next --> Next --> Save & New.
+================================================================================================================================================================
+Step 4: Add a Battle Station field (Master-Detail Relationship)
+Data Type: Master-Detail Relationship --> Related To : Battle Station --> Next
+Field Label: Should default to Battle Station
+Field Name: Battle_Station
+Leave the defaults for the remaining fields --> Next --> Next --> Next --> Save.
+================================================================================================================================================================
