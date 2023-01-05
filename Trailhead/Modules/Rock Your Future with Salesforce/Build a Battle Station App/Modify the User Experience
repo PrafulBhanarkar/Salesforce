@@ -1,1 +1,45 @@
+Modify the Battle Station Page Layout
+Setup --> Object Manager --> Battle Station --> Page Layouts --> Battle Station Layout --> Battle Station Detail section --> drag the Project Status field to the right column (below Owner field).
+--> Drag the Weapons Status field to the right column (below Project Status field).
+===================================================================================================================================================================================================================
+Resources (Click the wrench icon) --> Add --> Quantity and Utilization field to the right side by selecting them --> OK
+Supplies (Click the wrench icon) --> Add --> Quantity, Unit Cost, and Total Cost field to the right side by selecting them --> OK --> Save
+===================================================================================================================================================================================================================
+Add Some Battle Station Data
+App Luncher --> Battle Station Construction --> Battle Stations --> New --> Battle Station Name: Obliteration Station --> Save
 
+Resources --> New --> 
+      Resource Name                                                         Quantity          Utilization
+
+      Dark Lord                                                                10                1%
+      Admiral                                                                  9                 2%
+      Construction worker                                                      8                 3%
+      Left-handed monkey wrench adjuster                                       7                 4%
+      Robert the foreman                                                       6                 5%
+      Exhaust Port Inspector                                                   5                 6%
+      Sandwich maker                                                           4                 7%
+      Massage therapist                                                        3                 8%
+      Yoga instructor                                                          2                 9%
+      Battle trooper with ridiculously thin armor & terrible aim               1                 10%
+
+Supplies --> New -->
+      Supply Name                                                        Quantity          Unit Cost
+ 
+      Light bulbs                                                           1                10%
+      Planet-destroying laser                                               2                20% 
+      Donuts                                                                3                30%
+      Hot glue gun                                                          4                40%
+      Cantina band instruments                                              5                50%
+      Laser protecting eyewear                                              6                60%
+      Steel                                                                 7                70%
+      Toilet paper                                                          8                80%
+     
+===================================================================================================================================================================================================================
+Add a Roll-Up Summary Field
+Setup --> Object Manager --> Battle Station --> Fields & Relationships --> New --> Data Type: Roll-Up Summary --> Next -->
+Field Label: Crew Members
+Field Name: Crew_Members --> Next -->
+Summarized Object : Resources 
+Select Roll-Up Type : SUM
+Field to Aggregate : Quantity --> Next --> Next --> Save
+===================================================================================================================================================================================================================
