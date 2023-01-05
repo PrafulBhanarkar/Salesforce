@@ -1,0 +1,18 @@
+Create a Report
+App Launcher --> Battle Station Construction --> Reports --> New Report --> Category : Other Reports --> Select a Report Type : Battle Station with Supplies --> Start Report
+      =======================================================================================================================================================
+      = Note: (If you don't see the Battle Station with Supplies report type, go to Setup and click Object Manager.                                         =
+      = Next to Supply click the drop-down, then click Edit. Under Optional Features, check Allow Reports. Click Save. Then go back and create the report.) =
+      =======================================================================================================================================================
+Columns : Quantity, Unit Cost, and Total Cost (Add all)
+Groups : Battle Station Name (Add all)
+Toggle Update Preview Automatically (ON)
+
+Quantity --> Summarize (From menu dropdown arrow) --> Deselect : Sum
+Unit Cost --> Summarize (From menu dropdown arrow) --> Deselect : Sum
+--> Save & Run --> Report Name : Supplies --> Save
+=============================================================================================================================================================================================
+=============================================================================================================================================================================================
+Create a Dashboard
+Dashboards  --> New Dashboard --> Name : Construction --> Create
++Component --> Report: Supplies --> Select --> Vertical Bar Chart --> Add --> Save --> Done
