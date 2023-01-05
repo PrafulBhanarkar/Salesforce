@@ -1,0 +1,39 @@
+Add a Utilization Validation Rule
+Setup --> Object Manager --> Resource --> Validation Rules --> New --> Rule Name : Inspectors_Must_Work_Overtime
+Formula : AND(Name = "Exhaust Port Inspector", Utilization__c < 1.5) --> Check Syntax
+Error Message : Exhaust Port Inspectors must work at least 150%. No coffee breaks!
+Error Location : Field --> Utilization --> Save
+=====================================================================================================================================
+App Luncher --> Battel station --> Obliteration Station --> Related --> Resource --> New -->
+Resource Name : Exhaust Port Inspector
+Quantity : 2
+Utilization : 10% (you get an error msg)
+=====================================================================================================================================
+Automate with Flow Builder
+Setup --> Flows --> New Flow --> Record-Triggered Flow --> Create -->
+Object : Battle Station
+Trigger the flow when : A record is created or updated
+
+Condition Requirements : All Conditions Are Met (AND)
+Field : Weapon_Status__c, Operator : Equals, Value : Fully Operational
+When to Run the Flow for Updated Records : Only when a record is updated to meet the condition requirements --> Done
+=====================================================================================================================================
+Update Record Action
+On the Flow Builder canvas, click The Add Element --> Update Triggering Record --> Label: Update Status
+Field: Project_Status__c.
+Value: Complete --> Done
+=====================================================================================================================================
+Post to Chatter
+click The Add Element --> Action --> Action : Post to Chatter
+Label : Post to Chatter
+Message : {!$Record.Name} is complete! Now witness the power of a fully armed and operational battle station!
+Target Name or ID : {!$Record.Id} --> Done --> Save
+Flow Label: Fully Operational Battle Station
+Flow API Name: Fully_Operational_Battle_Station --> Save --> Activate
+=====================================================================================================================================
+Test Your Flow
+App Luncher --> Battel station --> Obliteration Station --> Update --> Weapons Status: Fully Operational --> Save
+
+Now you can see the changes
+Project status : Complete, & Chatter post
+=====================================================================================================================================
