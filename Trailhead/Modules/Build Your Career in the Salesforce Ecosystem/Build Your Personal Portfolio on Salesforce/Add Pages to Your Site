@@ -1,0 +1,43 @@
+Create Your Pages
+Home Tab (Setting Icon) --> New Page --> Standard Page --> +New Blank Page --> content layout : Flexible Layout --> Next
+--> Name : About Me --> Create.
+
+Note: At the top of your page, click the main tab (it might now be called About Me)
+
+
+Home Tab (Setting Icon) --> New Page --> Standard Page --> +New Blank Page --> content layout : Flexible Layout --> Next
+--> Name : Experience --> Create.
+
+Home Tab (Setting Icon) --> New Page --> Standard Page --> +New Blank Page --> content layout : Flexible Layout --> Next
+--> Name : Education pages --> Create.
+==============================================================================================================================
+Create Your Navigation
+
+Home Tab (Setting Icon) --> Tile Menu area --> Default Menu : Default Navigation --> Edit Default Navigation
+--> Remove (X): Support ,Knowledge --> Add Menu Item -->
+Name : About Me
+Type : Site Page
+Page : About Me (Select curresponding page)
+Publicly available (Checked) 
+
+Add Menu Item -->
+Name : Experience
+Type : Site Page
+Page : Experience (Select curresponding page)
+Publicly available (Checked) 
+
+Add Menu Item -->
+Name : Education
+Type : Site Page
+Page : Education pages (Select curresponding page)
+Publicly available (Checked) --> Save Menu
+
+==============================================================================================================================
+Preview and Publish Your Changes
+Preview --> 
+
+Note : Test out your page and navigation mappings by clicking each box and seeing that the tab changes to the corresponding tab.
+Click the menu items at the top of the page and ensure that the resulting tabs match the menu items.
+
+Back To Builder --> Publish --> Publish --> Got It
+==============================================================================================================================
