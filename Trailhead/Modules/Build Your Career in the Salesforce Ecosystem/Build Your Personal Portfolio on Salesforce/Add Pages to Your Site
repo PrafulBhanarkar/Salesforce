@@ -9,7 +9,7 @@ Home Tab (Setting Icon) --> New Page --> Standard Page --> +New Blank Page --> c
 --> Name : Experience --> Create.
 
 Home Tab (Setting Icon) --> New Page --> Standard Page --> +New Blank Page --> content layout : Flexible Layout --> Next
---> Name : Education pages --> Create.
+--> Name : Education --> Create.
 ==============================================================================================================================
 Create Your Navigation
 
@@ -29,7 +29,7 @@ Publicly available (Checked)
 Add Menu Item -->
 Name : Education
 Type : Site Page
-Page : Education pages (Select curresponding page)
+Page : Education (Select curresponding page)
 Publicly available (Checked) --> Save Menu
 
 ==============================================================================================================================
