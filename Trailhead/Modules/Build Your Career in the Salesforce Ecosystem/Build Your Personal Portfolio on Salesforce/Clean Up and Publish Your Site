@@ -1,0 +1,17 @@
+Clean Up the Rest of Your Home Page
+Home page --> My Open Cases --> Delete
+Paused Flows --> Delete
+=================================================================================================================
+Add Links
+Rich Content Editor --> Edit Content --> Delete the existing text --> Type : My Trailhead Profile
+--> Highlight the text --> Link icon --> Paste the URL --> Open in a new window is selected --> Preview
+--> Right-Click Link and check --> Back to Builder --> Publish --> Publish --> Got It
+=================================================================================================================
+Build Out Your Pages
+Home --> Components --> Drag the Rich Content Editor  (under the content heading) --> Content segment, or column 1
+--> Edit Content : Enter information about yourself --> Preview --> Back to Builder --> Publish --> Publish --> Got It
+=================================================================================================================
+Make Your Site Public
+Home page --> Settings --> General --> Guest users can see and interact with the site without logging in.
+--> Publish --> Publish --> Got It.
+=================================================================================================================
