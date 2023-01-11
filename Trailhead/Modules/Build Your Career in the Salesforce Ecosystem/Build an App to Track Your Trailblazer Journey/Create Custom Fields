@@ -1,0 +1,25 @@
+Create a Custom Field for Type
+Setup --> Object Manager --> Discovery --> Fields & Relationships --> New --> Picklist --> Next -->
+      Field Label: Type
+      Field Name: Type
+      Values (Select --> Enter values) :  Website
+                                          Blog
+                                          Event
+                                          Podcast
+                                          Group
+                                          Job
+                                          Other
+Required --> (select) Always require a value in this field in order to save a record --> Next --> Next --> Save & New
+======================================================================================================================================
+Create a Custom Field for URL
+Setup --> Object Manager --> Discovery --> Fields & Relationships --> New --> URL --> Next -->
+      Field Label: Link
+      Field Name: Link
+--> Next --> Next --> Save & New
+======================================================================================================================================
+Create a Custom Field for Notes
+Setup --> Object Manager --> Discovery --> Fields & Relationships --> New --> Text Area (Long) --> Next -->
+      Field Label: Notes
+      Field Name: Notes
+      # Visible Lines: 3
+--> Next --> Next --> Save
