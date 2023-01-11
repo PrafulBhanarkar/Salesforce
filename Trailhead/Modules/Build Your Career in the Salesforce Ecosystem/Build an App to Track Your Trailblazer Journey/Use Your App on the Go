@@ -1,0 +1,16 @@
+Create a User
+Setup --> Users --> New User -->
+Enter your first and last name: ________________________________
+Enter a unique alias: ________________________________
+Enter a valid email address: ________________________________
+Enter a unique username: ________________________________ 
+  (Note : Your username should be formed like an email address, but it does not need to be a valid email address but in standard email form.)
+Enter a unique nickname: ________________________________
+User License: Salesforce
+Profile: System Administrator. 
+  (Note: If a Salesforce license isn't available, select the Salesforce Platform license and the Salesforce Platform User profile.)
+Role: CEO --> Save.
+
+Just for Your information : 
+Check your email for an activation email. Click the link in the email and set your password.
+Now you have a username and password to access your app easily.
