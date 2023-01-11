@@ -1,0 +1,23 @@
+Make a Report
+Reports --> New Report --> Category : All --> Search : Discoveries --> Start Report --> Update Preview Automatically slider to switch it on
+--> Add column : Link , Notes --> Add group : Type --> Save
+      Report Name: New Discoveries Report
+      Description: Summary of my career exploration discoveries
+--> Save --> Run
+==============================================================================================================================
+Add a Chart to the Report
+Discoveries Report --> add a chart --> chart properties (Gear icon) --> Donut 
+--> Chart Attributes section :  Chart Title: Discovery by Type
+                                Value: Record Count
+--> Save
+==============================================================================================================================
+Add the Report to a Dashboard
+Dashboards --> New Dashboard --> 
+Name: My Discoveries
+Description: My career exploration discoveries dashboard --> Create --> +Component --> New Discoveries Report --> Select
+--> Gauge component --> four segment ranges at 0, 5, 10, and 15 --> Add
+
++Component --> New Discoveries Report --> vertical bar chart component --> Add 
+--> Drag the component so it’s next to the gauge component --> Save and Done
+
+==============================================================================================================================
