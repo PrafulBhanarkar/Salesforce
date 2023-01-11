@@ -1,0 +1,21 @@
+Create a Heading for Your Portfolio
+
+Update your photo with name :  portfolio_header.jpg
+
+Setup --> Digital Experiences --> All Sites --> Select Site --> Builder 
+--> Hover over the existing image on the page --> Rich Content Editor --> Edit Content 
+--> Highlight the image and press the Delete key --> Image Icon --> Upload -->  portfolio_header.jpg 
+--> If your image doesn’t span across the whole page, also add some text such as: My Online Portfolio
+--> Preview --> Back to Builder
+===========================================================================================================================
+Choose Your Colors
+Theme panel --> Colors --> Change the colors for Action Color, Detail Text Color, and Page Background Color
+===========================================================================================================================
+Review the Language Options
+Settings panel --> Languages --> For this project, leave English (US) as the default language
+===========================================================================================================================
+Preview Your Portfolio
+Preview --> Back to Builder
+===========================================================================================================================
+Publish Your Changes
+Publish --> Publish --> Got It
