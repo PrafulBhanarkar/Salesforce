@@ -1,0 +1,12 @@
+Build a Custom Object
+Setup --> Object Manager --> Create --> Custom Object
+      Label: Discovery
+      Plural Label: Discoveries
+      Object Name: Discovery
+      Record Name: Discovery Name
+Optional Features --> Allow Reports.
+Object Creation --> Launch New Custom Tab Wizard --> Save
+======================================================================================
+Make a Custom Tab
+Object : Discovery
+Tab Style : (What you want select) --> Next --> Next --> Save
