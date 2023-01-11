@@ -1,0 +1,27 @@
+Create the My Trailblazer Journey App
+Home --> App Manager --> New Lightning App -->
+      App Name: My Trailblazer Journey
+      Description: Tracking my discoveries in the Salesforce ecosystem
+      (Optionally, upload an image to your app) --> Next
+      
+      App Options: Click Next.
+      Utility Items: Click Next.
+      Navigation Items:
+            Discoveries, Dashboards, Reports item --> Add to move it to Selected Items --> Next
+      User Profiles:
+            System Administrator, Standard Platform User, Standard User --> Add to move it to Selected Profiles --> Save & Finish.
+===================================================================================================================================================
+Add Discovery Records
+App Launcher --> My Trailblazer Journey --> Discoveries --> New --> 
+      Discovery Name: Trailhead
+      Type: Website
+      Link: trailhead.com --> Save & New
+      
+      Discovery Name: Trailblazer Community Groups
+      Type: Group
+      Link: https://trailblazercommunitygroups.com/#chapters-page --> Save & New
+
+      Discovery Name: Trailblazer Blog Post
+      Type: Blog
+      Link: https://medium.com/trailhead/huge-demand-for-salesforce-talent-3bb30c597b39 --> Save
+===================================================================================================================================================
