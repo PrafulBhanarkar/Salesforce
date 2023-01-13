@@ -1,0 +1,24 @@
+Important point to Remember
+
+Dashboards chart types:
+      1.	Tables : table to show a set of report data in column form.
+      2.	metrics : metric when you have one key value to display.
+      3.	gauges : single value that you want to show within a range
+
+Dynamic dashboards feature reduces the number of required dashboards from 45 to two!
+
+                            View Dashboard As
+
+Me — Dashboard readers see data in the dashboard according to your access to data.
+
+Another person — Dashboard readers see data in the dashboard according to the data access level of whomever you specify.
+
+The dashboard viewer— Dashboard readers see data as themselves, according to their own access to data. These types of dashboards are often called dynamic dashboards. Your organization can have up to 5 dynamic dashboards for Enterprise Edition, 10 for Unlimited and Performance Edition, and 3 for Developer Edition. Dynamic dashboards aren’t available in other editions. Additional dynamic dashboards may be available for purchase. Take note of these dynamic dashboard limitations:
+      1. You can't follow components on dynamic dashboards.
+      2. You can’t save dynamic dashboards in private folders.
+      3. You can’t schedule refreshes for dynamic dashboards. They must be refreshed manually.
+
+Optionally, select Let dashboard viewers choose whom they view the dashboard as to let a reader with appropriate user permissions choose who they view the dashboard as. With the “View My Team’s Dashboards” user permission, the reader can view the dashboard as themself or as anyone beneath them in the role hierarchy. With the “View All Data” user permission, the reader can view the dashboard as anyone.
+
+Report Charts
+If you don’t want to create a dashboard, but just want to add a chart to your report, then report charts may be right for you.
