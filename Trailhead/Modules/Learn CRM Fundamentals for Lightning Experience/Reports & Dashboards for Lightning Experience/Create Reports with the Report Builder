@@ -1,0 +1,13 @@
+Important points of Module
+
+      •	Primary object with related object— Records returned are only those where the primary object has at least one related object record.
+      Opportunities with Products, the only records that would be displayed on the report would be opportunities that have at least one related product record.
+      •	Primary object with or without related object—Records returned are those where the primary object may or may not have a related object record.
+
+Filter Type
+      1.	Standard Filter : Standard filters are applied by default to most objects (Show Me and Date Field).
+      2.	Field Filter : Field filters are available for reports, list views, workflow rules, and other areas of the application.
+      3.	Filter Logic : Add Boolean conditions to control how field filters are evaluated. You must add at least 1 field filter before applying filter logic.
+      4.	Cross Filter : Filter a report by the child object using WITH or WITHOUT conditions. The most common use case is exception reporting.
+      Select a parent object from the Show Me & Select a child object from the Secondary Object dropdown
+      5.	Row Limit : For tabular reports, select the maximum number of rows to display, then choose a field to sort by and the sort order.
