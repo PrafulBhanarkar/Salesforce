@@ -1,0 +1,12 @@
+Enable Approval Requests in Chatter
+
+Setup --> Chatter Settings --> Edit --> Allow Approvals --> Save
+==============================================================================================================
+Create an approval post template for opportunities
+
+Setup --> Post Templates --> New Template --> Object: Opportunity --> Next -->
+Name: Opportunity Approvals
+Unique Name: Opportunity_Approvals
+Description: Post template for opportunity approvals
+Default: Selected
+Post Template Fields: Opportunity Name, Opportunity Owner, Probability % (Select add) --> Save
