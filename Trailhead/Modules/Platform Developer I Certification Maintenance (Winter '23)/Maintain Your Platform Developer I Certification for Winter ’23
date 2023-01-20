@@ -1,0 +1,17 @@
+1. Field update actions have changed in API Version 54.0. Which record-triggered flows do field update actions now execute?
+Solution : B. Before-save and After-save
+
+2. Which Apex class is used to determine the hostnames for the domains that Salesforce hosts for your org?
+Solution : A. System.DomainCreator
+
+3. Which modules can be used for notifications in a Lightning web component instead of native APIs?
+Solution : B. LightningAlert, LightningConfirm, and LightningPrompt
+
+4. What determines an org’s “shape” in Salesforce?
+Solution : C. Features, Settings, Edition, Limits, and Licenses
+
+5. Which lightning-modal-* component is required to create a modal?
+Solution : C. Body
+
+6. How do you call an invocable action from Apex code?
+Solution : D. Refrence Invocable.Action
