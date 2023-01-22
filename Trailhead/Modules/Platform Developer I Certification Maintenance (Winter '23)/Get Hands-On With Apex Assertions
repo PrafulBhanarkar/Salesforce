@@ -1,1 +1,126 @@
+Get Ready for the Hands-on Challenge
+Developer Console --> file --> new --> Apex Class --> Name : TestFactory
+        ==============================================================================================================
+        = Note : if it shows error "duplicate value found: <unknown> duplicates value on record with id: <unknown>". =
+        = It means your org already contain apex class with TestFactory. for that open                               =
+        = File --> open --> classes --> Search "TestFactory" in "Filter"                                             =
+        ==============================================================================================================
+=========================================================================================================================================
+Replace code:
 
+@isTest
+public class TestFactory {
+   public static Account getAccount(String accountName, Boolean doInsert) {
+       Account account = new Account(Name = accountName);
+       if (doInsert) {
+           insert account;
+       }
+       return account;
+   }
+   public static Contact getContact(Id accountId, String firstName, String lastName, Boolean doInsert){
+       Contact contact = new Contact(
+           FirstName = firstName,
+           LastName = lastName,
+           AccountId = accountId
+       );
+       if (doInsert) {
+           insert contact;
+       }
+       return contact;
+   }
+   public static void generateAccountWithContacts(Integer numContacts) {
+       Account account = getAccount('default account ltd', true);
+       List<Contact> contacts = new List<Contact>();
+       for (Integer i = 0; i < numContacts; i++) {
+           String firstName = 'Contact';
+           String lastName = 'Test' + i;
+           contacts.add(getContact(account.Id, firstName, lastName, false));
+       }
+       insert contacts;
+   }
+   public static Opportunity[] generateOppsForAccount(ID accountId, Decimal amount, Integer numOpps){
+       List<Opportunity> oppsForAccounts = new List<Opportunity>();
+       for (Integer i = 0; i < numOpps; i++) {
+           Opportunity opp = new Opportunity(
+               Name = 'Account ' + i,
+               AccountId = accountId,
+               Amount = amount,
+               CloseDate = Date.today().addDays(5),
+               StageName = 'Prospecting'
+           );
+           oppsForAccounts.add(opp);
+       }
+       return oppsForAccounts;
+   }
+   public static User generateUser(String profileName) {
+       UserRole userRole = new UserRole(
+           DeveloperName = 'TestingTeam',
+           Name = 'Testing Team'
+       );
+       insert userRole;
+       String uniqueEmail = 'Cpt.Awesome' + DateTime.now().getTime() + '@th.example.com';
+       User userForInsert = new User(
+           ProfileId = [SELECT Id FROM Profile WHERE Name = :profileName].Id,
+           LastName = 'lastName',
+           Email = uniqueEmail,
+           Username = uniqueEmail,
+           CompanyName = 'Testing Co',
+           Title = 'Captain',
+           Alias = 'alias',
+           TimeZoneSidKey = 'America/Los_Angeles',
+           EmailEncodingKey = 'UTF-8',
+           LanguageLocaleKey = 'en_US',
+           LocaleSidKey = 'en_US',
+           UserRoleId = userRole.Id
+       );
+       insert userForInsert;
+       return userForInsert;
+   }
+}
+--> Save
+=========================================================================================================================================
+Developer Console --> file --> new --> Apex Class --> Name : DataGenerationTest
+Replace Code :
+
+@isTest
+private class DataGenerationTest {
+  @testSetup
+  static void dataCreation() {
+      Account account = TestFactory.getAccount('Muddy Waters Inc.', true);
+      Contact contact = TestFactory.getContact(account.Id, 'Muddy', 'Waters', true);
+      Opportunity opp = New Opportunity();
+      opp.Name = 'Long lost record';
+      opp.AccountId = account.Id;
+      opp.CloseDate = Date.today().addDays(14);
+      opp.StageName = 'Prospecting';
+      insert opp;
+  }
+  @isTest
+  static void testBruteForceAccountCreation() {
+      List<Account> accts = new List<Account>();
+      Test.startTest();
+          accts = [SELECT Id FROM Account];
+      Test.stopTest();
+      Assert.isTrue(accts.size() > 0, 'Was expecting to find at least one account created on the Test Setup');
+  }
+  @isTest
+  static void testUseTestFactoryToCreateAccountsWithContacts() {
+      List<Account> accts;
+      List<Contact> contacts;
+      TestFactory.generateAccountWithContacts(5);
+      Test.startTest();
+          accts = [SELECT Id FROM Account];
+          contacts = [SELECT Id FROM Contact];
+      Test.stopTest();
+      Assert.isTrue(accts.size() > 0, 'Was expecting to find at least one account created');
+      Assert.isTrue(contacts.size() == 6, 'Was expecting to find 6 contacts');
+      Assert.areNotEqual(accts.size(), contacts.size(), 'Was expecting there to be a different number of account and contacts');
+  }
+  @isTest
+  static void testAtTestSetupMethodsRule() {
+      List<Opportunity> opps = [SELECT Id, AccountId FROM Opportunity];
+      Assert.areEqual(1, opps.size(), 'Expected test to find a single Opp');
+  }
+}
+--> Save
+=========================================================================================================================================
