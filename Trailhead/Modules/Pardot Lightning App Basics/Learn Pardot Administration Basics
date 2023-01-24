@@ -1,0 +1,5 @@
+1. What are the four default user roles in Pardot?
+Solution : B. Admin, Marketing User, Sales Manager, Sales User
+
+2. Your company has a field in Salesforce that captures product preferences, and you'd like to use that information in Pardot. You should:
+Solution : A. Create a custom field in Pardot and map it to the corresponding field in Salesforce
