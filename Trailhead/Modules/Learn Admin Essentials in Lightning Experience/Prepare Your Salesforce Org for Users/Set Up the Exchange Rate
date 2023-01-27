@@ -1,0 +1,25 @@
+Enable Multiple Currencies
+Setup --> Company Information --> Edit --> Default Locale : English (United States) --> Currency Settings : Activate Multiple Currencies (Checked) --> Save
+Currency Setup --> New --> 
+                            Field                   Value
+                            Currency Type           EUR – Euro
+                            Conversion Rate         1.5
+                            Decimal Places          2
+--> Save
+==========================================================================================================================================================================
+App Launcher --> Sales --> Opportunities --> New --> 
+                            Field                       Value
+                            Opportunity Name            Euro Currency Test
+                            Account Name                United Oil & Gas, UK
+                            Opportunity Currency        Euro
+                            Close Date                  (end of current month)
+                            Stage                       Closed Won
+                            Amount                      10000
+--> Save
+==========================================================================================================================================================================
+Update the Exchange Rate
+Setup --> Company Information --> Currency Setup --> Edit Rates --> Euro to 1.00 --> Save 
+==========================================================================================================================================================================
+You can check the difference if you want
+App Launcher --> Sales --> Opportunities --> Euro Currency Test
+==========================================================================================================================================================================
