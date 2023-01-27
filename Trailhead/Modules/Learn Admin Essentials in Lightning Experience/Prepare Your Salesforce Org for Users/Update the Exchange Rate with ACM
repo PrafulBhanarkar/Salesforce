@@ -1,0 +1,10 @@
+Enable Advanced Currency Management
+Setup --> Company Information --> Currency Setup --> Advanced Currency Management (Enable) --> Confirmation that appears : Yes, I want to enable Advanced Currency Management (Checked) --> Enable
+Manage Dated Exchange Rates --> Continue --> New Exchange Rates --> 
+                                                                      Start Date: (first day of next month)
+                                                                      Euro: 1.13
+--> Save
+===============================================================================================================================================================================================================
+Edit the Euro Currency Test Opportunity
+App Launcher --> Sales --> Opportunities --> Euro Currency Test --> Details --> Edit --> Change the Close Date to the first date of next month --> Save.
+===============================================================================================================================================================================================================
