@@ -1,0 +1,12 @@
+Create a New List View
+App Launcher --> Sales --> Accounts --> List View (Gear Icon) --> New --> 
+                                                              List Name: Energy and Biotech Accounts
+                                                              Who sees this list view: All users see this list view 
+--> Save.
+============================================================================================================================================
+Filters --> Filter by Owner: All accounts --> Done --> Add Filter --> 
+                                                                        Field	      Operator	       Value
+                                                                        Industry	  equals	    Biotechnology, Energy
+--> Done --> Save
+============================================================================================================================================
+gear icon --> Select Fields to Display --> Industry --> Add --> Save --> Hide Filters (Click on Filter to hide)
