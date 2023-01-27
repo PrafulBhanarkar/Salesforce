@@ -1,0 +1,17 @@
+Create a New Home Page Using Lightning App Builder
+Setup --> Lightning App Builder --> New --> Home Page --> Next --> Label : Support Home Page --> Next --> Standard Home Page --> Finish
+===================================================================================================================================================================================
+Drag the Recent Items (any spot in the canvas) --> Label : Recent Cases --> Select : API Anomaly Event Store & Case [move to right] --> ok --> Number of Records to Display : 5
+===================================================================================================================================================================================
+Drag the Chatter Feed (any spot in the canvas) --> Feed Type : To Me
+===================================================================================================================================================================================
+Drag the Today’s Tasks (any spot in the canvas) & Drag the Today’s Events (any spot in the canvas)
+===================================================================================================================================================================================
+Drag the Rich Text --> Today’s Tasks --> text entry field : Be sure to check the Salesforce Trust site. --> Highlight :  "Salesforce Trust" and select the Link button 
+--> URL : https://trust.salesforce.com --> Save
+===================================================================================================================================================================================
+Activate the new Home Page
+Save  --> Activate --> App and Profile --> Assign to Apps and Profiles --> Service Console --> Next --> Custom: Support Profile and System Administrator --> Next --> Save.
+
+<- Back (To leave the Lightning App Builder).
+===================================================================================================================================================================================
