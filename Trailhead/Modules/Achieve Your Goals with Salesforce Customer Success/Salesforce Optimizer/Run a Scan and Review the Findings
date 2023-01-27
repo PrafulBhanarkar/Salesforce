@@ -1,0 +1,5 @@
+1. How long does it take for Salesforce Optimizer to complete a scan of your org?
+Solution : D. It varies, based on size and complexity of the org being scanned
+
+2. Maria Jimenez is the admin at Ursa Major Solar, Inc. She ran Optimizer for her org, and it shows a very high number of active flows on the Opportunity object. What should Maria do as a next step?
+Solution : A. Click the View in Setup button on the results detail to navigate to the flow page setup
