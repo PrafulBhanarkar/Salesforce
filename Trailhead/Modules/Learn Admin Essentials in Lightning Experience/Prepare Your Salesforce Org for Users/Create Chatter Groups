@@ -1,0 +1,24 @@
+Create Chatter Groups for All Sales and All Support
+App Launcher --> Groups --> New -->
+                                      Group Name: All Sales
+                                      Description: Collaboration space for all things related to Sales
+                                      Access Type: Public
+Save & Next --> Next --> Done
+=========================================================================================================================================================
+Chatter --> Post --> Message: Welcome to the All Sales group, which replaces the All Sales email list. --> Share
+=========================================================================================================================================================
+Groups --> New --> 
+                    Group Name: All Support
+                    Description: Collaboration space for all things related to Support
+                    Access Type: Private
+Save & Next --> Next --> Done
+=========================================================================================================================================================
+Chatter --> Post --> Message: Welcome to the All Support group, which replaces the All Support email list. --> Share
+=========================================================================================================================================================
+Chatter --> Post --> 
+Message: Hi Support people! Here is some quick training on how to use the @mention feature, to bring another user or even an entire group into a Chatter conversation.
+link: https://help.salesforce.com/articleView?id=collab_add_mentioning_people.htm&type=5 
+--> Share
+                      ===================================================================================================================
+                      = Note: Ensure you don't add any extra line breaks. Copy the text from step 1 then on the next line, add the URL. =
+                      ===================================================================================================================
