@@ -1,0 +1,46 @@
+Setup --> Path Settings --> Enable --> New Path --> 
+                                                        Field                   Value
+                                                        Path Name               North American Sales Path
+                                                        API Reference Name      [this field auto-completes]
+                                                        Object                  Opportunity
+                                                        Record Type             B2B Opportunities
+                                                        Picklist                Stage
+--> Next --> Prospecting --> Add/Update Fields --> Selected Fields (Add Below List) -->
+                                                                                            Account Name
+                                                                                            Expected Revenue
+                                                                                            Lead Source
+                                                                                            Next Step
+--> Save --> Under Guidance for Success : 
+Learn how to make the most of Salesforce, and make your sales move more quickly and efficiently, by completing the trail Optimize Sales Features for Lightning Experience:
+
+https://trailhead.salesforce.com/trails/sales_admin
+============================================================================================================================================================================
+--> Qualification --> Add/Update Fields --> Selected Fields (Add Below List) -->
+                                                                                      Close Date
+                                                                                      Amount
+--> Save --> Under Guidance for Success :
+Qualify the opportunity and confirm budget:
+
+What problems are they trying to solve?
+How does solving these problems help them?
+What is their budget?
+============================================================================================================================================================================
+--> Need Analysis --> Add/Update Fields --> Selected Fields (Add Below List) -->
+                                                                                      Expected Revenue
+                                                                                      Forecast Category
+                                                                                      Main Competitors
+--> Save --> Under Guidance for Success : 
+Check out this helpful Salesforce video, 3 Steps to Reduce Time to Close:
+
+https://www.youtube.com/watch?v=6KgdZZ5wOzM
+============================================================================================================================================================================
+--> Next --> Activate Your Path (ON) --> Enable Celebrations (ON) --> Picklist Values (Add): Closed Won --> Celebration Frequency : Always --> Finish
+============================================================================================================================================================================
+Throw the (Virtual) Confetti!
+App Launcher --> Sales --> Opportunities --> My Opportunities --> United Oil Office Portable Generators --> action buttons (arrow) --> Change Record Type -->
+B2B Opportunities --> Next --> Save --> Stage : Negotiation/Review --> Mark Stage as Complete --> Closed Won --> Save
+
+    ===================================================================================================================================================================
+    = Note : When you open United Oil Office Portable Generators (opportunity) it continue blink then go to the Flow Builder (or click the mail link which received)  =
+    = and deactivate the current flow                                                                                                                                 = 
+    ===================================================================================================================================================================
