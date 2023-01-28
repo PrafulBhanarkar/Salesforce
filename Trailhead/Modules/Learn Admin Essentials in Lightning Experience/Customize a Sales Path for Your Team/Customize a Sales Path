@@ -1,0 +1,23 @@
+Create a Sales Process
+Setup --> Sales Processes --> New -->
+                                      Field	                    Value
+                                      Existing Sales Process	  Master
+                                      Sales Process Name	      B2B Sales Process
+                                      Description	              Process for logging sales data for B2B opportunities
+--> Save --> Remove Values --> 
+                                      Value Proposition (Open, 50%, Pipeline)
+                                      Id. Decision Makers (Open, 60%, Pipeline)
+                                      Perception Analysis (Open, 70%, Pipeline)
+--> Save
+==========================================================================================================================================================================
+Create a Record Type
+Setup --> Object Manager --> Opportunity --> Record Types --> New -->
+                                                                        Field	                      Value
+                                                                        Existing Record Type	      Master
+                                                                        Record Type Label	          B2B Opportunities
+                                                                        Record Type Name	          [this field auto-completes]
+                                                                        Sales Process	              B2B Sales Process
+                                                                        Description	                Use to log B2B opportunities
+                                                                        Active	                    Yes
+--> Make Available (Dis-select) --> Standard User & System Administrator (Select) --> Next --> Apply one layout to all profiles (select) : Opportunity Layout --> Save
+==========================================================================================================================================================================
