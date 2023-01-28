@@ -1,0 +1,25 @@
+Change the View
+Opportunities --> My Opportunities --> Display Options --> Kanban
+============================================================================================================================================================
+List View Controls (Gear Icon) --> Select Fields to Display --> remove all except : 
+                                                                                      Opportunity Name
+                                                                                      Amount
+                                                                                      Expected Revenue
+                                                                                      Owner Full Name
+--> Save
+============================================================================================================================================================
+Add a Filter
+Filter --> Add Filter --> 
+                            Field	              Operator	            Value
+                            Probability (%)	    greater or equal	    20
+--> Save
+============================================================================================================================================================
+Add a Chart
+Chart --> Pipeline By Stage --> Chart Settings --> Vertical Bar Chart
+============================================================================================================================================================
+Move an Opportunity
+Charts (for hiding the chart)--> Drag the card for "United Oil Plant Standby Generators" from the "Needs Analysis" stage to the "Value Proposition" stage
+
+                    =============================================================================================
+                    = Note: Make Sure that "United Oil Plant Standby Generators" Stage Must be "Needs Analysis" =
+                    =============================================================================================
