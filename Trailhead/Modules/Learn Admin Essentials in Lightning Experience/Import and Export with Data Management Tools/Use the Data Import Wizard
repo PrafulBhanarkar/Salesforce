@@ -1,0 +1,18 @@
+Prepare a File for Import
+Download the lead files by Click (clicking here)
+Replace Following details -->
+                              (City) SF => San Francisco
+                              (State/Province) Calif or Cali => CA
+                              Rating values => Cold, Warm, Hot (Values must incluede)
+--> Save As --> Lead Import --> File Type (.CSV) --> Save
+=========================================================================================================================================================
+Launch the Data Import Wizard
+Setup --> Data Import Wizard --> Launch Wizard --> Standard Objects : Leads --> Add new records -->
+                              Field	                              Value
+                              Match Lead by                       Email
+                              Assign New Leads to this Source     Web
+Where is your data located : CSV --> Choose File --> Browse --> Lead Import.csv --> Open --> Next
+                              Map (Address Line 1) => Street => Map
+                              Map (Owner) => Lead Owner => Map
+--> Next --> Start Import --> Ok
+=========================================================================================================================================================
