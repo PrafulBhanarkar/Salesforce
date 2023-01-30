@@ -1,0 +1,2 @@
+Setup --> Object Manager --> Case --> Field & Relationship --> Contact Name --> Edit --> Lookup Filter section: Show Filter Settings --> lookup icon: Contact Name, then Account ID
+--> Insert --> equals --> Value/Field : Field --> lookup icon : Case, then Account ID --> Insert --> Required --> Active --> Save
