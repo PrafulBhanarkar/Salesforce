@@ -1,0 +1,7 @@
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Formula --> Next --> Field Label: Account Annual Revenue --> Currency --> Next 
+--> Advanced Formula --> Insert Field --> Account > : Annual Revenue --> Insert
+                                                                            =========================
+                                                                            = Final formula         =
+                                                                            = Account.AnnualRevenue =
+                                                                            =========================
+--> Check Syntax --> Description field: Displays the account annual revenue on an opportunity --> Next --> Next --> Save 
