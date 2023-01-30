@@ -1,0 +1,23 @@
+Extract Data with Dataloader.io
+Dataloader.io --> Launch dataloader.io --> Confirm --> Login with Salesforce -->
+                                                                                    I have a custom Salesforce domain         uncheck
+                                                                                    Environment                               Production
+                                                                                    I agree to the Terms and Conditions       check
+Login --> Allow.
+=========================================================================================================================================================
+NEW TASK --> EXPORT --> Account --> Next --> select : Account ID, Account Name, and Account Site --> 
+SOQL Query : SELECT Id, Name, Site FROM Account WHERE Type LIKE '%Customer%' --> Next --> Save & Run
+
+                                =============================================================================================
+                                = Note: If an Oops! pop-up opens, click Close.                                              =
+                                = Note: If the Love your Dataloader? pop-up appears, click Not now, let me load more data.  =
+                                =============================================================================================
+11 successes --> open file (downloaded file) --> Sort: Account name column A-Z --> Save
+=========================================================================================================================================================
+Windows users:
+
+select the NAME column --> Data --> Sort --> Ensure Expand the selection (selected) --> Sort --> My data has headers (Checked) sort by: Name --> OK
+                                ==============================================================
+                                = Note: ensure column headings are not included in the sort. =
+                                ==============================================================
+File --> Save As --> file type : CSV (Comma delimited) (*.csv) --> filename : Accounts Export --> Save
