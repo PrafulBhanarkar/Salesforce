@@ -1,0 +1,18 @@
+Update Using Dataloader.io
+download account-site file by clicking (clicking here)
+contents of the "Account Site" column from the "account-site file" into the blank "Site" column in the "Accounts Export" file
+==================================================================================================================================================================================
+Windows users:
+
+Accounts Export.csv file --> File --> Save As --> file type CSV (Comma delimited) (*.csv) --> filename : Updated Account Site Import --> Save.
+==================================================================================================================================================================================
+Dataloader.io --> NEW TASK --> IMPORT --> Update --> Object : Account --> Next --> Upload CSV --> File : Updated Account Site Import --> Open --> Next --> Save & Run --> Run
+==================================================================================================================================================================================
+View the Results
+App Launcher --> Sales --> Accounts  --> List View Controls icon --> New --> List Name: Accounts Modified Today --> Only I can see this list view (checked) --> Save --> Add Filter
+                                    Field                   Operator          Value
+                                    Last Modified Date      equals            TODAY
+--> Done --> Add Filter
+                                    Field           Operator          Value
+                                    Account Site	  not equal to      (leave this value blank)
+--> Done --> Save
