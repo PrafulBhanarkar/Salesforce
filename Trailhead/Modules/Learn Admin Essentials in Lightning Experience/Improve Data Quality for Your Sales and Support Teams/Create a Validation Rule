@@ -1,0 +1,25 @@
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Date --> Next --> Field Label : Delivery Schedule Date --> Next
+--> Read-Only column header, select the checkbox --> Read-Only column, deselect the "Standard User" and "System Administrator" checkboxes --> Next --> Save
+==========================================================================================================================================================================
+create a validation rule on the Opportunity object
+Setup --> Object Manager --> Opportunity --> Validation Rules --> New -->
+                                                                            Field	              Value
+                                                                            Rule Name	          Delivery_Schedule_14_Days_Or_Less
+                                                                            Active	            Select
+                                                                            Description	        Sets end date for initial delivery
+==========================================================================================================================================================================
+Enter the error condition formula
+Functions list : ISPICKVAL --> Insert Selected Function --> highlight "picklist_field" --> Insert Field : Stage --> Insert --> highlight "text_literal" Enter "Closed Won"
+--> Insert Operator --> && --> Insert Operator --> ( Open Parenthesis --> Insert Field --> Delivery Schedule Date from the second list --> Insert
+--> Insert Operator --> - Subtract --> Insert Field --> Close Date from the second list --> Insert --> Insert Operator --> ) Close Parenthesis --> 
+Insert Operator --> > Greater Than --> 14 --> Check Syntax
+                                            ===========================================================================================
+                                            = Final Formula looks like this:                                                          =
+                                            = ISPICKVAL( StageName , "Closed Won") && ( Delivery_Schedule_Date__c - CloseDate ) > 14  =
+                                            ===========================================================================================
+Error message information
+                                            Field	                    Value
+                                            Error Message	            Dates of type delivery must be no later than 14 days after close date
+                                            Error Location	          Field: Delivery Schedule Date
+--> Save
+==========================================================================================================================================================================
