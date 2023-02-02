@@ -12,11 +12,18 @@ Setup --> Users --> New User -->
                                   User License	  Salesforce Platform
 --> Save
 ==========================================================================================================================================================================
-Create Processes (create an inquiry support process)
+Create Processes 
 Setup --> Support Processes --> New --> 
                                         Existing Support Process: Master
                                         Support Process Name: Product Support Process
                                         Description: Process for logging product support cases
+--> Save --> Save
+==========================================================================================================================================================================
+Create an inquiry support process
+New --> 
+          Existing Support Process: Master
+          Support Process Name: Inquiry Process
+          Description: Process for logging customer inquiry cases
 --> Save --> Save
 ==========================================================================================================================================================================
 add picklist values to the standard Type field
