@@ -1,0 +1,28 @@
+Add a User (create a product support process)
+Setup --> Users --> New User --> 
+                                  Field	          Value
+                                  First Name	    Noah
+                                  Last Name	      Larkin
+                                  Email	          (fill in your own email)
+                                  Username	      nlarkin@your initials plus your favorite color.com (for example, nlarkin@APyellow.com)
+                                  Nickname	      nlarkin
+                                  Title	          Vice President of Services
+                                  Company	        AW Computing
+                                  Role	          Customer Support, North America
+                                  User License	  Salesforce Platform
+--> Save
+==========================================================================================================================================================================
+Create Processes (create an inquiry support process)
+Setup --> Support Processes --> New --> 
+                                        Existing Support Process: Master
+                                        Support Process Name: Product Support Process
+                                        Description: Process for logging product support cases
+--> Save --> Save
+==========================================================================================================================================================================
+add picklist values to the standard Type field
+Setup --> Object Manager --> Case --> Fields & Relationships --> Type --> Case Type Picklist Values section : New -->
+                                                                                                                        Product Specifications
+                                                                                                                        Shipping
+                                                                                                                        Warranty
+--> Save
+==========================================================================================================================================================================
