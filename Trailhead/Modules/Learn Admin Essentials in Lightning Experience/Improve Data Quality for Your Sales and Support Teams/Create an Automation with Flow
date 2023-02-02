@@ -1,2 +1,38 @@
 Set Up Automated Updates
-Setup --> Object Manager --> Opportunity --> Fields & Relationships.
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Data Type: Checkbox --> Next --> 
+                                                                                                                  Field	               Value
+                                                                                                                  Field Label          First Contact Made
+                                                                                                                  Default Value        unchecked
+                                                                                                                  Field Name           [this field auto-populates]
+--> Next --> Read-Only column (Checked) & Standard User and System Administrator (Dis-select) --> Next --> Save & New
+==========================================================================================================================================================================
+Data Type: Checkbox --> Next --> 
+                                  Field	            Value
+                                  Field Label       Additional Meeting Scheduled
+                                  Default Value     Unchecked
+                                  Field Name	      [this field auto-populates]
+--> Next --> Read-Only column (Checked) & Standard User and System Administrator (Dis-select) --> Next --> Save
+==========================================================================================================================================================================
+Setup --> Flows --> New Flow --> Record-Triggered Flow --> Create
+Object : opportunity --> Configure Trigger: A record is created or updated --> Set Entry Conditions: All Conditions Are Met (AND) --> criteria -->
+                                                                                                                                Field	        Operator      Value
+                                                                                                                                StageName     Equals        Prospecting
+--> Every time a record is updated and meets the condition requirements --> Actions and Related Records --> Done
+==========================================================================================================================================================================
+Add Element (+) --> Update Records --> Label: Opportunity Stage Update --> Use the Opportunity record that triggered the flow --> 
+Set Filter Conditions: All Conditions Are Met (AND) --> + Add Condition -->
+                                                                            Field	                              Operator	      Value
+                                                                            First_Contact_Made__c               Equals          {!$GlobalConstant.True}
+                                                                            Additional_Meeting_Scheduled__c     Equals	        {!$GlobalConstant.True}
+--> Set Field Values for the Opportunity Record -->
+                                                      Field       Value
+                                                      StageName   Qualification
+--> Done --> Save --> Flow Label : Opportunity Stage to Qualification --> Description : Update the opportunity stage to Qualification when all tasks for the Prospecting stage are complete
+--> Save --> Activate
+==========================================================================================================================================================================
+Test the Flow
+back arrow (<--) --> App Launcher --> Sales --> Opportunities --> All Opportunities --> Open : Pyramid Emergency Generators --> Details --> stage : Prospecting 
+--> First Contact Made : pencil icon --> First Contact Made and Additional Meeting Scheduled (Checked) --> Save
+                                                    ====================================================
+                                                    = Note that the current stage is now Qualification =
+                                                    ====================================================
