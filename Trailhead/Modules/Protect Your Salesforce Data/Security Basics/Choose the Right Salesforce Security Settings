@@ -1,0 +1,5 @@
+1. Which of these security features is built-in to Salesforce?
+Solution : B. Multi-factor authentication
+
+2. What does multitenancy mean?
+Solution : C. Multiple organizations use the same Salesforce data infrastructure, but cannot access each other's data
