@@ -1,0 +1,28 @@
+Create Case Queues
+Setup --> Queues --> New --> Label: Product Support Tier 1 --> Case (Add) --> Members list : your name & Noah Larkin (Add) --> Save
+==========================================================================================================================================================================
+Setup --> Queues --> New --> Label: Product Support Tier 2 --> Case (Add) --> Members list : your name & Noah Larkin (Add) --> Save
+==========================================================================================================================================================================
+Create a Standard Case Escalation Rule
+Setup --> Escalation Rules --> New --> Rule Name: Case Escalation --> Active --> Save
+==========================================================================================================================================================================
+Case Escalation --> Rule Entries: New --> Sort Order: 1 --> criteria are met --> 
+                                                                                  Field                     Operator    Value
+                                                                                  Case: Case Record Type    equals      Product Support
+Set business hours --> Default --> When case is created --> Save
+==========================================================================================================================================================================
+Escalation Actions --> New --> Age Over:4 --> Auto-reassign cases: Queue --> Product Support Tier 2 --> Notification Template : Support: Escalated Case Reassignment 
+--> Notify Users : Noah Larkin --> Notification Template : Support: Escalated Case Notification --> Notify Case Owner (Select) --> Save
+==========================================================================================================================================================================
+Test the Case Escalation Rule
+App Launcher --> Cases --> New --> New Case: Product Support --> Next --> 
+                                                                          Field            Value
+                                                                          Case Origin      Phone
+                                                                          Product          (choose any product in the list)
+                                                                          Type             Electronic
+                                                                          Case Reason      Performance
+                                                                          Subject          Laptop power
+                                                                          Description      Laptop doesn’t turn on when the power button is pressed
+Save.
+Setup --> Case Escalations --> Search.
+==========================================================================================================================================================================
