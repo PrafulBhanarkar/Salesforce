@@ -1,0 +1,11 @@
+                                      ===========================================
+                                      = Create  brand-new Trailhead Playground! =
+                                      ===========================================
+Create a permission set:
+                          Name: MFA Authorization for User Logins
+                          API Name: MFA_Authorization_for_User_Logins
+                          Enable multi-factor authentication for user interface logins
+Assign the permission set you created to an active user in your Trailhead Playground
+Set up multi-factor authentication for your org
+Log in to your org as the user to register for multi-factor authentication
+Log out, then log in again with multi-factor authentication
