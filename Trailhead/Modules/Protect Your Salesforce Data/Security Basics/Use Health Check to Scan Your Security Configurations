@@ -1,0 +1,10 @@
+Identify and Fix Security Risks in Your Org
+Setup --> Health Check --> User passwords expire in : Password Policies --> Health Check (Re-open) --> Fix Setup --> Health Check 
+--> User passwords expire in : Password Policies --> Health Check (Re-open) --> Fix Setup --> Health Check --> User passwords expire in : Password Policies 
+--> Health Check (Re-open) --> Fix Risks --> 
+                                              Require a minimum 1 day password lifetime (Select) 
+                                              Obscure secret answer for password resets (Select) 
+                                              Maximum invalid login attempts (Select) 
+                                              Password complexity requirement (Select) 
+                                              Lockout effective period (Select) 
+--> Change Setting --> Yes, Change Settings
