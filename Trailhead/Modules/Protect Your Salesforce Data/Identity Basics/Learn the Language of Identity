@@ -1,0 +1,8 @@
+1. Which protocol allows secure data sharing between applications?
+Solution : A. OAuth
+
+2. Which language is SAML based on?
+Solution : D. XML
+
+3. Which of the following is true when Salesforce acts as an identity provider to an external application?
+Solution : B. A user logged in to Salesforce can flow through to the external application
