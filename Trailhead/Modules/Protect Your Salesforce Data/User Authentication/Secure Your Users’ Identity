@@ -1,9 +1,24 @@
                                       ===========================================
                                       = Create  brand-new Trailhead Playground! =
                                       ===========================================
-Create a permission set:
-                          Name: MFA Authorization for User Logins
-                          API Name: MFA_Authorization_for_User_Logins
+Setup --> Permission Sets --> New --> 
+                                      Label: MFA Authorization for User Logins
+                                      API Name: MFA_Authorization_for_User_Logins
+--> Save --> System : System Permissions --> Edit --> Multi-Factor Authentication for User Interface Logins (Checked) --> Save --> Save
+
+Setup --> Session Settings --> Session Security Levels --> High Assurance : Multi-Factor Authentication (Add) --> Save
+
+permission set --> MFA Authorization for User Logins : Manage Assignments --> Add Assignments --> select your name --> Next --> Assign --> Done
+
+Setup --> Identity Verification --> Require multi-factor authentication (MFA) for all direct UI logins to your Salesforce org (Checked) --> Save
+
+
+==================================
+Download and install Salesforce Authenticator for iOS from the App Store or Salesforce Authenticator for Android from Google Play.
+
+
+
+
                           Enable multi-factor authentication for user interface logins
 Assign the permission set you created to an active user in your Trailhead Playground
 Set up multi-factor authentication for your org
