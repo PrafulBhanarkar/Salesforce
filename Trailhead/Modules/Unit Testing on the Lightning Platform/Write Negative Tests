@@ -1,0 +1,103 @@
+Developer Console
+File --> New --> Apex Class --> Calculator
+
+public class Calculator {
+  public class CalculatorException extends Exception{}
+  
+  public static Integer addition(Integer a, Integer b){
+    return a + b;
+  }
+
+  public static Integer subtraction(Integer a, Integer b){
+    return a - b;
+  }
+
+  public static Integer multiply(Integer a, Integer b){
+    if(b==0 || a==0){
+      throw new CalculatorException('It doesn\'t make sense to multiply by zero');
+    }
+    return a * b;
+  }
+
+  public static Decimal divide(Integer numerator, Integer denominator){
+    if(denominator == 0){
+      throw new CalculatorException('you still can\'t divide by zero');
+    }
+     if(numerator < 0 || denominator < 0)
+        	throw new CalculatorException('negative value(s) not allowed.');
+        Decimal returnValue = numerator / denominator;
+        return returnValue;
+    }
+}
+=========================================================================================================================================================================
+Developer Console
+File --> New --> Apex Class --> Calculator_Tests
+
+@isTest
+private class Calculator_Tests {
+  @isTest
+  static void testAdditionWithPositiveValues() {
+    Integer result = Calculator.addition(5, 10);
+    System.assertEquals(15, result);
+  }
+
+  @isTest
+  static void testSubtractionWithPositiveValues() {
+    Integer result = Calculator.subtraction(10, 5);
+    System.assertEquals(5, result);
+  }
+
+  @isTest
+  static void testMultiplicationWithPositiveValues() {
+    Integer result = Calculator.multiply(5, 10);
+    System.assertEquals(50, result);
+  }
+
+  @isTest
+  static void testDivisionWithPositiveValues() {
+    Decimal result = Calculator.divide(10, 5);
+    System.assertEquals(2.0, result);
+  }
+
+  @isTest
+  static void testDivisionWithNumeratorLessThanDenominator() {
+    Decimal result = Calculator.divide(5, 10);
+    //System.assertEquals(0.5, result);
+  }
+
+  @isTest
+  static void multiply_by_zero() {
+    Boolean caught = false;
+    try {
+      Calculator.multiply(1, 0);
+    } catch (Calculator.CalculatorException e) {
+      System.assertEquals('It doesn\'t make sense to multiply by zero', e.getMessage(), 'caught the right exception');
+      caught = true;
+    }
+    System.assert(caught, 'threw expected exception');
+  }
+
+  @isTest
+  static void divide_throws_exception_for_negative_number() {
+    Boolean caught = false;
+    try {
+      Calculator.divide(-1, 2);
+    } catch (Calculator.CalculatorException e) {
+      System.assertEquals('negative value(s) not allowed.', e.getMessage());
+      caught = true;
+    }
+    System.assert(caught, 'threw expected exception');
+  }
+
+  @isTest
+  static void testDivisionWithZeroDenominator() {
+    Boolean caught = false;
+    try {
+      Calculator.divide(10, 0);
+    } catch (Calculator.CalculatorException e) {
+      System.assertEquals('you still can\'t divide by zero', e.getMessage());
+      caught = true;
+    }
+    System.assert(caught, 'threw expected exception');
+  }
+}
