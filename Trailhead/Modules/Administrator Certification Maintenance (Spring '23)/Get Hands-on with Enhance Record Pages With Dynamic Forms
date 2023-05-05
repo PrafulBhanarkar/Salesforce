@@ -1,2 +1,10 @@
 Setup --> Object Manager --> Case --> Lightning Record Pages --> New --> Record Page --> Next -->
-Label : Enhanced Case Layout, Object : Case --> Next --> Clone salesforce default page: Case Grouped View Default --> Finish
+Label : Enhanced Case Layout, Object : Case --> Next --> Clone salesforce default page: Case Grouped View Default --> Finish.
+
+Highlight Panel (Case Section) --> Upgrade Now --> Migrate --> Next --> Case Layout --> Finish
+
+Select Record Detail (Under detail section) --> Upgrade Now --> Next --> Case Layout --> Finish
+
+Field Section --> set component visibility --> add filter --> Priority equals High --> Done --> Save --> Activate.
+
+Org Default --> Assign as org default --> Desktop and Phone --> Save
