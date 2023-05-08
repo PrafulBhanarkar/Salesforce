@@ -1,0 +1,10 @@
+Note : Perform challange only on "CRM Analytics Developer Edition org". which created on previous unit
+
+App Menue --> Opportunities --> created by : View all --> Opportunity Details (Location:My DTC Sales) -->
+
+from Opportunity Details dropdown arrow --> set notification --> 
+
+Notification Name: Lost Opportunities
+Operator: Equals or is greater than
+Threshold value: 100000000
+Notify me only the first time conditions are met: Selected --> Save
