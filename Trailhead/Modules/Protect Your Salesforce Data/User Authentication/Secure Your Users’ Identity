@@ -1,26 +1,30 @@
                                       ===========================================
                                       = Create  brand-new Trailhead Playground! =
                                       ===========================================
+Setup --> Users --> New User --> Filled appropriate data with valid email id --> Generate new password and notify user immediately (checked)
+--> Save
+- received an email --> checked link to reset password --> Filled appropriate data --> change password
+===================================================================================================================================================
+Setup --> Session Settings --> Session Security Levels --> High Assurance : Multi-Factor Authentication (Add) --> Save
+===================================================================================================================================================
 Setup --> Permission Sets --> New --> 
                                       Label: MFA Authorization for User Logins
                                       API Name: MFA_Authorization_for_User_Logins
 --> Save --> System : System Permissions --> Edit --> Multi-Factor Authentication for User Interface Logins (Checked) --> Save --> Save
 
-Setup --> Session Settings --> Session Security Levels --> High Assurance : Multi-Factor Authentication (Add) --> Save
-
-permission set --> MFA Authorization for User Logins : Manage Assignments --> Add Assignments --> select your name --> Next --> Assign --> Done
+permission set --> MFA Authorization for User Logins : Manage Assignments --> Add Assignments --> select user name --> Next --> Assign --> Done
 
 Setup --> Identity Verification --> Require multi-factor authentication (MFA) for all direct UI logins to your Salesforce org (Checked) --> Save
-
-
-==================================
+===================================================================================================================================================
 Download and install Salesforce Authenticator for iOS from the App Store or Salesforce Authenticator for Android from Google Play.
+===================================================================================================================================================
+login "login.salesforce.com" after that it ask for the two factor authentication, open installed app and write text on org for authentication
+from app
+===================================================================================================================================================
+relogin and approved from mobile app
+===================================================================================================================================================
 
 
 
 
-                          Enable multi-factor authentication for user interface logins
-Assign the permission set you created to an active user in your Trailhead Playground
-Set up multi-factor authentication for your org
-Log in to your org as the user to register for multi-factor authentication
-Log out, then log in again with multi-factor authentication
+
