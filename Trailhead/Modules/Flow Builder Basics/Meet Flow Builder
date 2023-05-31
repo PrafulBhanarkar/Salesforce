@@ -1,0 +1,5 @@
+1. What does a flow connector do?
+Solution : C. It tells the flow which element to execute next
+
+2. Which flow element can send an email?
+Solution : B. Action
