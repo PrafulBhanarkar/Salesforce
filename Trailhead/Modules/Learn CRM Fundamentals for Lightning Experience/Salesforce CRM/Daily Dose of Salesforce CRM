@@ -1,0 +1,16 @@
+Create an account:
+Name: Mondocorp
+Industry: Energy
+Employees: 10000
+========================================================================
+Create a contact for Mondocorp:
+First Name: Shawn
+Last Name: Corbin
+Email: scorbin@example.com
+========================================================================
+Create an opportunity for Shawn Corbin:
+Opportunity Name: Replacement gas generator
+Type: New Customer
+Close Date: Today
+Stage: Value Proposition
+========================================================================
