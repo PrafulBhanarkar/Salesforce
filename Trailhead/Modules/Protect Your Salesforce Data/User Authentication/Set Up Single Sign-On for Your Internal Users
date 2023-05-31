@@ -4,17 +4,23 @@
 Setup SSO : setup --> users --> Edit previously created user --> Federation ID: test@user-tech.com --> save
 ===================================================================================================================================================
 Download the certificate : new tab, https://axiomsso.herokuapp.com --> 
-
+===================================================================================================================================================
 Click SAML Identity Provider & Tester, then click Download the Identity Provider Certificate
 ===================================================================================================================================================
+Setup --> Single Sign-On Settings --> Edit --> SAML Enabled --> Save
+                    ================================================================================
+                    = Please Note :  If it already enabled SAML, try disabling and re-enabling it =
 ===================================================================================================================================================
+SAML Single Sign-On Settings --> New --> Name: Axiom Test App --> Issuer: https://axiomsso.herokuapp.com --> 
+Identity Provider Certificate: upload the certificate which you downloaded previously --> Request Signature Method: Select RSA-SHA1 -->
+SAML Identity Type: Select Assertion contains the Federation ID from the User object --> SAML Identity Location: Select Identity is in the 
+NameIdentifier element of the Subject statement --> Service Provider Initiated Request Binding: Select HTTP Redirect --> 
+Entity ID: Enter your My Domain URL, which is displayed on your org's My Domain Setup page (Please note domain must contain with https://) --> Save
 ===================================================================================================================================================
+Redirect (Open) : https://axiomsso.herokuapp.com --> Click SAML Identity Provider & Tester --> Click generate a SAML response --> SAML Version: 2.0 
+--> Username or Federated ID: The Federation ID from last user which you created for user authentication module --> Issuer: https://axiomsso.herokuapp.com
+--> Recipient URL: The URL from the Salesforce SAML Single Sign-On Settings page. It’s at the bottom of the page (in the Endpoints section) labeled Login URL
+--> Entity Id: The Entity ID from the Salesforce SAML Single Sign-On Settings page
 ===================================================================================================================================================
-===================================================================================================================================================
-===================================================================================================================================================
-===================================================================================================================================================
-===================================================================================================================================================
-===================================================================================================================================================
-===================================================================================================================================================
-===================================================================================================================================================
+click Request SAML Response --> Login
 ===================================================================================================================================================
