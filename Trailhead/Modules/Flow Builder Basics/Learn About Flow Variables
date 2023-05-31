@@ -1,0 +1,20 @@
+Setup --> Flows --> New Flow --> screen flow --> Create
+Manager --> New Resource --> Resource Type : Variable --> boolean:
+API Name: boolean
+Data Type: Boolean
+Default Value: $GlobalConstant.False --> Done
+===============================================================================================================================
+Manager --> New Resource --> Resource Type : Variable --> number:
+API Name: number
+Data Type: Number
+Decimal Places: 0 --> Done
+===============================================================================================================================
+Manager --> New Resource --> Resource Type : Variable --> formula:
+API Name: numberFormula
+Data Type: Number
+Decimal Places: 0
+Formula: Subtract 100 from the number variable
+Save your flow:
+Label: Variables
+API Name: Variables
+===============================================================================================================================
