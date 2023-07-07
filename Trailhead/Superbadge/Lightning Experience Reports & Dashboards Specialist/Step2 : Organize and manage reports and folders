@@ -1,0 +1,8 @@
+Setup --> Object Manager --> Opportunity --> Field & Relationship --> Type (Picklist) --> Add value : SolarBot --> Save
+
+Setup --> Search : Public Group --> New --> Add below details --> Executive Team
+                                                                  Report and Dashboard Administrators
+                                                                  Research and Development Team
+                                                                  Sales Leadership Team
+                                                                  Sales Team
+                                                                  Support Team
