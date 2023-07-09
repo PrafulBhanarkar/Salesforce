@@ -8,3 +8,16 @@ Setup --> Search : Public Group --> New --> Add below details --> Executive Team
                                                                   Support Team
 
 App Luncher --> SolarBots --> Data Import --> Import
+
+Report --> New Folder --> SolarBot Executive Reports
+                          SolarBot Sales Reports
+                          SolarBot Support Reports --> New Folder --> Status Reports
+                          SolarBot R&D Reports
+
+SolarBot Executive Reports --> (Share) Down arrow --> Share With : Public Group
+                                                      Names : Executive team --> Access : Edit --> Share
+                                                      Names : Report and Dashboard Administrators --> Access : Edit --> Manage --> Share
+--> Done
+
+SolarBot Sales Reports --> (Share) Down arrow --> Share With : Public Group
+                                                     
