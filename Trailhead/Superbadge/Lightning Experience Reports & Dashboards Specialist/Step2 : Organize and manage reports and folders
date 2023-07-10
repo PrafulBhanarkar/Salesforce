@@ -1,23 +1,57 @@
 Setup --> Object Manager --> Opportunity --> Field & Relationship --> Type (Picklist) --> Add value : SolarBot --> Save
-
-Setup --> Search : Public Group --> New --> Add below details --> Executive Team
-                                                                  Report and Dashboard Administrators
-                                                                  Research and Development Team
-                                                                  Sales Leadership Team
-                                                                  Sales Team
-                                                                  Support Team
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Setup --> Search : Public Group --> New --> Executive Team --> Search : Public Group --> Save
+                                    New --> Report and Dashboard Administrators --> Search : Public Group --> Save
+                                    New --> Research and Development Team --> Search : Public Group --> Save
+                                    New --> Sales Leadership Team --> Search : Public Group --> Save
+                                    New --> Sales Team --> Search : Public Group --> Save
+                                    New --> Support Team --> Search : Public Group --> Save
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 App Luncher --> SolarBots --> Data Import --> Import
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report --> New Folder --> SolarBot Executive Reports
-                          SolarBot Sales Reports
-                          SolarBot Support Reports --> New Folder --> Status Reports
-                          SolarBot R&D Reports
-
-SolarBot Executive Reports --> (Share) Down arrow --> Share With : Public Group
+                          All Folders --> New Folder --> SolarBot Sales Reports
+                          All Folders --> New Folder --> SolarBot Support Reports --> New Folder --> Status Reports
+                          All Folders --> New Folder --> SolarBot R&D Reports
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report --> All Folders --> SolarBot Executive Reports --> (Share) Down arrow --> Share With : Public Group
                                                       Names : Executive team --> Access : Edit --> Share
-                                                      Names : Report and Dashboard Administrators --> Access : Edit --> Manage --> Share
+                                                      Names : Report and Dashboard Administrators --> Access : Manage --> Share
 --> Done
-
-SolarBot Sales Reports --> (Share) Down arrow --> Share With : Public Group
-                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report --> All Folders --> SolarBot Sales Reports --> (Share) Down arrow --> Share With : Public Group
+                                                      Names : Executive team --> Access : View --> Share
+                                                      Names : Report and Dashboard Administrators --> Access : Manage --> Share
+                                                      Names : Sales Leadership Team --> Access : Manage --> Share
+                                                      Names : Sales Team --> Access : View --> Share
+--> Done
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report --> All Folders --> SolarBot Support Reports --> (Share) Down arrow --> Share With : Public Group
+                                                      Names : Executive team --> Access : View --> Share
+                                                      Names : Report and Dashboard Administrators --> Access : Manage --> Share
+                                                      Names : Research and Developement Team --> Access : View --> Share
+                                                      Names : Sales Leadership Team --> Access : View --> Share
+                                                      Names : Support Team --> Access : Edit --> Share
+--> Done
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report --> All Folders --> SolarBot R&D Reports --> (Share) Down arrow --> Share With : Public Group
+                                                      Names : Executive team --> Access : View --> Share
+                                                      Names : Report and Dashboard Administrators --> Access : Manage --> Share
+                                                      Names : Research and Developement Team --> Access : Manage --> Share
+--> Done
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Setup --> Report Type --> continue --> New Custome Report Type --> Primary Object : SolarBots --> Report Type Label : SolarBots and Status Data
+--> Add description: Use this for creating reports that use SolarBot and SolarBot Status data. --> Store in Category : Other Reports --> Deployment : Deployed --> Next
+(Click to relate another object) : SolarBot Status --> Select : "A" records may or may not have related "B" records. --> Save
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fields Available for Reports : Edit Layout
+Remove (Drag and drop) --> kWh Roll-Up
+                           Temp Roll-Up
+                           Obscured Roll-Up
+                           Number of Status Records
+                           Maintenance Requested --> Save
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reports --> Acquisition Reports --> Potential SB Product Names for R&D --> Move --> SolarBot R&D Reports --> Select Folder
+Reports --> Acquisition Reports --> Marketing's SB Lead Report for Sales --> Move --> SolarBot Sales Reports --> Select Folder
+Reports --> Acquisition Reports --> Lincoln's SolarBot Research to remove --> Move --> Report Recycle Bin --> Select Folder
+Reports --> Acquisition Reports --> Erin's SB Opp Matrix for Sales --> Move --> SolarBot Sales Reports --> Select Folder
