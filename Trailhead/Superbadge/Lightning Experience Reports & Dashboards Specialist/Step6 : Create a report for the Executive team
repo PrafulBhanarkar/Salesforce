@@ -1,1 +1,10 @@
-Report --> New Report --> Report Type : Opportunities --> Start Report
+Reports --> New Reports --> Select a Report Type : Opportunities --> Start Report --> Outline 
+--> Group Rows : Stage --> Columns : Opportunity Name, Account Name, Type, Probability, Amount, and Expected Revenue (Summarize: sum --> Apply) 
+--> Column : Add Summary Formula --> Column Name : Adjusted Expected Revenue, Formula Output Type : Currency, 
+Function : IF(Account.Number_of_SolarBots__c:SUM>0,EXP_AMOUNT:SUM*1.1, EXP_AMOUNT:SUM) --> Validate 
+--> General --> Specific Group : Stage --> Apply  
+--> Filter : Closed Date : Range : All Time --> Save & Run --> Report Name : SolarBot Loyalty Revenue  
+--> Folder : SolarBot Executive Reports --> Select Folder --> Save
+
+Add Chart --> Chart Properties (Gear Icon) --> Column --> Chart Title : Revenue Difference, Y-axis : Adjusted Expected Revenue --> Select : Measure
+--> Sum of Expected Revenue
