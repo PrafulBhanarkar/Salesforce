@@ -1,1 +1,5 @@
+Reports --> New Reports --> Select a Report Type : SolarBots and Status Data --> Start Report --> Outline --> Group Rows: Status Date | 
+Columns : Panel Temperature / Kilowatt Hours --> Column : Add Bucket Column --> Field : Panel Temperature, Bucket Name : Temperature Range -->
 
+--> Deselect : Row Counts / Detail Rows / Subtotals / Grand Total --> Save & Run --> Report Name : Temperature to kWh Research --> 
+Folder : SolarBot Support Reports --> Status Reports --> Select Folder --> Save
