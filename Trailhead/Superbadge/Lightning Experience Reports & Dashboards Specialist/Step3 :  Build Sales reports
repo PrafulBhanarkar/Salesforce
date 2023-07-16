@@ -1,1 +1,16 @@
+Reports --> New Reports --> Select a Report Type : Accounts --> Start Report --> Outline --> Columns: Account Name, Account Number, Phone, Type | 
+Filters :- Close Date : All Time --> Add Cross Filter : Accounts without Opportunities --> Apply --> 
+Add Opportunities Filter : Type : equal SolarBot --> Apply --> Save --> Report Name : Accounts Without SolarBot Opportunities --> 
+Folder : SolarBot Sales Reports --> Save
 
+Reports --> New Reports --> All Reports --> Select a Report Type : Case --> Start Report -->  Outline --> 
+Group Rows: Account Name, Account Number | Columns : subject, open, close --> Filters :- Opened Date : All Time, Number of SolarBots : equals to "0" 
+--> Apply --> Save --> Report Name : SolarBot High-Case Candidates --> Folder : SolarBot Sales Reports --> Save
+
+Please Note : 1. Account Name Sort by Record Count (Order : Descending)
+2. Phone Sort by Record Count (Order : Ascending)
+3. Subject (Order : Ascending)
+
+Reports --> New Reports --> All Reports --> Select a Report Type : Accounts with SolarBots --> Start Report --> Outline --> Columns: Account Name, Phone
+Warranty Expiration, Under Warranty : Summarized = Sum --> Apply --> Filters :- Show me : All Accounts --> Filter : Under Warranty? = False, 
+Select "Locked" --> Apply
