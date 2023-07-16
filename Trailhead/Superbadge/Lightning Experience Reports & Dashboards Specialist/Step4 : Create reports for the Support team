@@ -1,1 +1,13 @@
+Reports --> New Reports --> Select a Report Type : Cases --> Start Report --> Outline --> Group Rows: Case Reason | Columns (Add): Account Name, Subject 
+--> From Fields "Number of SolarBots" drag and drop in columns --> Columns : Add Bucked Columns --> Field : Number of SolarBots, Bucket Name : SolarBot Ownership 
+1. Range = 0, Bucket = No SolarBots --> Add
+2. Range = 3, Bucket = Some SolarBots
+3. Bucket = Several SolarBots --> Apply
+--> Drag and drop "SolarBot OwnerShip" to Group Rows
+--> Deselect : Row Counts / Subtotals / Grand Total --> Save & Run --> Report Name : Top Case Drivers by SolarBot Ownership --> 
+Folder : SolarBot Support Reports --> Save
 
+Reports --> New Reports --> Select a Report Type : SolarBots and Status Data --> Start Report --> Outline --> Group Rows: Status Date | 
+Columns : Panel Temperature / Percent Obscured / Kilowatt Hours
+--> Deselect : Row Counts / Detail Rows / Subtotals / Grand Total --> Save & Run --> Report Name : SolarBot Status Averages --> 
+Folder : SolarBot Support Reports --> Status Reports --> Select Folder --> Save
