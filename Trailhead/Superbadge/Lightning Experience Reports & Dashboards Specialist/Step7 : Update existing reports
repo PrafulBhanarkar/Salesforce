@@ -1,41 +1,35 @@
-Report --> Accounts Without SolarBot Opportunities --> Edit -->
-
-
-========================================================================================================================================================
-Report --> SolarBot Warranty Call Sheet --> Edit --> Group Rows: Warranty Expiration / Billing State/Province --> under warranty (Delete from columns)
+Report --> Accounts Without SolarBot Opportunities --> Edit --> GROUP ROWS: Billing State/Province --> Save & Run
+========================================================================================================================================================================
+Report --> SolarBot Warranty Call Sheet --> Edit --> GROUP ROWS: Warranty Expiration / Billing State/Province --> #Under Warranty (Delete from columns)
 --> Filters : Billing State/Province Equals NV,UT,CA --> Apply
 --> Filters : Warranty Expiration less or equal (Click on use relative date) NEXT 45 DAYS --> Apply
-Include rows matching --> Edit --> (1 OR 3) AND 2 --> Apply
-                                ===============================================
-                                = Note : For above formula sequence should be =
-                                = 1. Under warranty?                          =
-                                = 2. Billing State/Province                   =
-                                = 3. Warranty Expiration                      =
-                                = as per the sequence formula changed         =
-                                ===============================================
+--> Add Filter Logic --> Include rows matching --> Edit --> (1 OR 3) AND 2 --> Apply
+                                ===================================================
+                                =   Note : For above formula sequence should be   =
+                                =   1. Under warranty?                            =
+                                =   2. Billing State/Province                     =
+                                =   3. Warranty Expiration                        =
+                                =   as per the sequence formula changed           =
+                                ===================================================
 --> Save & Run
-========================================================================================================================================================
+=======================================================================================================================================================================
+Report --> Top Case Drivers by SolarBot Ownership --> Edit --> Rearrange with GROUP ROWS: SolarBot Ownership & GROUP COLUMNS: Case Reason --> 
+--> (Remove)Column: #Number of SolarBots & (Add) Phone(Account) & Open.
+Add Chart --> Chart Properties --> Stacked Bar --> Checked : Show Reference Line & Stack to 100% --> Save & Run
 
+========================================================================================================================================================================
+Report --> SolarBot Status Averages --> Edit --> Status Date -->Make Detail Column : Calander Week.
+Column --> Panel Temperature (Checked): Average (Remove SUM) --> Apply
+Column --> Percent Obscured (Checked): Average (Remove SUM) --> Apply
+Column --> Kilowatt Hours (Checked): Average (Remove SUM) --> Apply
+Add Chart --> Chart Properties --> Line --> Chart Title : Weekly Panel Temperature and kWh --> (On Y-axis) Measure --> Average Kilowatt Hours --> Save & Run
+========================================================================================================================================================================
+SolarBot Status --> Open any record --> Setup --> Edit Page --> Page Label : SolarBot Status Page With Chart, API Name:SolarBot_Status_Page_With_Chart
+--> Search: Report Chart (Drag and Drop on page)--> Label : SolarBot Status Averages --> Report : SolarBot Status Averages
+--> Filter by : SolarBot Status ID --> Save --> Activate --> Assign as Org Default --> Checked : Desktop and Phone --> Next --> Save
+========================================================================================================================================================================
+Report --> Temperature to kWh Research --> Edit --> GROUP COLUMNS : SolarBot model.
+Column --> Panel Temperature (Checked): Average (Remove SUM) --> Apply
+Column --> Kilowatt Hours (Checked): Average (Remove SUM) --> Apply
+Add Chart --> Chart Properties --> X-Axis --> +Group --> SolarBot model --> Save & Run
 
-========================================================================================================================================================
-
-
-========================================================================================================================================================
-
-
-========================================================================================================================================================
-
-
-========================================================================================================================================================
-
-
-========================================================================================================================================================
-
-
-========================================================================================================================================================
-
-
-========================================================================================================================================================
-
-
-========================================================================================================================================================
