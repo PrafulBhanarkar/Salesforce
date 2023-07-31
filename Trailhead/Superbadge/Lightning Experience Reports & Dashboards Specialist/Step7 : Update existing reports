@@ -1,4 +1,4 @@
-Report --> Accounts Without SolarBot Opportunities --> Edit --> GROUP ROWS: Billing State/Province --> Save & Run
+Report --> Accounts Without SolarBot Opportunities --> Edit --> GROUP ROWS: Billing State/Province --> Columns: Account Name, Phone and Type --> Save & Run
 ========================================================================================================================================================================
 Report --> SolarBot Warranty Call Sheet --> Edit --> GROUP ROWS: Warranty Expiration / Billing State/Province --> #Under Warranty (Delete from columns)
 --> Filters : Billing State/Province Equals NV,UT,CA --> Apply
@@ -32,4 +32,13 @@ Report --> Temperature to kWh Research --> Edit --> GROUP COLUMNS : SolarBot mod
 Column --> Panel Temperature (Checked): Average (Remove SUM) --> Apply
 Column --> Kilowatt Hours (Checked): Average (Remove SUM) --> Apply
 Add Chart --> Chart Properties --> X-Axis --> +Group --> SolarBot model --> Save & Run
+========================================================================================================================================================================
+========================================================================================================================================================================
+Still if you are facing this error : 
+Challenge Not yet complete... here's what's wrong:
+We can't find a page with the name 'SolarBot Status Page With Chart'.
+
+Solution:
+
+========================================================================================================================================================================
 
