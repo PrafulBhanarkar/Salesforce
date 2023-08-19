@@ -1,0 +1,27 @@
+Dashboard --> New Folder --> Lable : SolarBot Dashboards --> Save
+Dashboard --> SolarBot Dashboards --> Share : Public Group --> Names : All Internal Users --> Access : View --> Share
+Dashboard --> SolarBot Dashboards --> Share : Public Group --> Names : Report and Dashboard Administrators --> Access : Manage --> Share --> Done
+=======================================================================================================================================================
+Dashboard --> New Dashboard --> Name : SolarBot Impact Dashboard --> Select Folder --> SolarBot Dashboards --> Select Folder --> Create
+Dashboard --> +Components --> Report : SolarBot Loyalty Revenue --> Display as : vertical bar chart --> Y-axis : Sum of Expected Revenue 
+--> +measure : Adjusted Expected Revenue --> Display Units : Thousands --> Stage (down arrow) --> Title : SolarBot Pipeline by Stage --> Add
+--> Adjust dashboard Position to 4X9 component in the upper left corner
+ (X coordinate: 0, Y coordinate: 0) / 4X9 
+=======================================================================================================================================================
+Dashboard --> +Components --> Report : Top Case Drivers by SolarBot Ownership --> Display as : Stacked vertical bar chart --> X-axis : Case Reason 
+--> Y-axiz : Sum of Open --> +measure : Record Count --> Title : Case Drivers and SolarBot Ownership --> Add
+(X coordinate: 7, Y coordinate: 0) / —5X9—
+=======================================================================================================================================================
+Dashboard --> +Components --> Report : Temperature to kWh Research --> Display as : Line chart -->Title : Temperature and Kilowatt Hour Relationship --> Add
+(X coordinate: 0, Y coordinate: 9) / 4X7 
+=======================================================================================================================================================
+Dashboard --> +Components --> Report : Accounts Without SolarBot Opportunities --> Display as : Guage chart --> Segment Ranges : 0–5 accounts: Green
+5–10 accounts: Yellow / 10–15 accounts: Red --> Title : SolarBot Evangelism Countdown --> Add
+ (X coordinate: 4, Y coordinate: 0) / 3X9 
+=======================================================================================================================================================
+Dashboard --> +Components --> Report : SolarBot Loyalty Revenue --> Display as : Lightning Table --> Column (Only add) --> Opportunity Owner / 
+Opportunity Name / Probability / Amount / Expected Revenue / Stage --> Sort By : Stage --> Display Units : Add Conditional Highlighting (Checked)
+--> Highlight Column : Amount --> Segment Ranges : mount gray if between $20,000 and $50,000 and blue if above $50,000 
+--> Title : Opportunity Overview --> Add
+(X coordinate: 4, Y coordinate: 9) / 8X7 
+=======================================================================================================================================================
