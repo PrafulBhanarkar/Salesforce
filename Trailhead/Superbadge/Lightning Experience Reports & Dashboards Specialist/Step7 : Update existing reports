@@ -26,7 +26,7 @@ Add Chart --> Chart Properties --> Line --> Chart Title : Weekly Panel Temperatu
 ========================================================================================================================================================================
 SolarBot Status --> Open any record --> Setup --> Edit Page --> Page Label : SolarBot Status Page With Chart, API Name:SolarBot_Status_Page_With_Chart
 --> Search: Report Chart (Drag and Drop on page)--> Label : SolarBot Status Averages --> Report : SolarBot Status Averages
---> Filter by : SolarBot Status ID --> Save --> Activate --> Assign as Org Default --> Checked : Desktop and Phone --> Next --> Save
+--> Filter by : SolarBot ID --> Save --> Activate --> Assign as Org Default --> Checked : Desktop and Phone --> Next --> Save
 ========================================================================================================================================================================
 Report --> Temperature to kWh Research --> Edit --> GROUP COLUMNS : SolarBot model.
 Column --> Panel Temperature (Checked): Average (Remove SUM) --> Apply
@@ -38,7 +38,5 @@ Still if you are facing this error :
 Challenge Not yet complete... here's what's wrong:
 We can't find a page with the name 'SolarBot Status Page With Chart'.
 
-Solution:
-
+Solution: goto setup --> Lightning app builder and select record page and do the same process from line number 27th 
 ========================================================================================================================================================================
-
