@@ -1,0 +1,13 @@
+Dashboard --> SolarBot Impact Dashboard --> Opportunity Overview --> component Theme : Light (Dashboard default) --> Update
+Setting (GearIcon) --> Dashboard Palette : Sunrise --> Dashboard Theme : Light
+Filter --> Account Name : Marquee Accounts --> Operator : Contain --> Value : Heinrich Technical Instruments --> Apply
+Add Filter Value --> Operator : Contain --> Value : Heinrich Technical Instruments --> Apply --> Add
+
+SolarBot Pipeline by Stage --> Filter : Account Name
+Opportunity Overview --> Filter : Account Name
+
+Setup --> Lightning App Builder --> SolarBot App Page --> Edit --> Dashboard (Drag and Drop) --> Save --> Activation --> Save
+Report --> Temperature to kWh Research --> Drop down arrow (Suscribe) --> Days : Tue (Make sure only select Tue / Remove all ) --> Save
+
+Setting (GearIcon) --> Dashboard Theme : Dark --> Dashboard Palette : Sunrise
+Opportunity Overview --> Edit Component --> Component Theme : Light --> Update
