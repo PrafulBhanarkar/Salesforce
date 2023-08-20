@@ -12,7 +12,8 @@ Dashboard --> +Components --> Report : Top Case Drivers by SolarBot Ownership --
 --> Y-axiz : Sum of Open --> +measure : Record Count --> Title : Case Drivers and SolarBot Ownership --> Add
 (X coordinate: 7, Y coordinate: 0) / —5X9—
 =======================================================================================================================================================
-Dashboard --> +Components --> Report : Temperature to kWh Research --> Display as : Line chart -->Title : Temperature and Kilowatt Hour Relationship --> Add
+Dashboard --> +Components --> Report : Temperature to kWh Research --> Display as : Line chart --> X-axis : Temperature Range / SolarBot Model
+--> Y-axiz : Average Kilowatt Hours --> Title : Temperature and Kilowatt Hour Relationship --> Add
 (X coordinate: 0, Y coordinate: 9) / 4X7 
 =======================================================================================================================================================
 Dashboard --> +Components --> Report : Accounts Without SolarBot Opportunities --> Display as : Guage chart --> Segment Ranges : 0–5 accounts: Green
