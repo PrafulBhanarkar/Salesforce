@@ -1,0 +1,20 @@
+Signup for this challage : https://trailhead.salesforce.com/promo/orgs/earn-the-data-categorization-and-access-superbadge-unit
+
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> New --> Number --> Field Label : Service Plan PIN --> Field Name : Service_Plan_PIN 
+--> Length : 4 --> Description : PIN is a four-digit number. --> Next --> (disselect all) select visible : System Admin --> Next --> Save
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> New --> Text (Encrypted) --> Field Label : Tax ID --> Field Name : Tax_ID 
+--> Length : 12 --> Description : Field needs to accommodate Tax IDs up to 12 digits. --> Mask Type : Last Four Characters Clear --> Mask Character : * 
+--> Next --> (disselect all) select visible : System Admin --> Next --> Save
+
+Setup --> Object Manager --> Contact --> Fields & Relationships --> New --> Text (Encrypted) --> Field Label : Social Security Number 
+--> Field Name : Social_Security_Number --> Length : 9 --> Description : Data must display in nine-digit Social Security number format. 
+--> Mask Type : Social Security Number --> Mask Character : * --> Next --> (disselect all) select visible : System Admin --> Next --> Save
+
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Text Area (Long) --> Field Label : Closed Lost Reason 
+--> Field Name : Closed_Lost_Reason --> # Visible Lines : 3 --> --> Description : Field will house detailed explanation for a closed lost opportunity. 
+--> Next --> (disselect all) select visible : System Admin --> Next --> Save
+
+Go for the challange --> Check challenge --> Accept
+Note: while go for the chek challenge your playground should be new one which was created first for this challenge
