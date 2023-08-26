@@ -1,0 +1,33 @@
+Setup --> Permission Sets --> Account Management --> Object Settings --> Accounts --> Edit 
+--> Service Plan PIN & Tax ID (check Read/Edit checkbox) --> Save
+
+--> Permission Set Overview --> Object Settings --> Contacts (select from dropdown list) --> Edit 
+--> Social Security Number & Birthdate (check Read/Edit checkbox) --> Save
+
+--> Permission Set Overview --> Object Settings --> Opportunities (select from dropdown list) --> Edit 
+--> Closed Lost Reason (check Read/Edit checkbox) --> Save
+
+--> Permission Set Overview --> Object Settings --> Assets (select from dropdown list) --> Edit 
+--> Serial Number (check Read/Edit checkbox) --> Save
+======================================================================================================================================================
+Setup --> Permission Sets --> Opportunity Management --> Object Settings --> Accounts --> Edit 
+--> Service Plan PIN & Tax ID (check Read/Edit checkbox) --> Save
+
+--> Permission Set Overview --> Object Settings --> Contacts (select from dropdown list) --> Edit 
+--> Social Security Number & Birthdate (check Read/Edit checkbox) --> Save
+
+--> Permission Set Overview --> Object Settings --> Opportunities (select from dropdown list) --> Edit 
+--> Closed Lost Reason (check Read/Edit checkbox) --> Save
+
+--> Permission Set Overview --> Object Settings --> Assets (select from dropdown list) --> Edit 
+--> Serial Number (check Read/Edit checkbox) --> Save
+======================================================================================================================================================
+//can continue from chart//
+Setup --> Permission Set Groups --> Account Executive --> Muting Permission Set in Group --> Account Executive Muted --> Object Settings --> Accounts
+--> Service Plan PIN (checked Edit) & Tax ID (checked Read/Edit checkbox) --> Save
+
+Muting Permission Set in Group --> Object Settings --> Contacts (select from dropdown list) --> Edit 
+--> Social Security Number (check Read/Edit checkbox) --> Save
+
+Muting Permission Set in Group --> Object Settings --> Assets (select from dropdown list) --> Edit 
+--> Serial Number (check Read/Edit checkbox) --> Save
