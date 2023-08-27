@@ -22,12 +22,46 @@ Setup --> Permission Sets --> Opportunity Management --> Object Settings --> Acc
 --> Permission Set Overview --> Object Settings --> Assets (select from dropdown list) --> Edit 
 --> Serial Number (check Read/Edit checkbox) --> Save
 ======================================================================================================================================================
-//can continue from chart//
 Setup --> Permission Set Groups --> Account Executive --> Muting Permission Set in Group --> Account Executive Muted --> Object Settings --> Accounts
 --> Service Plan PIN (checked Edit) & Tax ID (checked Read/Edit checkbox) --> Save
 
 Muting Permission Set in Group --> Object Settings --> Contacts (select from dropdown list) --> Edit 
 --> Social Security Number (check Read/Edit checkbox) --> Save
 
+Muting Permission Set in Group --> Object Settings --> Opportunities (select from dropdown list) --> Edit 
+--> Closed Lost Reason (uncheck checkbox) --> Save
+
 Muting Permission Set in Group --> Object Settings --> Assets (select from dropdown list) --> Edit 
---> Serial Number (check Read/Edit checkbox) --> Save
+--> Serial Number (check Edit checkbox) --> Save
+======================================================================================================================================================
+//Not completed, Need to checke once with all details.//
+
+Setup --> Permission Set Groups --> Sales Manager --> Muting Permission Set in Group --> Sales Manager Muted --> Object Settings --> Accounts
+--> Service Plan PIN (checked Edit) & Tax ID (checked Read/Edit checkbox) --> Save
+
+Muting Permission Set in Group --> Object Settings --> Contacts (select from dropdown list) --> Edit 
+--> Social Security Number (check Read/Edit checkbox) --> Save
+
+Muting Permission Set in Group --> Object Settings --> Opportunities (select from dropdown list) --> Edit 
+--> Closed Lost Reason (uncheck checkbox) --> Save
+
+Muting Permission Set in Group --> Object Settings --> Assets (select from dropdown list) --> Edit 
+--> Serial Number (check Edit checkbox) --> Save
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
+======================================================================================================================================================
+
