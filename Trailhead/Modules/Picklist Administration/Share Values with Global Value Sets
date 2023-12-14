@@ -1,0 +1,16 @@
+Promote an existing picklist’s values to a global value set, and assign it to another picklist
+You decided to create T-shirts for each of your flavors to help promote them. So you want a T-shirt selection picklist that uses the same values as your macaron flavors.
+Setup --> Object Manager --> Product --> Macaron Flavor --> Edit --> Promote to Global Value Set -->
+
+Promote the values of the Macaron Flavor field to a global value set with the following settings:
+Label: Flavors
+Name: Flavors
+Note: If Promote to Global Value Set is not available on the Macaron Flavor field, then make sure Restrict picklist to the values defined in the value set is selected.
+
+Create a field with the following settings:
+Object: Product
+Field Type: Picklist
+Field Label: Shirt
+Field Name: Shirt
+Values: Flavors global value set (select from drop down list)
+Make this field visible to all user profiles --> Save
