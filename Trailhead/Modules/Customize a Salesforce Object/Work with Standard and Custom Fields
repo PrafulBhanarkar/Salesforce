@@ -15,7 +15,7 @@ Description : Sales users use this field to indicate to Support which customers 
 Help Text : Does this customer have a current support plan? Check this box when you sell a support plan to this customer. --> Next --> Select the checkbox : Read-Only column header
 --> Deselect the Sales User and Support User checkboxes in the Read-Only column --> Next --> Save & New
 
-Data Type : Checkbox --> 
+Data Type : Date --> 
 Field Label : Support Plan Expiration Date
 Field Name : Support_Plan_Expiration_Date
 Description : Expiration date of current support plan
