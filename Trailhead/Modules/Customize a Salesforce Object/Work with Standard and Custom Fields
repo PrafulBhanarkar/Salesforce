@@ -1,1 +1,23 @@
+Setup --> Quick Find box --> Profiles --> Standard User (Clone) --> Profile Name : Sales User --> Save --> Clone --> Profile Name : Support User --> Save
 
+Setup --> Quick Find box --> Rename Tabs and Labels --> Account --> Edit --> Next --> Replace name infront of "Rating : Prospect Rating" --> Save
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> Prospect Rating --> Edit --> 
+Help Text: This indicates the likelihood of a sale being made to this account in the next six months. Cold indicates not likely. Warm indicates quite likely. Hot indicates very likely.
+--> Save --> Account Rating Picklist Values --> New --> add : Not Known --> Save --> Set Field-Level Security --> Select the checkbox : Read-Only column header
+--> Deselect : Sales User checkbox from Read-Only Column --> Save
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> New --> Data Type : Checkbox --> 
+Field Label : Has Support Plan
+Field Name : Has_Support_Plan
+Default Value : Unchecked
+Description : Sales users use this field to indicate to Support which customers have support plans.
+Help Text : Does this customer have a current support plan? Check this box when you sell a support plan to this customer. --> Next --> Select the checkbox : Read-Only column header
+--> Deselect the Sales User and Support User checkboxes in the Read-Only column --> Next --> Save & New
+
+Data Type : Checkbox --> 
+Field Label : Support Plan Expiration Date
+Field Name : Support_Plan_Expiration_Date
+Description : Expiration date of current support plan
+Help Text : When is the current support plan due for renewal?
+--> Deselect the Sales User and Support User checkboxes in the Read-Only column --> Next --> Save
