@@ -1,1 +1,17 @@
+Add a picklist field to the standard Product object with the following settings:
+Setup --> Object Manager --> 
+Object: Product
+Field Type: Picklist
+Field Label: Macaron Flavor
+Field Name: Macaron_Flavor
+Make sure Restrict picklist to the values defined in the value set is selected
 
+Include the following picklist values: (Add values)
+Gingerbread
+Strawberry
+Chocolate
+Raspberry
+Pumpkin
+Mint
+Vanilla
+Make this field visible to all user profiles --> Save
