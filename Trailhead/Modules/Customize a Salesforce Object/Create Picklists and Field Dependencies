@@ -1,0 +1,78 @@
+Setup --> Quick find box --> Picklist value sets --> New -->
+Label	: Region
+Name : Region
+Description : For use in region fields throughout AW’s org.
+Enter regions, each on a new line	: APAC
+                                    EMEA
+                                    LATAM
+                                    US
+                                    Canada
+--> Save
+
+Setup --> Object Manager --> Lead --> Fields & Relationships --> New --> Data Type : Picklist --> Field Label : Region --> 
+Note :  Use global picklist value set, then select Region from the picklist
+--> Description : Customer’s geographical region—for sales operations use only.
+--> Help Text : In which region is the customer based? --> Next --> Select the checkbox : Read-Only column header
+--> Deselect the Sales User from the Read-Only column. --> Next --> Save
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> New --> Data Type : Picklist --> Field Label : Region --> 
+Note :  Use global picklist value set, then select Region from the picklist
+--> Description : Customer’s geographical region—for sales operations use only.
+--> Help Text : In which region is the customer based? --> Next --> Select the checkbox : Read-Only column header
+--> Deselect the Sales User from the Read-Only column. --> Next --> Save
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> New --> Data Type : Picklist --> Field Label : Zone --> Enter values, with each value separated by a new line.
+--> East Asia
+    Oceania
+    Southeast Asia
+    Africa
+    Europe
+    Middle East
+    UK + Ireland
+    Mexico
+    Caribbean
+    Central America
+    South America
+    Midwest US
+    Northeast US
+    Southeast US
+    Southwest US
+    West US
+    Northern Canada
+    Mountains and the West
+    The Prairies
+    Central Canada
+    East Coast 
+--> Description : Customer’s zone within the selected region—for sales operations use only.
+--> Help Text : In which zone is this customer based? Depends on region. --> Next --> Select the checkbox : Read-Only column header
+--> Deselect the Sales User from the Read-Only column. --> Next --> Save
+
+Setup --> Object Manager --> Account --> Fields & Relationships --> Field Dependencies --> New --> Controlling Field : Region & Dependent Field : Zone --> Continue
+--> Select the following zones in each column. (Select values and click on Include)
+APAC: East Asia, Oceania, Southeast Asia
+EMEA: Africa, Europe, Middle East, UK + Ireland
+LATAM: Mexico, Caribbean, Central America, South America
+US: Midwest US, Northeast US, Southeast US, Southwest US, West US
+Canada: Northern Canada, Mountains and the West, The Prairies, Central Canada, East Coast
+--> Preview (check once all the values) --> Save
+
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Data Type : Picklist (Multi-Select) --> Next --> Field Label : Close Reason --> 
+Lost: Competitor
+Lost: Price
+Lost: Product Features
+Lost: Project Abandoned
+Lost: Company Budget Constraints
+Lost: Other Reason
+Won: Competitor
+Won: Price
+Won: Product Features
+Won: Other Reason
+--> # Visible Lines	: 6 --> Field Name : Close_Reason --> Description : Created for the VP of Global Sales to track wins and losses.
+--> Help Text : When you close the opportunity, select one or more values that best describe your reason for closing. --> Next  --> Select the checkbox : Read-Only column header
+--> Deselect the Sales User from the Read-Only column. --> Next --> Save
+
+Setup --> Object Manager --> Opportinity --> Fields & Relationships --> Field Dependencies --> New --> Controlling Field : Stage  & Dependent Field : Close Reason --> Continue
+--> Click Next available on Table --> Select the following zones in each column. (Select values and click on Include)
+Closed Won: Select all values starting with “Won”
+Closed Lost: Select all values starting with “Lost”
+--> Preview (check once all the values) --> Save --> Ok
