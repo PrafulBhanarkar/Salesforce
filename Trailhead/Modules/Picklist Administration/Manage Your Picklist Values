@@ -1,0 +1,2 @@
+Setup --> Object Manager --> Product --> Fields & Relationships --> Macaron Flavor --> Edit --> Default Value
+--> CASE(MONTH(TODAY()), 1, "Gingerbread", 2, "Strawberry", 4, "Chocolate", 7, "Raspberry", 11, "Pumpkin", 12, "Mint", "Vanilla") --> check syntax --> save
