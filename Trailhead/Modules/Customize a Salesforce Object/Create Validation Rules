@@ -1,0 +1,11 @@
+Setup --> Object Manager --> Account --> Validation Rules --> New
+--> Rule Name : Support_plan_expiration_date_required --> Ensure Active is selected
+--> Description : Support plan expiration date is required when account is marked as having support plan.
+--> Error Condition Formula box: Has_Support_Plan__c = True && ISBLANK(Support_Plan_Expiration_Date__c) --> Check Syntax
+--> Error Message : You must enter an expiration date when an account has a support plan. -->  Error Location : Field --> Field : Support Plan Expiration Date --> Save
+
+Setup --> Object Manager --> Opportunity --> Validation Rules --> New
+--> Rule Name : Close_reason_required_when_lost --> Ensure Active is selected
+--> Description : A close reason is required when opportunity is closed lost.
+--> Error Condition Formula box: ISPICKVAL( StageName ,"Closed Lost") && ISBLANK(Close_Reason__c) --> Check Syntax
+--> Error Message : You must enter a close reason when opportunity is closed lost. -->  Error Location : Field --> Field : Close Reason --> Save
