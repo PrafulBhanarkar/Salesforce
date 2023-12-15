@@ -1,0 +1,29 @@
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Data Type : Formula --> 
+    Field Label and the Field Name : Commission 
+    Formula Return Type : Currency
+--> Insert Merge Field picklist : Amount --> Insert Operator and select *Multiply --> Commission (Currency)= box, enter 0.1 --> Check Syntax
+Note :  final formula looks like this: Amount * 0.1
+--> Description : Calculates sales rep commission of 10 percent when opportunity is won.
+    Help Text : Sales rep commission when opportunity is won --> Next --> Visible column header, select and deselect the checkbox to clear the checkboxes
+--> Visible column, select Sales User and System Administrator --> Next --> Save
+
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> Commission --> Edit --> Advanced Formula --> 
+Note Final Formula looks like this : IF( ISPICKVAL( StageName , "Closed Won") , Amount * 0.1, 0)
+--> Check Syntax --> Save
+
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Data Type : Formula --> 
+      Field Label : Region/Zone
+      Field Name : Region_Zone
+      Formula Return Type : Text
+--> Advance Formula --> Note Final Formula looks like this : TEXT( Account.Region__c ) & "/" & TEXT( Account.Zone__c ) --> Check Syntax 
+--> Description : Displays the Region and Zone values from the account record. --> Help Text : Account region and zone --> Next, Next and Save
+
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Data Type : Percent --> Field Label : Discount Percentage -->
+--> Length : 3 --> Next --> deselect the Visible header to clear out the checkboxes --> Sales User and System Administrator --> Next and Save
+
+Setup --> Object Manager --> Opportunity --> Fields & Relationships --> New --> Data Type : Formula --> 
+      Field Label : Amount After Discount
+      Field Name : Amount_After_Discount 
+--> Formula Return Type : Currency --> Simple Formula --> Ensure your formula looks like this: Amount * ( 1 - Discount_Percentage__c ) --> Check Syntax
+--> Description : Calculates the opportunity amount after any discount has been applied. --> Help Text : Opportunity amount after discount has been applied
+--> Next, Next, and Save
