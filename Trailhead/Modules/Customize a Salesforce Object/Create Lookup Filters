@@ -1,0 +1,14 @@
+Setup --> Object Manager --> Case --> Fields & Relationships --> New --> Data Type : Lookup Relationship --> Related To picklist : User --> 
+          Label : Backup Agent
+          Name : Backup_Agent
+          Description : Used to identify the assigned support rep when case owner is away — for support use only.
+          Help Text : Who is the assigned support rep when case owner is away?
+--> Lookup Filter section : Show Filter Settings --> 
+          Field	                  Operator	      Value/Field
+          User: Profile: Name     equals	        Value / Support User
+--> Next --> Read-Only column header, select the checkbox --> Read-Only column, deselect the Support User checkbox --> Next --> Deselect the checkbox : Close Case Layout --> Save
+
+Setup --> Object Manager --> Case --> Fields & Relationships --> Contact Name --> Edit --> Lookup Filter section : Show Filter Settings --> 
+          Field                        Operator    Value/Field
+          Contact Name: Account ID     equals      Field / Case: Account ID
+--> Required (Checked) --> Save
