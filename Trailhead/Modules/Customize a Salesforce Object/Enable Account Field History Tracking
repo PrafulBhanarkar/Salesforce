@@ -1,0 +1,7 @@
+Setup --> Object Manager --> Account --> Fields & Relationships --> Set History Tracking --> Enable Account History --> Select -->
+        Has Support Plan
+        Support Plan Expiration Date
+--> Save
+
+App Launcher --> Sales --> Accounts --> All Accounts -->  Edge Communications (Edit) --> Setup menu --> Edit Object --> Page Layouts --> Account Layout
+--> In the palette, click Related Lists --> drag the Account History below the Contacts related list --> Save --> No
