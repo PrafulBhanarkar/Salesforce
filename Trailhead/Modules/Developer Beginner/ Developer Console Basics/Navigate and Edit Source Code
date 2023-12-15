@@ -1,0 +1,122 @@
+Developer Console --> File | New | Apex Class --> Name : EmailMissionSpecialist --> Code: 
+public class EmailMissionSpecialist {
+   // Public method
+   public void sendMail(String address, String subject, String body) {
+      // Create an email message object
+      Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+      String[] toAddresses = new String[] {address};
+      mail.setToAddresses(toAddresses);
+      mail.setSubject(subject);
+      mail.setPlainTextBody(body);
+      // Pass this email message to the built-in sendEmail method 
+      // of the Messaging class
+      Messaging.SendEmailResult[] results = Messaging.sendEmail(
+                                new Messaging.SingleEmailMessage[] { mail });
+      // Call a helper method to inspect the returned results
+      inspectResults(results);
+   }
+   // Helper method
+   private static Boolean inspectResults(Messaging.SendEmailResult[] results) {
+      Boolean sendResult = true;
+      // sendEmail returns an array of result objects.
+      // Iterate through the list to inspect results. 
+      // In this class, the methods send only one email, 
+      // so we should have only one result.
+      for (Messaging.SendEmailResult res : results) {
+         if (res.isSuccess()) {
+            System.debug('Email sent successfully');
+         }
+         else {
+            sendResult = false;
+            System.debug('The following errors occurred: ' + res.getErrors());                 
+         }
+      }
+      return sendResult;
+   }
+}
+--> File | Save
+
+Debug | Open Execute Anonymous Window --> Code :
+EmailMissionSpecialist em = new EmailMissionSpecialist();
+em.sendMail('Prafultestemail1@gmail.com', 'Flight Path Change', 
+   'Mission Control 123: Your flight path has been changed to avoid collision '
+   + 'with asteroid 2014 QO441.');
+
+Note : Replace Enter your email address with your email address
+--> Execute
+
+File | New | Lightning Component --> Name : meetGreet --> Submit --> Code : 
+
+ <aura:component >
+	   <p>Greetings, fellow humans! What’s your status?</p>
+</aura:component>
+
+--> File | Save
+
+File | New | Visualforce Page --> Name : FlightSystemsChecklist --> Code :
+<apex:page sidebar="false">
+<!--Flight Systems Checklist Visualforce Page-->
+   <h1>Checklist</h1>
+   <apex:form id="engineReadinessChecklist">
+      <apex:pageBlock title="Flight Systems Checklist">
+         <!--First Section-->
+         <apex:pageBlockSection title="Engines">
+            <!--Adding Checkboxes-->
+            <apex:inputCheckbox immediate="true"/>Engine 1
+            <apex:inputCheckbox immediate="true"/>Engine 2
+            <apex:inputCheckbox immediate="true"/>Engine 3
+            <apex:inputCheckbox immediate="true"/>Engine 4
+            <apex:inputCheckbox immediate="true"/>Engine 5
+            <apex:inputCheckbox immediate="true"/>Engine 6
+         </apex:pageBlockSection>
+         <!--Second Section-->
+         <apex:pageBlockSection title="Fuel Tanks">
+            <apex:inputCheckbox immediate="true"/>Tank 1
+            <apex:inputCheckbox immediate="true"/>Tank 2
+            <apex:inputCheckbox immediate="true"/>Tank 3
+            <apex:inputCheckbox immediate="true"/>Tank 4
+            <apex:inputCheckbox immediate="true"/>Tank 5
+            <apex:inputCheckbox immediate="true"/>Tank 6
+         </apex:pageBlockSection>
+         <apex:pageBlockButtons>
+            <!--Adding Save Button-->
+            <apex:commandButton value="Save" action="{!save}"/>
+         </apex:pageBlockButtons>
+      </apex:pageBlock>
+   </apex:form>
+</apex:page>
+--> File | Save --> Preview
+
+File | New | Visualforce Page --> Name : StationCheck --> Code :
+<apex:page sidebar="false">
+<!--Flight Systems Checklist Visualforce Page-->
+   <h1>Station Status</h1>
+   <apex:form id="engineReadinessChecklist">
+      <apex:pageBlock title="Flight Systems Checklist">
+         <!--First Section-->
+         <apex:pageBlockSection title="Engines">
+            <!--Adding Checkboxes-->
+            <apex:inputCheckbox immediate="true"/>Engine 1
+            <apex:inputCheckbox immediate="true"/>Engine 2
+            <apex:inputCheckbox immediate="true"/>Engine 3
+            <apex:inputCheckbox immediate="true"/>Engine 4
+            <apex:inputCheckbox immediate="true"/>Engine 5
+            <apex:inputCheckbox immediate="true"/>Engine 6
+         </apex:pageBlockSection>
+         <!--Second Section-->
+         <apex:pageBlockSection title="Fuel Tanks">
+            <apex:inputCheckbox immediate="true"/>Tank 1
+            <apex:inputCheckbox immediate="true"/>Tank 2
+            <apex:inputCheckbox immediate="true"/>Tank 3
+            <apex:inputCheckbox immediate="true"/>Tank 4
+            <apex:inputCheckbox immediate="true"/>Tank 5
+            <apex:inputCheckbox immediate="true"/>Tank 6
+         </apex:pageBlockSection>
+         <apex:pageBlockButtons>
+            <!--Adding Save Button-->
+            <apex:commandButton value="Save" action="{!save}"/>
+         </apex:pageBlockButtons>
+      </apex:pageBlock>
+   </apex:form>
+</apex:page>
+--> File | Save --> Preview
