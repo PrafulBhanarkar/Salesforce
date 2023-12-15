@@ -1,0 +1,19 @@
+App Launcher --> Sales --> Accounts --> All Accounts --> select "Edge Communications" --> Setup menu --> Edit page --> change the Label : Customer Account Page
+--> API Name : Customer_Account_Page --> On the canvas, click the Details tab --> Click the Record Detail component inside the Details tab --> Upgrade Now --> Next
+--> Account Layout --> Finish --> Click the Fields tab in the palette --> Drag a Field Section component onto the canvas and drop it just above the Additional Information section in the Details tab.
+--> Label : Sales Region --> Add another Field Section component below the Sales Region section --> Label : Support Plan Information -->
+          From the Account Information section, drag the Region field into the left column of the new Sales Region section.
+          From the Account Information section, drag the Zone field into the right column of the new Sales Region section.
+          From the Account Information section, drag the Has Support Plan field into the left column of the new Support Plan Information section.
+          From the Account Information section, drag the Support Plan Expiration Date field into the right column of the new Support Plan Information section. 
+--> Sales Region section, click Move component and drag the section above the Activity and Chatter tabs in the right hand region of the page
+--> Do the same for the Support Plan Information section --> Make the Prospect Rating field required --> Save, then Not Yet.
+--> Back --> Setup --> Object Manager --> Account --> Page Layouts --> Account Layout --> Contacts related list --> wrench --> Do Not Call --> Add --> ok
+--> move the Opportunities related list to the top --> Opportunities related list --> drag it above the Contacts related list --> Save, then Yes.
+
+Setup --> Quick Find box : Lightning App Builder --> Customer Account Page : Edit --> Activation --> App, Record Type, and Profile --> Assign to Apps, Record Types, and Profiles
+--> Assign the page : Sales app --> Desktop and phone --> Next --> Customer Account --> Next --> Sales User and Support User --> Next --> Save
+--> Back --> Customer Account Page (Clone) --> label : Partner Account Page --> API Name : Partner_Account_Page --> On the canvas, click the Details tab.
+--> Remove the Prospect Rating, Region, Zone, Has Support Plan, and Support Plan Expiration Date fields --> Sales Region & Support Plan Information section : Delete
+--> Save --> Activate --> App, Record Type, and Profile --> Assign to Apps, Record Types, and Profiles
+--> Assign the page : Sales app --> Desktop and phone --> Next --> Partner Account --> Next --> Sales User and Support User --> Next --> Save
