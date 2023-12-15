@@ -1,0 +1,21 @@
+Setup --> Object Manager --> Account --> Record Types --> New -->
+          Field                  Value
+          Existing Record Type   Master
+          Record Type Label      Customer Account
+          Record Type Name	     Customer_Account
+          Description            For customers and prospects
+          Active                 select
+--> Make Available (deselect the checkbox) --> Make Available (select these profiles) : Sales User / System Administrator --> Next -->
+--> Apply one layout to all profiles (radio button is selected) --> Select Page Layout list : Account Layout --> Save
+--> Industry --> Edit --> Consulting and Education (Remove) --> Remove --> Save
+
+Setup --> Object Manager --> Account --> Record Types --> New --> 
+Existing Record Type : Master
+Record Type Label : Partner Account
+Record Type Name : Partner_Account 
+Description : For consulting partners
+Active : Select
+Make Available column : Partner App Subscription User / Partner Community Login User / Partner Community User --> Next 
+--> Apply one layout to all profiles radio button is selected --> Select Page Layout list : Account Layout --> Save
+--> Industry --> Edit --> Consulting and Education --> Remove (Rest all the values) --> Save
+--> Type --> Edit --> Prospect, Customer - Direct, and Customer - Channel (Remove) --> Remove --> Save
