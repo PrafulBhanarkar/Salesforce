@@ -1,0 +1,11 @@
+Create the Property object as described in the previous unit.
+    Setup --> Object Manager --> Create custom object --> Name:Property
+Challenge Requirements:
+    Create a custom Master-Detail field on the Offer object
+    Data Type: Master-Detail
+    Field Label: Property
+    Field Name: Property
+Create a custom Lookup field on the Offer object
+    Data Type: Lookup
+    Field Label: Contact
+    Field Name: Contact
