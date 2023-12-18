@@ -27,3 +27,19 @@ System.debug('Found the following contacts.');
 for (Contact c : searchContacts) {
     System.debug(c.LastName + ', ' + c.FirstName);
 }
+=================================================================================================================================================
+Note: After that also you are facing the error that "" then follow the steps :
+
+Create a lead:
+                  First Name: Chantal
+                  Last Name: Smith
+                  Company: Get Cloudy South
+Update lead status:
+                  Change Chantal Smith’s Lead Status to: Working - Contacted
+Add a task on Chantal Smith’s record:
+                  Subject: Call Ms. Smith
+                  Due Date: any future date
+Convert the lead to an account and contact:
+                  New Account Name: Get Cloudy South
+                  New Contact: Chantal Smith
+                  Select: Don't create an opportunity upon conversion
