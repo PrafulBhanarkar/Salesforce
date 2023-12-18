@@ -1,0 +1,14 @@
+Setup --> Digital Experiences --> setting --> Enable Digital Experiences --> Check Availability --> Save --> Ok
+Setup --> Digital Experiences --> setting --> Role and User Settings --> Number of partner roles : 2 --> Save
+Setup --> Digital Experiences --> All Sites --> New --> Partner Central --> Get Started --> Name: Ursa Major --> URL : UrsaMajor --> Create
+
+Accounts -->  All Accounts  --> click any account --> Click the dropdown menu to see all the quick actions available for the page --> Enable as Partner
+--> skip to Enable Partner Accounts and Create Partner Users.
+
+If you don’t see Enable as Partner, follow these steps.
+Setup --> Object Manager --> Account  --> Page Layouts --> Account Layout --> Mobile & Lightning Actions --> Drag the Enable as Partner and Disable Partner Account
+--> Quick Save
+
+Now add the partner user buttons to the contact page layout.
+Setup --> Object Manager --> Contact  --> Page Layouts --> Contact Layout --> Mobile & Lightning Actions --> Drag the Enable as Partner and Disable Partner Account
+button to the Salesforce Mobile and Lightning Experience Actions section --> Quick Save
