@@ -1,0 +1,6 @@
+Use Schema Builder to create a custom field for the Property object
+Setup --> Object Manager --> Property --> Field and Relationship --> New -->
+Data Type: Text Area
+Field Label: Street Address
+Field Name: Street_Address
+Always require a value in this field in order to save a record: Selected
