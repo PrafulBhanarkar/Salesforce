@@ -12,3 +12,52 @@ Setup --> Object Manager --> Account  --> Page Layouts --> Account Layout --> Mo
 Now add the partner user buttons to the contact page layout.
 Setup --> Object Manager --> Contact  --> Page Layouts --> Contact Layout --> Mobile & Lightning Actions --> Drag the Enable as Partner and Disable Partner Account
 button to the Salesforce Mobile and Lightning Experience Actions section --> Quick Save
+
+Now, we can enable a couple of accounts as partner accounts. Let’s enable Edge Communications and Express Logistics and Transport as partner accounts in our Trailhead Playground.
+From the App Launcher, select Accounts.
+Select the All Accounts list view.
+Click Edge Communications.
+Click the dropdown menu to see all the quick actions available for the page.
+Click Enable as Partner.
+In the confirmation dialog, select Enable As Partner.
+Repeat these steps for Express Logistics and Transport.
+
+Click your Chatter image (or Astro, if you haven’t gotten around to changing it).
+Click your name at the top of the dialog.
+Click User Detail.
+Click Edit, and assign yourself any Role you’d like (go for CEO… why not?).
+Click Save.
+
+Click Edge Communications.
+Click Sean Forbes from the contact related list.
+From the dropdown menu, select Enable Partner User.
+Change the following in the New User detail page.
+Email: [Enter your email address so you can get login information for your newly created users.]
+Username: [unique username in an email format]
+User License: Partner Community 
+Profile: Partner Community User 
+select the Allow using standard external profiles for self-registration, user creation and login in Setup > Digital Experiences > Settings.
+Role (if asked): [account name] Partner User
+Deselect Salesforce CRM Content User.
+Deselect Receive Salesforce CRM Content Email Alerts.
+Select the Generate new password and notify user immediately checkbox.
+Click Save.
+Follow the same steps for other contact records.
+      Rose Gonzalez (in Edge Communications)
+      Babara Levy (in Express Logistics and Transport)
+      Josh Davis (in Express Logistics and Transport)
+
+From Setup, enter Digital Experiences in the Quick Find box, then select All Sites.
+Click Workspaces next to the Ursa Major portal.
+Click Administration | Members.
+To add members using profiles:
+Select the Partner Community User and Customer Community User profiles. (If you don’t see the profile, change the search to All.)
+Click Add.
+Click Save.
+
+From Setup, enter Digital Experiences in the Quick Find box, then select All Sites.
+Click Builder next to the Ursa Major portal.
+Click Publish, and in the confirmation dialogue, click Publish again. Then click Got it in the next confirmation dialogue.
+Click Builder to navigate to Administration.
+Click Settings.
+Click Activate, and click OK.
