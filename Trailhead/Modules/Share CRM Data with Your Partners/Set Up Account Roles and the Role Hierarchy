@@ -1,0 +1,20 @@
+Setup --> Users --> Edit : Levy, Babara --> Change her role to Express Logistics and Transport Partner Manager --> Save
+Setup --> Users --> Edit : Sean Forbes --> Change her role to Edge Communications Partner Manager --> Save
+
+Setup --> Users --> New User --> 
+                    First Name: Maya
+                    Last Name: Pasqua
+                    Email: [your email address]
+                    Alias: [autopopulates]
+                    Username: [unique username in an email format]
+                    Nickname: [must be unique]
+                    Role: Channel Sales Team
+                    License: Salesforce
+                    Profile: Custom: Sales Profile
+                    Deselect the following checkboxes: Salesforce CRM Content User and Receive Salesforce CRM Content Email Alerts (if selected).
+                    Select the Generate new password and notify user immediately checkbox.
+                    Click Save.
+
+App Launcher --> Accounts --> Edge Communications --> Change Owner --> Maya Pasqua --> Submit
+--> Edge Communications Opportunities list on the Related tab : Edge Installation --> Change Owner --> Rose Gonzalez (If you can't find Rose, change the search target to Partner Users first.)
+--> Submit
