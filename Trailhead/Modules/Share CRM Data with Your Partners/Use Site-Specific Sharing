@@ -1,0 +1,22 @@
+Setup --> Digital Experiences --> Settings --> Sharing Sets --> New --> Label: Share Customer Cases
+                                                                        Sharing Set Name: [autopopulates]
+Select Profiles --> Customer Community User (this is the profile you share cases with) --> Case --> 
+                                                                                Objects with an org-wide sharing setting of Public Read/Write
+                                                                                Custom objects that don’t have an account or contact lookup field
+Set Up --> User : Account 
+          Target Object : Account 
+          Access Level : Read Only 
+--> Update --> Save
+
+App Launcher --> Accounts --> All Accounts --> Burlington Textiles Corp of America --> contact related list : Jack Rogers --> Enable Customer User.
+          Email: [Enter your email address so you can get login information for your newly created users.]
+          Username: [unique username in an email format]
+          User License: Customer Community
+          Profile: Customer Community User
+          Select the Generate new password and notify user immediately checkbox.
+--> Save --> Ok
+
+App Launcher --> Contacts --> Jack Rogers --> Log in to Experience as User
+
+Note : In the portal, click on the dropdown menu next to Jack's name and select My Account. 
+You should be able to see the Cases related list, with two cases related to the Burlington account.  
