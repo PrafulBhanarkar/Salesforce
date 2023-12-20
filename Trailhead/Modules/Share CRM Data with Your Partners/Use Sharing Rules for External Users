@@ -1,0 +1,28 @@
+Setup --> Sharing Settings --> Edit : Opportunity Sharing Rules --> New --> 
+          Label: Share Edge Opportunities
+          Rule Name: [autopopulates]
+          Rule Type: Based on record owner
+          Select which records to be shared: Portal Roles and Subordinates: Edge Communications Partner Manager
+          Select the users to share with: Portal Roles: Express Logistics and Transport Partner Manager
+          Select the level of access for the users: Read/Write
+--> Save --> Ok
+
+Setup --> Public Groups --> New --> 
+          Label: Partner Managers and Channel Director
+          Group Name: [autopopulates]
+          Search Roles for Channel Sales and move Role: Director, Channel Sales to Selected Members
+          Search Portal Roles for Manager and move Portal Role: Edge Communications Partner Manager and Portal Role: Express Logistics and Transport Partner Manager to Selected Members
+--> Save
+
+Setup --> Sharing Settings --> Account Sharing Rules --> New --> 
+          Label: High Priority Energy Accounts
+          Rule Name: [autopopulates]
+          Rule Type: Based on criteria
+          Select which records to be shared: Criteria
+                  Field: Industry equals Energy AND Field: Customer Priority equals High
+          Select the users to share with: Public Groups: Partner Managers and Channel Director
+          Select the level of access for the users:
+                  Default Account and Contract Access: Read Only
+                  Opportunity Access: Private
+                  Case Access: Private
+--> Save --> Ok
