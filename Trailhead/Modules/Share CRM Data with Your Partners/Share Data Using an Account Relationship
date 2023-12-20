@@ -1,0 +1,37 @@
+App Launcher --> Accounts --> All Accounts --> Pyramid Construction --> Enable as Partner --> Enable As Partner --> contact related list: Pat Stumuller
+--> Enable Partner User --> 
+                            Email: [Enter your email address so you can get login information for your newly created users.]
+                            Username: [unique username in an email format]
+                            User License: Partner Community
+                            Profile: Partner Community User
+                            Role (if asked): Pyramid Construction Inc. Partner User
+                            Deselect Salesforce CRM Content User.
+                            Deselect Receive Salesforce CRM Content Email Alerts.
+                            Select the Generate new password and notify user immediately checkbox.
+--> Save --> Ok --> Navigate back to the Pyramid Construction account --> opportunity related list : Pyramid Emergency Generators --> Change Owner --> Pat Stumuller --> Submit
+
+App Launcher --> Contacts --> Barbara Levy --> Log in to Experience as User --> Sales > Opportunities
+
+Setup --> digital experiences --> Settings --> Enable Account Relationships --> Save
+
+Setup --> Object Manager | Account | Page Layouts | Account Layout --> Related Lists --> Drag the Account Relationships: Account From and Account Relationships: Account To Related Lists on to the page
+--> Save --> Yes
+
+Setup --> Account Relationship Data Sharing Rule Settings --> New --> 
+                                                                      Name: Share Opportunities
+                                                                      Developer Name: share_opportunities
+                                                                      Description: Sharing opportunities between accounts.
+                                                                      Account Relationship Type: Distributor
+                                                                      Access Level: Read/Write
+                                                                      Object Type: Opportunity
+                                                                      Account To Criteria Field: Account ID
+--> Save
+
+App Launcher --> Accounts --> Express Logistics and Transport --> Account From related list : New --> 
+                                                                      Name: Share Opportunities with Express
+                                                                      Account From: Express Logistics and Transport
+                                                                      Account To: Pyramid Construction
+                                                                      Account Relationship Type: Distributor
+--> Save
+
+App Launcher --> Contacts --> Barbara Levy --> Log in to Site as User (Log in to Experience as User) --> Sales | Opportunities
