@@ -1,0 +1,20 @@
+Setup --> Profiles --> 
+Clone the Standard User profile:
+        Existing Profile: Standard User
+        Profile Name: Sales
+Control access for the Sales profile: --> Edit --> 
+    Standard Object Permissions:
+        Accounts: Read, Create, Edit
+        Contacts: Read, Create, Edit
+
+Not Completed : Field Permissions:
+        Rating field on the Accounts object: no access
+    All other permissions from the Standard User profile remain as is
+Create a new permission set:
+        Label: Rating
+        API Name: Rating
+        User License: Salesforce
+Control access for the Rating permission set:
+    Field Permissions:
+        Rating field on the Accounts object: Read Access, Edit Access
+
