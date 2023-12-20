@@ -1,0 +1,11 @@
+setup--> Profiles --> 
+Clone the Minimum Access - Salesforce profile with the following settings:
+        Use existing profile: Minimum Access - Salesforce
+        Profile Name: Cleaner
+--> Save
+
+Control access for the Cleaner profile: --> Edit --> 
+        Object Permissions: Accounts (Read, Edit)
+        Object Permissions: Contacts (Read, Edit)
+        Object Permissions: Leads (Read, Edit)
+Make sure Edit and Create object permissions aren't enabled for any other objects in the Cleaner profile. --> Save
