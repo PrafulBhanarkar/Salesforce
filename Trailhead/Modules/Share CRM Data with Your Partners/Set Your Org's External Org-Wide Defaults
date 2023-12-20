@@ -1,0 +1,12 @@
+Setup--> Sharing Settings --> Default Sharing Settings --> Edit --> Opportunity and Account and Contract objects 
+--> Default Internal Access to Public Read Only and the Default External Access to Private --> Ok --> Save
+
+Setup --> Digital Experiences --> All Sites --> Ursa Major portal : Builder --> Click anywhere on the Navigation Menu bar (1) and then click the Edit Default Navigation button (2).
+--> Add Menu Item --> Name: Opportunities
+                      Type: Salesforce Object
+                      Object Type: Opportunity
+                      Default List View: All Opportunities
+-->  Save Menu --> Publish --> Got it
+
+Log in to the Ursa Major Partner Portal as your system administrator : Salesforce Setup > Digital Experiences > All Sites > [site URL] 
+Contact -->  Josh Davis --> Log in to Experience as User --> Opportunities --> All Opportunities
