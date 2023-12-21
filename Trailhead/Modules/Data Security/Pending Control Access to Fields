@@ -7,7 +7,7 @@ Control access for the Sales profile: --> Edit -->
         Accounts: Read, Create, Edit
         Contacts: Read, Create, Edit
 
-Not Completed : Field Permissions:
+FNot Completed : Field Permissions:
         Rating field on the Accounts object: no access
     All other permissions from the Standard User profile remain as is
 Create a new permission set:
@@ -18,3 +18,5 @@ Control access for the Rating permission set:
     Field Permissions:
         Rating field on the Accounts object: Read Access, Edit Access
 
+//note : Challenge not yet complete in My Trailhead Playground 1
+In the Sales profile, we can't find the correct permissions for the Account object.
