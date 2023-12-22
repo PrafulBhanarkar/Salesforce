@@ -1,0 +1,13 @@
+Setup --> Role --> setup roles --> New role (show list view)
+Create the Chief Sales Officer role:
+    Label: Chief Sales Officer
+    Role Name: Chief_Sales_Officer
+    Reports to: CEO
+Create the Sales Strategy Manager role:
+    Label: Sales Strategy Manager
+    Role Name: Sales_Strategy_Manager
+    Reports to: Chief Sales Officer
+Create the Training Coordinator role:
+    Label: Training Coordinator
+    Role Name: Training_Coordinator
+    Reports to: Sales Strategy Manager
