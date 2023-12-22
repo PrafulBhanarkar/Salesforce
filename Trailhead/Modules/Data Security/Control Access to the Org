@@ -1,0 +1,7 @@
+Setup --> users --> New user --> 
+Create a new user:
+    Profile: System Administrator
+    User License: Salesforce
+    Username: must contain guestadmin somewhere in it
+    Alias: guestadm
+The new user must be inactive
