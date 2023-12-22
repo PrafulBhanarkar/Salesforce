@@ -1,0 +1,13 @@
+Setup --> object manager --> create --> custom object -->
+Create a custom object:
+      Label: Project
+      Plural Label: Projects
+      Object Name: Project
+      Record Name: Project Name
+      Record Name Data Type: Text
+      Search Status : Allow Search --> save
+
+Configure organization-wide default sharing settings for the Project object so that Project records are visible only to the record owner.
+Also configure the sharing settings so that Project records are visible to users above them in the role hierarchy. (We won't check for this.)
+
+Setup --> sharing setting --> Edit --> Project --> Default Internal Access : Private, Default External Access : Private --> Save
