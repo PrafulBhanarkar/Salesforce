@@ -1,0 +1,12 @@
+After the Contact Info element, hover over Add Element  and click Add Element --> Get Records --> 
+                                                                                                  Field	    Value
+                                                                                                  Label    	Find a Match
+                                                                                                  API Name	Find_a_Match
+                                                                                                  Object	  Contact
+--> Condition Requirements : All Conditions Are Met (AND) --> 
+                                                              Field 	    Operator	  Value
+                                                              FirstName	  Equals	    {!contact.FirstName}
+
+                                                              Field	      Operator	  Value
+                                                              LastName	  Equals	    {!contact.LastName}
+--> Save
