@@ -9,14 +9,15 @@ Setup --> object manager --> project --> field and relationship -->
       High
       Medium
       Low
-Make the field visible to all profiles and add it to all page layouts
-Create a sharing rule for the Project object:
-Label: choose any label you want
-Rule Name: Share_Project_Records
-Rule Type: Based on criteria
-Field: Priority
-Operator: equals
-Value: High
-Share with (role): Training Coordinator
-Access level: Read Only
+Make the field visible to all profiles and add it to all page layouts // for that need to complete "Create a Role Hierarchy" module
+setup --> sharing setting --> Project Sharing Rules --> New -->
+    Create a sharing rule for the Project object:
+    Label: choose any label you want
+    Rule Name: Share_Project_Records
+    Rule Type: Based on criteria
+    Field: Priority
+    Operator: equals
+    Value: High
+    Share with (role): Training Coordinator
+    Access level: Read Only
 Make sure the organization-wide defaults for the Project object are set to Private
