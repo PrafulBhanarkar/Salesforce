@@ -1,0 +1,39 @@
+Setup --> Flows --> New Flow --> Screen Flow --> Create --> (+) Screen --> 
+Label : Contact Info
+API Name : Contact_Info
+--> Done --> Save -->
+                      Field	          Value
+                      Flow Label	    New Contact
+                      Flow API Name	  New_Contact
+--> Save
+
+Click the Toggle Toolbox button --> New Resource --> Variable --> API Name : contact --> Data Type : Record --> Object : Contact --> Done --> Save
+
+double-click the Contact Info screen --> enter Name in the search box --> Name --> API Name : contactName --> First Name : {!contact.FirstName} 
+--> Scroll down and click Advanced --> Manually assign variables is selected --> First Name : {!contact.FirstName} --> Last Name : {!contact.LastName} --> Done --> Save
+
+double-click the Contact Info screen --> enter Picklist in the search box --> 
+                                                                              Field        	Value
+                                                                              Label	        Account
+                                                                              API Name	    Account
+                                                                              Data Type    	Text
+--> Choice : New Choice Resource --> 
+                                      Field	                      Value
+                                      Resource Type              	Record Choice Set
+                                      API Name	                  accounts
+                                      Object	                    Account
+                                      Condition Requirements	    None—Get All Account Records
+                                      Choice Label              	Name
+                                      Data Type	                  Text
+                                      Choice Value	              Id
+--> Field : Id --> Variable : {!contact.AccountId} --> Done --> Done --> Save
+
+double-click the Contact Info screen --> enter Toggle in the search box -->
+                              Field	                                      Value
+                              API Name	                                  update_toggle
+                              Label	                                      If this contact already exists, update the existing record.
+                              Active Label	                              Update existing
+                              Inactive Label	                            Create other contact
+                              Manually assign variables (under Advanced)	unchecked
+                              Revisited Screen Values (under Advanced)	  Use values from when the user last visited this screen
+--> Done --> Save --> Run --> Finish
