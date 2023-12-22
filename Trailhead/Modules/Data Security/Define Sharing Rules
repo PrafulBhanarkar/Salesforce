@@ -1,0 +1,22 @@
+// Note for this task you need to complete the "Control access to records" Module //
+
+Setup --> object manager --> project --> field and relationship -->
+  Create a custom field for the Project object:
+    Field Type: Picklist
+    Field Label: Priority
+    Field Name: Priority
+      Values (each value separated by a new line):
+      High
+      Medium
+      Low
+Make the field visible to all profiles and add it to all page layouts
+Create a sharing rule for the Project object:
+Label: choose any label you want
+Rule Name: Share_Project_Records
+Rule Type: Based on criteria
+Field: Priority
+Operator: equals
+Value: High
+Share with (role): Training Coordinator
+Access level: Read Only
+Make sure the organization-wide defaults for the Project object are set to Private
