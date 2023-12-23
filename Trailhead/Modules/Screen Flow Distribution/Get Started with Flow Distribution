@@ -1,0 +1,14 @@
+Setup --> Flows --> new flows --> Screen flow --> Create --> 
+Create a screen flow.
+Add a screen element.
+    Label: My Screen
+    API Name: My_Screen
+    Configure Footer : select Hide Previous and Hide Pause
+    Next or Finish Button : select Use the standard label.
+Add a Display Text field:
+    Display Text: Hello, World
+    API Name: Hello_World
+Save the flow:
+    Flow Label: Hello World
+    Flow API: Hello_World
+Activate the flow.
