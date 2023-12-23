@@ -1,0 +1,13 @@
+After the Find a Match element, hover over Add Element  and click Add Element --> Decision --> 
+                                                                                                Field	     Value
+                                                                                                Label      Update or Create?
+                                                                                                API Name	 Update_or_Create
+--> New Outcome --> 
+                    Field      	Value
+                    Label	      Update Existing
+                    API Name	  Update_Existing
+--> All Conditions Are Met (AND) --> Add Condition --> 
+                                                            Resource	              Operator	    Value
+                                                          {!update_toggle.value}	  Equals	    {!$GlobalConstant.True}
+                                                          {!Find_a_Match}	          Is Null	    {!$GlobalConstant.False}
+Default Outcome --> Label : Create New --> Done --> Save
