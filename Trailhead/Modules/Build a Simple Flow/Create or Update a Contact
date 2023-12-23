@@ -1,0 +1,22 @@
+Create New path, hover over Add Element  and click Add Element --> Create Records --> 
+                                                                                      Field	      Value
+                                                                                      Label	      Create Contact
+                                                                                      API Name	  Create_Contact
+                                                                                      Record     	contact
+--> Save
+
+Update Existing path, hover over Add Element  and click Add Element --> Assignment --> 
+                                                                                      Field	      Value
+                                                                                      Label	      Set Contact ID
+                                                                                      API Name	  Set_Contact_ID
+Set Variable Values --> 
+                          Variable	        Operator	        Value
+                        {!contact.Id}	      Equals	      {!Find_a_Match.Id}
+--> Done --> Save
+
+Set Contact ID element, hover over Add Element  and click Add Element --> Update Records --> 
+                                                                                              Field	                          Value
+                                                                                              Label	                          Update Contact
+                                                                                              API Name	                      Update_Contact
+                                                                                              Record or Record Collection	    Select the contact record variable
+--> Save
