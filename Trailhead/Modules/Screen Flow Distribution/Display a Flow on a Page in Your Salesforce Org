@@ -1,0 +1,2 @@
+Open any contact record --> setup --> Edit page --> Component section search "Flow" --> drag and drop flow below activity section --> Flow : Hello World 
+--> Save --> Activate --> Assign as Org Default --> Next --> desktop and phone --> Next --> Save --> API Name : Contact_Record_Page --> Save --> Activate
