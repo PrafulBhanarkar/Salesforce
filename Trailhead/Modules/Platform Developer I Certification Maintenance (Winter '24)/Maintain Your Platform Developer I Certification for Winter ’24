@@ -1,0 +1,14 @@
+1. Which SOQL keywords can be used to respect the object permissions of the running user for a query in Apex code?
+Ans : A. WITH USER_MODE
+
+2. Where can an error message be displayed by adding the Custom Error Message element to a flow?
+Ans : C. Either A or B
+
+3. Why are the lwc:if, lwc:elseif, and lwc:else conditional directives more efficient than the legacy if:true and if:else directives?
+Ans : A. Property getters are accessed only once per instance of the directive.
+
+4. Which of the following can be used to iterate through lists or sets in a for loop?
+Ans : C. Iterable variable
+
+5. Which Apex feature can be used to customize the behavior of the List.sort() method?
+Ans : B. Comparator interface
