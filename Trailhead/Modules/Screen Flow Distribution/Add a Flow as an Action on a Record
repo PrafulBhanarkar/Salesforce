@@ -1,0 +1,9 @@
+Setup --> Object Manager --> Account --> Buttons, Links, and Actions --> New Action --> 
+                                                                                          Action Type : Flow
+                                                                                          Flow : Hello World
+                                                                                          Label : Flow Action
+                                                                                          Name : Flow_Action
+--> Save
+
+Setup --> Object Manager --> Account --> Page Layouts --> Account Layout --> under Mobile & Lightning Actions click on "override the predefined actions" 
+--> drag and drop "Flow Action" button to Mobile & Lightning Actions section --> Save
