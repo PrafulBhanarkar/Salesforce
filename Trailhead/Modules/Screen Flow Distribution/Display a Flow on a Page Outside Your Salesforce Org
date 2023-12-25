@@ -1,0 +1,11 @@
+1. Which Experience Builder page types support the Flow component?
+Ans : B. All Experience Builder pages
+
+2. Which of the following is appropriate to distribute as a flow in a site instead of in your Salesforce org?
+Ans : E. A, C, and D
+//An interest form for your school's new MBA course
+//A survey to collect feedback on new products
+//A registration form for your company's conference
+
+3. You can see the flow fully rendered when you:
+Ans : C. Publish the site.
