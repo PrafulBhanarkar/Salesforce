@@ -1,0 +1,5 @@
+1. Why is it necessary to test in Salesforce?
+Ans : D. Testing ensures any custom apps deploy correctly into your org.
+
+2. Which level of testing ensures that any changes you make to Salesforce do not affect other functionality?
+Ans : . Regression Testing
