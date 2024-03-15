@@ -1,0 +1,5 @@
+1. Salesforce has three major releases per year. How might these affect your testing?
+Ans : B. Your apps need to be retested after each new release.
+
+2. How can Provar help ensure tests are reliable?
+Ans : A. Provar Automation allows you to create different test environments, test plans, and browser configurations.
