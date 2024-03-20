@@ -1,0 +1,14 @@
+1. What is the advantage of using reactive components in screen flows?
+Ans : C. Components react to changes in other components on the same screen in real time.
+
+2. What is the first step to provide mobile users the same experience as desktop users for Dynamic Forms?
+Ans : B. Enable Dynamic Forms on Mobile.
+
+3. Which feature allows customization of knowledge content visibility rules?
+Ans : A. Article Personalization
+
+4. Screen flow reactivity allows admins to:
+Ans : C. Use the ADDMONTHS formula operator to perform real-time logic.
+
+5. The Lightning Article Editor and Article Personalization:
+Ans : B. Allows admins to choose which parts of the articles users can see.
