@@ -1,0 +1,11 @@
+setup --> Object manager --> Case --> Buttons, Links and Actions --> 
+                                                                      Action name: Update_Status
+                                                                      Standard Label Type: Change Status
+                                                                      Action Type: Update a Record
+                                                                      Success message: Status Updated Successfully
+--> Save --> Remove all Actions and Save only "Status" --> Save
+
+setup --> Object manager --> Contact --> page layouts --> Contact Layouts --> Related list --> Cases (Gear icon) --> Buttons (Expand) 
+--> Quick Actions in Lightning Experience: --> Add Change Status --> Ok --> Save
+
+search Contact "Ms. Stella Pavlova" Open related cases --> select all cases --> click on "Change Status" Button --> change status to "Closed" --> Save --> Ok
