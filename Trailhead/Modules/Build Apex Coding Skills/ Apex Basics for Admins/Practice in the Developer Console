@@ -1,0 +1,6 @@
+1. A variable named teaKettleFull is declared. Later in the code, you reference the teaKettleFull variable, but an error occurs. 
+How should you change the variable declaration to ensure that the code executes without an error? Integer teaKettleFull = false;
+Ans : B. Change Iteger to Boolean
+
+2. What is syntax?
+Ans : D. The arrangement of punctuation and text within code.
