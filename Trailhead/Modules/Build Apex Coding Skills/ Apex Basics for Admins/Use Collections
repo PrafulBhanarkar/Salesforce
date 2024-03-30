@@ -1,0 +1,5 @@
+1. What is the code necessary to create a new list named "sports" with three strings?
+Ans : A. String[] sports = new String[3];
+
+2. Which line of code refers to the item named Golf in this list initialization statement: List<String> sports = new List<String>{'Soccer', 'Baseball', 'Golf', 'Tennis'}; ?
+Ans : D. sports[2];
