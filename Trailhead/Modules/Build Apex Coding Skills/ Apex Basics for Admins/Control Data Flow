@@ -1,0 +1,5 @@
+1. If Integer i = 44, what is the value of the result variable in the following statement? Boolean result = i < 20;
+Ans : C. False
+
+2. How many options are possible when using one if-else statement?
+Ans : B. 2
