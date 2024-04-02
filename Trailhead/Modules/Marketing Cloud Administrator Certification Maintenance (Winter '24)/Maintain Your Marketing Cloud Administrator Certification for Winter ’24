@@ -1,0 +1,11 @@
+1. An admin downloads data extension storage details to delete unneeded data and optimize storage. What’s an example of a retention policy to optimize storage?
+Ans : B. For triggered send data extensions, limit storage to seven days.
+
+2. Which Marketing Cloud feature now allows automations that include imports?
+Ans : C. Package Manager
+
+3. What improvements were made to Journey Builder this release?
+Ans : A. Access to Help and new configuration warnings in Journey Builder have been added.
+
+4. What data should be used when preparing Query Activities in a multi-org account configuration to ensure that the data is securely accessed by the correct business unit?
+Ans : C. Synchronized Data Extensions
