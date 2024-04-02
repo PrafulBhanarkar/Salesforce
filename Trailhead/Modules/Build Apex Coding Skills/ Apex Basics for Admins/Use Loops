@@ -1,0 +1,5 @@
+1. Integer x equals 1. While x < 2, a System.debug statement displays x and increments x by 1 (x++). What is the output in the logs?
+Ans : A. 1
+
+2.True or false: A while loop starts by verifying a condition first.
+Ans : A. True
