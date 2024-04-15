@@ -60,7 +60,7 @@ public with sharing class MaintenanceRequestHelper {
 }
 
 =============================================================================================================================================================
-Developer Console --> file --> Open --> Trigger --> MaintenanceRequestHelperTest
+Developer Console --> file --> Open --> Class --> MaintenanceRequestHelperTest
 Code:
 
 @isTest
