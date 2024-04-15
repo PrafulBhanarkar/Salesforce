@@ -1,4 +1,9 @@
-Setup --> Object Manager --> Case --> field and relationship --> choose “Type” --> add Picklist Values (New) --> Repair & Routine Maintenance.
+Please Note : First install the package "04t6g000008av9iAAA" 
+Setup --> Install a Package --> 04t6g000008av9iAAA --> Install
+
+Setup --> Object Manager --> Case --> field and relationship --> choose “Type” --> add Picklist Values (New) --> 
+Repair
+Routine Maintenance.
 
 Setup --> Object Manager --> Case --> Case Page Layouts --> Page Layout Assignment --> select “System Admin” & Choose “Case (HowWeRoll) Layout”
 
