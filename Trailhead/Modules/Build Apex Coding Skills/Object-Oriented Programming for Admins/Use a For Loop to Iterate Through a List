@@ -1,0 +1,4 @@
+1. True or false: A set iteration for loop includes a counter, a condition, and an increment.
+Ans : B. False
+2. Which element defines the condition in this for loop code snippet? for(Integer i = 11; i >2; i--){ system.debug(i); }
+Ans : B. i>2;
