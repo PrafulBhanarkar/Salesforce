@@ -1,0 +1,5 @@
+1. In which scenario does it make sense to use data spaces?
+Ans : A. Your business has multiple brands/regions and your users work on data only in the context of their brand or region
+
+2. Which permission sets have permissions to create, edit, delete, and add data to a data space?
+Ans : B. Data Cloud Admin and Data Cloud Marketing Cloud Admin
