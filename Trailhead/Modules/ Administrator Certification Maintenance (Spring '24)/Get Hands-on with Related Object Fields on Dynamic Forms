@@ -1,0 +1,5 @@
+Setup --> Object manager --> Contact --> Lightning Record Pages --> New --> Record Page --> Label : Contact Record Page, Object : Contact --> Next --> 
+Contact Record View for Lightning Console --> Done --> Details on layout --> Upgrade --> Contact layout --> Save --> Activate --> org default --> 
+Assign an org default --> Desktop and Phone --> Next --> Save
+
+Contact --> Account Name : Annual Revenue --> Drag and drop under lead source --> Save
