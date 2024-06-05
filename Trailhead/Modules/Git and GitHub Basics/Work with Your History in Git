@@ -1,0 +1,5 @@
+1. What command safely undoes a change at any point in a repository's history?
+Ans : C. git revert
+
+2. How is rebase used in relation to a merge?
+Ans : C. A rebase enables you to move from a recursive to a fast-forward merge scenario.
