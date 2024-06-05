@@ -1,0 +1,39 @@
+Setup --> Flows --> New Flow --> Autolaunched Flow (No Trigger) --> Toolbox : Manager : New Resource --> 
+Resource Type: Variable
+API Name: accountID
+Data Type: Text
+Available for input: checked --> Done
+
+Resource Type: Formula
+API Name: WeekFromToday
+Data Type: Date
+Formula: TODAY() + 7 --> Check syntax --> Done
+
+--> (+) Update Records --> 
+Label: Set Type to Customer
+API Name: Set_Type_to_Customer
+How to Find Records to Update and Set Their Values: Specify conditions to identify records, and set fields individually
+Object: Account
+Filter Account Records:
+Field: Id
+Operator: Equals
+Value: accountID
+Set Field Values:
+Field: Type
+Value: Customer - Direct
+
+--> (+) Create Records --> 
+Label: Create Onboarding Task
+API Name: Create_Onboarding_Task
+How Many Records to Create: One
+How to Set the Record Values: Use separate resources, and literal values
+Object: Task
+Set Field Values:
+ActivityDate: WeekFromToday --> Add Field -->
+Priority: High --> Add Field -->
+Status: Not Started --> Add Field -->
+Subject: Reach Out for Onboarding --> Add Field -->
+WhatId: accountID (variable) --> Save
+
+--> Label: Convert to Customer
+    API Name: Convert_to_Customer --> Save
