@@ -1,0 +1,5 @@
+1. What powers Einstein Copilot custom actions?
+Ans : A. Flows, Apex classes, and prompt templates
+
+2. What is one way that Salesforce keeps your data secure when using Einstein Copilot?
+Ans : C. Einstein Copilot actions respect existing org and user permissions.
