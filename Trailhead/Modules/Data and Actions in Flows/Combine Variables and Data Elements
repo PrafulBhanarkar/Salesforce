@@ -1,0 +1,37 @@
+Setup --> Object Manager --> Lead --> Field & Relationship --> New --> 
+Data Type: Lookup Relationship
+Related To: Account
+Field Label: Possible Matching Account
+Field Name: Possible_Matching_Account
+Leave default values for other settings, field-level security, and Lead page layouts
+Don’t add the Leads related list to any Account page layout
+
+Setup --> Flows --> New Flows --> Record-Triggered flow --> 
+Object: Lead
+Trigger the Flow When: A record is created
+Optimize the Flow for: Actions and Related Records
+Keep default values for all other settings
+
+--> (+) Get Records --> 
+Label: Look for Matching Account
+API Name: Look_for_Matching_Account
+Object: Account
+Filter Account Records:
+Field: Name
+Operator: Equals
+Value: $Record > Company
+Sort Order: Descending
+Sort By: CreatedDate
+Keep default values for all other settings
+
+--> (+) Update Records --> 
+Label: Update Matching Account
+API Name: Update_Matching_Account
+How to Find Records to Update and Set Their Values: Use the lead record that triggered the flow
+Condition Requirements to Update Record: None—Always Update Record
+Field Values:
+Field: Possible_Matching_Account__c
+Value: Account from Look_for_Matching_Account > Id
+--> Save -->
+Label: Check New Lead for Matching Account
+API Name: Check_New_Lead_for_Matching_Account
