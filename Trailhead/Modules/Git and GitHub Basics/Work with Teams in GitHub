@@ -1,0 +1,5 @@
+1. Typically, how long should branches exist?
+Ans : C. Shorter is best, but long-lived branches may be appropriate in some cases.
+
+2. What is the right amount of change to include in a commit?
+Ans : D. Enough for a small, logical unit of change
