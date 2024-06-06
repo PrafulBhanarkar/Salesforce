@@ -1,0 +1,19 @@
+Setup --> Public Group --> New --> Label	: Lead Routing
+                                   Group Name :Lead_Routing --> Save
+
+Setup --> Email Alerts --> New --> 
+Description: Send Matching Account to Lead Routing
+Unique Name: Send_Matching_Account_to_Lead_Routing
+Object: Lead
+Email Template: Select any email template
+Recipient Type: Public Groups
+Selected Recipients: Group: Lead Routing --> Save
+
+Setup --> Flows --> Check New Lead for Matching Account --> New resource --> Text template --> 
+API Name: ChatterMessage --> Change View as Rich Text to View as Plain Text --> @[{!Look_for_Matching_Account.OwnerId}] --> Done
+
+Below update record --> (+) Action --> Action: Post to Chatter --> Label: Chatter Post to Account Owner --> API Name: Chatter_Post_to_Account_Owner 
+--> Message : {!ChatterMessage} --> Target Name or ID : {!$Record.Id} --> Done
+
+Below Chatter Post to Account Owner --> (+) Action --> Action: Send Matching Account to Lead Routing
+Label: Email Lead Routing --> API Name: Email_Lead_Routing --> Record ID : {!$Record.Id} --> Done
