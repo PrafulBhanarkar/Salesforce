@@ -1,0 +1,39 @@
+1. What are the core pillars of Data Cloud capabilities?
+A. Connect, Harmonize, Unify, Analyze and Predict, Act
+
+2. Which are benefits of using data spaces? Choose two.
+A. Manage user access to designated data spaces using permission sets.
+D. Segregate your data, metadata, and processes by brand, region, or department.
+
+3. Which of these are valid use cases for Data Cloud’s capabilities? Choose three.
+A. Gain insights on data streams in real time and trigger follow-up actions.
+B. Build complex segments of unified individuals with related data from multiple platforms.
+D. Aggregate data from multiple systems to understand a customer’s true lifetime value across multiple accounts and devices.
+
+4. Which of these are key differentiators of Salesforce Data Cloud? Choose three.
+B. User-friendly interface and built on Lightning
+D. Integrates easily with Salesforce products and AppExchange
+E. Uses the Customer 360 Data Model
+
+5. What does “Connect” mean as a capability?
+D. Synchronize data from Salesforce and external data sources and transform data when needed.
+
+6. Which statements are true of Data Cloud platform functionality? Choose three.
+A. It's an open platform that allows you to integrate external systems and data sources.
+C. Data is transformed, cleaned, and harmonized into the standard data model.
+E. Data can be activated in Sales Cloud, Marketing Cloud Engagement, Service Cloud, and other Salesforce clouds.
+
+7. What does “Unify” mean as a capability of Data Cloud?
+B. Connect, match, and reconcile customer data.
+
+8. Match the Data Cloud terms to their definitions:
+Customer 360 Data Model  : The overall system that governs a set of common data model objects, how to describe them, and their relationships.
+Data Stream : A data source brought into Data Cloud.
+Data Lake : A vast pool of raw data whose purpose is not yet defined.
+DMO : Data model object
+Attribute : A standardized piece of information about a DMO.
+
+9. Which are data ethics best practices? Choose three.
+A. Collect and use only what you need.
+B. Treat sensitive data carefully.
+C. Choose third-party partners carefully.
