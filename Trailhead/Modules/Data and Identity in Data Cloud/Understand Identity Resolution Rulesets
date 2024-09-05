@@ -1,0 +1,5 @@
+1. True or false. Fuzzy match is matching the exact data, regardless of formatting.
+Ans: B. False
+
+2. Which reconciliation rule should be used if you trust one data source over another?
+Ans: D. Source sequence
