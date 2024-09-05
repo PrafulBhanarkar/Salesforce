@@ -37,3 +37,10 @@ Attribute : A standardized piece of information about a DMO.
 A. Collect and use only what you need.
 B. Treat sensitive data carefully.
 C. Choose third-party partners carefully.
+
+10. Put the steps to transform data in Data Cloud in the correct order.
+1 : Connect your data sources
+2 : Harmonize your data to a standard data model
+3 : Unify data with identity resolution rulesets
+4 : Analyze data using insights and predict behavior with AI
+5 : Act on your data in any channel
