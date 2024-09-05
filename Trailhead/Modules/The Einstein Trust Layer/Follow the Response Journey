@@ -1,0 +1,5 @@
+1. What does zero data retention mean?
+Ans: D. The prompt, its responses, and all related data are forgotten by the LLM.
+
+2. How is a response scanned for toxic language?
+Ans: C. The Salesforce assessment tool is applied to the response.
