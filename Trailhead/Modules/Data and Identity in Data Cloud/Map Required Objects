@@ -1,0 +1,5 @@
+1. What field must be mapped to a data stream for identity resolution rules to work?
+Ans: B. Individual ID
+
+2. Which object is used for unique external identifiers?
+Ans: D. Party Identification
