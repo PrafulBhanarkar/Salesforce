@@ -1,0 +1,5 @@
+1. How does dynamic grounding improve a prompt’s context?
+Ans: D. It pulls authorized, secure, relevant data directly from the customer’s org, and includes it in the prompt template.
+
+2. What do the Trust Layer’s prompt defense guardrails help protect against?
+Ans: B.Prompt injection attacks
