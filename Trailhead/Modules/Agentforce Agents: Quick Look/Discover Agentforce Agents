@@ -1,0 +1,7 @@
+1. What is a topic classification?
+Ans: B. A group of user utterances based on predefined descriptions
+
+2. Which of these can serve as Agentforce agents guardrails?
+Ans: E. B and C
+B. Natural-language instructions telling the agent what it can and can’t do
+C. Built-in security features in the Einstein Trust Layer
