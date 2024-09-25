@@ -1,0 +1,12 @@
+1. Click on Create new playground 
+2. Received an email for password reset
+3. Proceed to Launch and execute the task
+
+Setup --> Einstein Setup --> Turn on Einstein
+Setup --> Einstein Bots --> Turn on Einstein Bots
+Setup --> Agents --> Turn on Einstein Copilot for Salesforce (Note: If you not found this option then refresh your browser and try again)
+Setup --> Embedded Service Deployments --> ESA Web Deployment --> Publish
+
+Setup --> All Sites --> coral-cloud --> Builder --> if popup appears, click OK --> Publish --> Publish --> Got it --> Experience Builder menu --> Salesforce Setup
+
+Setup --> Agents --> 
