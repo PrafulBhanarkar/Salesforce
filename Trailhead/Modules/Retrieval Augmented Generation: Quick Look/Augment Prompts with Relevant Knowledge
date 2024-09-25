@@ -1,0 +1,5 @@
+1. Why might you want to use RAG in your prompts?
+Ans: A. Because RAG improves the accuracy and relevance of your LLM responses.
+
+2. In a prompt template, what do you add to trigger RAG to search for specific information?
+Ans: B. Einstein Search retriever
