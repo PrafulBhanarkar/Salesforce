@@ -1,0 +1,7 @@
+1. What are the three main risk areas to consider when creating a risk profile?
+Ans: B. Data leaks, regulatory requirements, reputation harm
+
+2. Which guardrails protect against data leaks?
+Ans: E. B and C
+B. Data masking
+C. Secure data retrieval and grounding
