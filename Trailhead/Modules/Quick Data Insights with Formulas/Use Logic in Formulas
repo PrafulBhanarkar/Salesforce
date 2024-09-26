@@ -1,0 +1,7 @@
+Setup --> Object Manager --> Contract --> Field & Relationship --> Days Active --> Edit --> Update the formula -->
+Formula: 
+          IF( NOT(ISBLANK(EndDate)), 
+          EndDate -  DATEVALUE( ActivatedDate ), 
+           TODAY() - DATEVALUE( ActivatedDate )
+          )
+--> Save
