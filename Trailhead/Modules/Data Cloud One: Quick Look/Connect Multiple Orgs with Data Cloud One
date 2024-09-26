@@ -1,0 +1,5 @@
+1. What type of connection lets Salesforce orgs power platform features with Data Cloud data?
+Ans: B. A companion connection
+
+2. When is it best practice to connect orgs using Data Cloud One?
+Ans: D. When you want to centralize control across orgs and minimize data silos
