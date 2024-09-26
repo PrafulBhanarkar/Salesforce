@@ -1,0 +1,5 @@
+1. Suppose that you want a field to indicate whether an account or contact is active or not. Which return type can you use to return either true or false?
+Ans: C. Checkbox
+
+2. True or false: The Advanced formula editor is only for advanced formula creators.
+Ans: B. False
