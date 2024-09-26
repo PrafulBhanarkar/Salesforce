@@ -1,0 +1,8 @@
+App Launcher : Data Cloud --> More: Search Index: New --> Easy Setup --> 
+Data Model Object Label: Knowledge Article Version
+Search Index Configuration Name: My_kav
+--> Save
+
+Data Cloud --> Data Explorer --> 
+Object: Data Model Object: My_kav chunk --> check for the data 
+Object: Data Model Object: My_kav index --> check for the data
