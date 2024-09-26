@@ -1,0 +1,2 @@
+Setup --> Object Manager --> Contract --> Field & Relationship --> New --> Data Type: Formula --> Field Label: Days Active, Field Name: Days_Active
+--> Formula: TODAY() - DATEVALUE( ActivatedDate ) --> Description: Number of days the contract has been active. --> Next --> Next --> Save.
