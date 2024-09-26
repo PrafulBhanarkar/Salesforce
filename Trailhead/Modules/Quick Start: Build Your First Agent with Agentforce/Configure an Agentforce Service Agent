@@ -9,4 +9,51 @@ Setup --> Embedded Service Deployments --> ESA Web Deployment --> Publish
 
 Setup --> All Sites --> coral-cloud --> Builder --> if popup appears, click OK --> Publish --> Publish --> Got it --> Experience Builder menu --> Salesforce Setup
 
-Setup --> Agents --> 
+Setup --> Agents --> Label:A fun way to learn how to build my first Agent. --> Description: A fun way to learn how to build my first Agent. --> Create
+
+Setup --> All Sites --> coral-cloud --> Open in Builder --> This Agent's Topics: New Topic --> 
+          Topic Label: Experience Management
+          Classification Description: This topic addresses customer inquiries and issues related to booking experiences at Coral Cloud Resort, including making reservations, modifying bookings, and answering queries about experience details.
+          Scope: The agent's job is to assist users in navigating and managing bookings for different experiences offered by Coral Cloud Resort, ensuring a seamless customer service experience by providing accurate information and resolving issues promptly.
+          Instruction: If a customer would like more information on an Experience, you should search for the related Experience__c record and let them know more.
+--> Next --> Select the following actions:
+                                          Identify Object by Name
+                                          Identify Record by Name
+                                          Query Records
+                                          Summarize Record
+--> Finish
+
+Describe your task or ask a question : Can you let me know more about the full moon beach party experience? --> check the response.
+
+Setup --> Prompt Builder --> Generate Personalized Schedule --> Prompt Template Workspace : Present the list of resort activities happening today that match the guest's interests. For clarity, use a bullet list. For each activity, include name, time, location and duration on a single line. Do not include the date. Tell the guest to reach out if they'd like to book any of these activities. List of activities happening today that match the guest's interests: {!$Apex:PersonalizedGuestExperiences.Prompt}
+--> Save As --> Save as a New Version --> Contact: Sofia Rodriguez --> Preview --> Activate
+
+Setup --> Agent Actions --> +New Agent Action --> Reference Action Type: Prompt Template --> Reference Action: Generate Personalized Schedule --> Next
+--> Agent Action Instructions: Generate a personalized schedule that includes the time and location of resort experiences that are available today, and that match the guest's interests.
+--> Contact Input Instructions: Contact for which the personalized schedule should be generated. Must be a valid JSON representing the contact info, chained from having executed the QueryRecords action.
+--> Output: Show in conversation (Checked) --> Finish
+
+Setup --> Agent Actions --> +New Agent Action --> Reference Action Type: Flow --> Reference Action: Create Experience Session Booking --> Next 
+                    Contact_Id: Require Input (Checked)
+                    Guests: Require Input (Checked), Collect data from user (Checked)
+                    Session_Id: Require Input (Checked)
+                    Booking output: Show in conversation (Checked)
+                    Output_Message: Show in conversation (Checked) --> Finish
+
+Setup --> All Sites --> coral-cloud --> Open in Builder --> Topics: Experience Management --> This Topic's Actions: add action (+) --> Create Experience Session Booking (checked), Generate Personalized Schedule (Checked) --> Finish
+--> Topic Details: Topic Configuration --> New Instruction --> 
+        Instruction: When a customer requests a list of recommended experience sessions, first retrieve their contact record. Pass this record into the "Generate Personalized Schedule" action's contact input to return a list of relevant experiences available for booking.
+        Instruction: When a customer requests to book an experience, first locate a Session__c record that corresponds to the desired date and Experience__c they wish to book. Then, use the "Create Experience Session Booking" action to complete the booking, ensuring that you pass the Session__c Id, not the Experience__c Id.
+--> Save
+
+prompt1 : Can you let me know if there are any experiences I, Sofia Rodriguez, might be interested in today?
+prompt2 : Can you tell me more about the Beach Bootcamp Challenge?
+prompt3 : Can you book Sofia into the Beach Bootcamp Challenge for today?
+--> Activate
+
+Setup --> Agents --> Coral Cloud Agent --> Agent User: Custom Agent User --> Custom Agent User: Coral Cloud Agent --> save (checkmark)
+Setup --> All Sites --> coral-cloud : Builder --> Components : over the Book an Experience --> Publish --> Publish --> Got It.
+
+Experience Builder menu --> View coral-cloud --> Messaging icon (Click) --> 
+          prompt1 : What activities are there at the resort?
+          prompt2 : What dining experiences does the resort offer? --> Agent is not working
