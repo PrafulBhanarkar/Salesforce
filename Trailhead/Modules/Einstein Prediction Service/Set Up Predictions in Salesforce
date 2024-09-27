@@ -1,0 +1,5 @@
+1. What is the minimum number of rows you need to train a model for predictions and improvements?
+Ans: C. 400 rows with outcome values
+
+2. How do you define the outcome that the model uses for predictions?
+Ans: C. During model setup, specify the goal.
