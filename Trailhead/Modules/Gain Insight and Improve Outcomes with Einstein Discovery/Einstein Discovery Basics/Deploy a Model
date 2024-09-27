@@ -1,0 +1,5 @@
+1. How are prediction definitions and models related?
+Ans: C. There are one or more models per prediction definition.
+
+2. What are the main elements of the model lifecycle?
+Ans: D. Train, Evaluate, Deploy, Monitor
