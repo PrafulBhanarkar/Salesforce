@@ -1,0 +1,5 @@
+1. What is the purpose of configuring a connected app?
+B. Manage authentication for REST API requests
+
+2. How do you get the access token needed to gain access to Einstein Prediction Service APIs?
+Ans: C. From an initial authentication POST request
