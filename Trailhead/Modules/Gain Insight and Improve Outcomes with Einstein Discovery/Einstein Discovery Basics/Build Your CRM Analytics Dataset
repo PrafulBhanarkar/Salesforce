@@ -1,0 +1,5 @@
+1. What’s an important consideration when preparing data for Einstein Discovery to analyze?
+Ans: C. The data contains the business outcome you’re trying to improve, together with relevant columns that explain and influence that outcome.
+
+2. To build a predictive model, what’s the minimum number of rows of data (with outcome values) that Einstein needs?
+Ans: B. 400
