@@ -1,0 +1,7 @@
+1. What inputs does a model accept to generate predictions?
+Ans: C. Predictor variables
+
+2. How do model performance metrics help you?
+Ans: E. B and C
+B. Model performance metrics show you how well your model performs on your training data.
+C. Model performance metrics help you decide whether to deploy your model.
