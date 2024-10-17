@@ -1,0 +1,5 @@
+1. Which of these scenarios is a good candidate for a batch data transform?
+Ans: B. You want to update new merchandise every night.
+
+2. Which type of node would you include to focus your target on escalated cases only?
+Ans: C. Filter
