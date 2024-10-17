@@ -3,3 +3,13 @@ Install the Data Quality Analysis Dashboards package:
 Package ID: 04t20000000D24R
 
 All Applications --> Install Package --> Package ID: 04t20000000D24R --> Install --> Install for Admins Only --> Install.
+
+
+Note: If you are facing the following error, then it means you are not created a brand new playgound for this module.
+
+This package can’t be installed.
+There are problems that prevent this package from being installed.
+CustomField(Account.Data_Quality_Score__c) You referenced an unsupported field type called "Phone (Encrypted)" using the following field: LEN
+Account.Data_Quality_Score__c: You referenced an unsupported field type called "Phone (Encrypted)" using the following field: LEN
+CustomField(Contact.Data_Quality_Score__c) You referenced an unsupported field type called "Phone (Encrypted)" using the following field: LEN
+Contact.Data_Quality_Score__c: You referenced an unsupported field type called "Phone (Encrypted)" using the following field: LEN
