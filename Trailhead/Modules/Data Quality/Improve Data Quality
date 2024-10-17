@@ -1,0 +1,5 @@
+1. As Salesforce admin at your company, you're asked to develop a data management plan. What's one data standard you should include in your plan?
+Ans: C. Record ownership criteria
+
+2. To plan territories, your sales ops team needs accurate contact information on all accounts. As a Salesforce admin, what’s a great way to ensure they have that information?
+Ans: D. Make sure contact information fields are required in Salesforce.
