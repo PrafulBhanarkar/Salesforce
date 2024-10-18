@@ -1,0 +1,7 @@
+1. What best practices should you follow when testing a copilot?
+Ans: E. A and B
+A. Test with requests users might actually make during a copilot interaction.
+B. Avoid updating real customer data during the testing process.
+
+2. Which of the following helps you troubleshoot individual user interactions with a copilot in the builder?
+Ans: C. Event Logs
