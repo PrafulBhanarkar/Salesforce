@@ -1,0 +1,5 @@
+1. Along with describing the recipient of a generated message, who else should be identified in a good prompt template?
+Ans: D. The person the LLM is role playing as while writing
+
+2. Why is it important to include direct instructions for the LLM to generate only the expected type of content?
+Ans: C. To prevent the LLM from creating content about the process of creating content.
