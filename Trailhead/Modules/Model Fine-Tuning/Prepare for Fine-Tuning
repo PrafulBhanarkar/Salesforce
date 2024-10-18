@@ -1,0 +1,5 @@
+1. What is one of the steps in fine-tuning dataset preparation?
+Ans: A. Data cleaning
+
+2. What can help an overconfident fine-tuned model?
+Ans: B. Calibration techniques
