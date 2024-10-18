@@ -1,0 +1,31 @@
+Connect the Playground
+Accept and connec, you received an email to reset the password. 
+Reset your password and proceed to connect it. once you connect Lunch and proceed the following steps:
+
+App Launcher --> orders --> All Orders (List View)
+- Two orders will appear,
+
+Setup --> einstein setup --> Turn on Einstein (Toggle switch to ON) // Refresh your browser and proceed to next step
+Setup --> agent --> Einstein Copilot for Salesforce (Toggle switch to ON) // check at the bottom
+Einstein Copilot --> Open in Builder --> 
+Conversation Preview window: Tell me about the account Edge Communications. --> Edge Communications (check that details related to edge communication is received or not)
+if yes then --> Do they have any active orders? (enter) --> received details about the active order.
+
+press back arroow (<-) --> setup --> Agent Actions --> New Agent Action --> Reference Action Type: Flow --> Reference Action: Initiate Return --> Next
+Agent Action Instructions : Use Initiate Return for requests to return or refund orders or products in an order.
+Instructions (under Inputs) --> Populate this input variable with an Order recordId. --> Require Input (checked) --> Collect data from user (checked)
+
+Instructions (under Outputs) --> This output indicates the status of the return request, whether it has been initiated, processed, or completed. --> Show in conversation (checked) --> Finish
+
+Setup --> agent --> Einstein Copilot Open in Builder --> Ensure your copilot isn’t active (Deactivate it)-->
+MigrationDefaultTopic --> This Topic's Actions --> New --> Add from Asset Library --> Initiate Return (checked) --> Finish --> Activate
+
+All Application --> sales App --> Home --> Refresh your window --> Einstein button (upper right corner) --> agent is available now insert the following comments :
+What is the order with the most recent order start date? --> Enter
+display order 101, with a clickable link --> Click on 00000101
+
+in conversation window
+Tell me about order 101 --> Enter
+Start a return for order 101 --> Enter
+
+check the status on record 00000101 it should be updated as "Return Status:Initiated"
