@@ -1,0 +1,5 @@
+Add Element --> Get Records --> Label: Get User Info --> API Name: Get_User_Info --> Object: User --> Condition Requirements: All Conditions Are Met (AND)
+--> Field: Id --> Operator: Equals --> Value: LoginFlow_UserId --> How Many Records to Store: Only the first record --> How to Store Record Data: Choose fields and assign variables (advanced)
+--> Where to Store Field Values: Together in a record variable --> Select Variable to Store User section --> Record : UserInfo 
+--> Field: FirstName  
+Add Field --> Field: LastName --> Field: AccountId --> Field: ContactId --> Save
