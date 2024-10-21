@@ -1,0 +1,19 @@
+App Launcher --> Data Cloud --> Data Streaam --> New --> Salesforce CRM --> Next --> AIPlusData --> Next --> Next --> Deploy
+
+Identity Resolutions --> New --> Create New Ruleset --> Next --> Data Space : Default --> Primary Data Model Object: Individual --> Ruleset ID: ccid --> Next 
+Ruleset Name: Guest Name and Email --> Ruleset Description: Reconcile Reserve-o-matic contact data with Salesforce contact data --> Run jobs automatically (Disable) --> Save
+Configure --> Next --> Configure --> Fuzzy Name and Normalized Email. --> Next --> Next --> Save
+
+Data Streams --> check for All streams need to state Success for Last Run Status.
+Identity Resolutions --> Guest Name and Email --> Run Ruleset
+
+Setup --> Object Manager --> Contact --> Data Cloud Related List --> New --> Data Cloud Object: ExternalReservation --> Next --> Next --> Next --> Edit Details --> Related List Label:Reservations --> Child Relationship Name: Reservations --> Save
+
+Lightning Record Pages --> Contact Record Page --> Edit --> above Opportunities Drag a Dynamic Related List - Single --> Related List: Reservations
+--> Related List Fields: Add Field --> Check-in Date / Check-out Date / Room Type / Reservation Status : Remove the Record ID --> Done
+--> Related List Filters: Add Filter --> Field: Check-in Date --> Operator: not equal to --> Done --> Save
+
+Verify the Latest Job Status is "Succeeded" under the Identity Resolutions --> Guest Name and Email // If not, wait a minute and refresh again.
+
+App Launcher --> Sales --> Contacts --> List View: All Contacts // if you are not visible the all contacts list view then check on layout at right side and click on "list view" 
+Sofia Rodriguez --> verify that Sofia should have three reservations.
