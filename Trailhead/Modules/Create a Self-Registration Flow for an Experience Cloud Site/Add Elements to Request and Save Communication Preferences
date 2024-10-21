@@ -1,0 +1,14 @@
+Add Element --> Screen --> Label: Communication Preferences --> API Name: Communication_Preferences --> 
+Search Component : Display Text --> API Name: privacyPrompt --> Text box: We value your privacy! Let us know if you’d like us to contact you, know about your location, or track your portal usage to improve performance.
+Search Component : Checkbox --> Label: I don't want to be contacted --> API Name: I_don_t_want_to_be_contacted
+Search Component : Checkbox --> Label: I don't want you to track my usage --> API Name: I_don_t_want_you_to_track_my_usage
+Search Component : Checkbox --> Label: I don't want you to track my location --> API Name: I_don_t_want_you_to_track_my_location
+--> Done
+
+Add Element --> Create Records --> Label: Create Individual --> API Name: Create_Individual --> How to set record field values: Manually --> Object: Individual
+--> Field: First Name --> Value: {!UserInfo.FirstName}
+Add Field --> Field: Last Name --> Value: {!UserInfo.LastName}
+Add Field --> Field: Block Geolocation Tracking --> Value: {!I_don_t_want_you_to_track_my_location}
+Add Field --> Field: Don’t Track --> Value: {!I_don_t_want_you_to_track_my_usage}
+Add Field --> Field: Last Name --> Value: {!I_don_t_want_to_be_contacted}
+--> Manually assign variables (checked) --> Store Individual ID in Variable : {!individualId} --> Save
