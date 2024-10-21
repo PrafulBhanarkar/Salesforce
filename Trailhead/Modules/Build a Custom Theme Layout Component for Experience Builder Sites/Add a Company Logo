@@ -1,0 +1,50 @@
+Developer Console --> File --> New --> Lightning Tokens --> Name: defaultTokens --> Submit --> Replace with the following code:
+<aura:tokens extends="forceCommunity:base">
+</aura:tokens>
+
+--> Style :
+.THIS .logoContainer {
+background-image: t('url(' + brandLogoImage  + ')');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+z-index: 99;
+cursor: pointer;
+position: relative;
+max-width: 100%;
+max-height: 52px;
+display: block;
+outline: 0;
+height: 50px;
+margin-top: 10px;
+}
+
+--> condensedThemeLayout :
+<aura:component implements="forceCommunity:themeLayout">
+    <aura:attribute name="search" type="Aura.Component[]"/>
+    <aura:attribute name="sidebarFooter" type="Aura.Component[]"/>
+    <div class="slds-grid slds-grid--align-center">
+        <div class="slds-col">
+            <div class="slds-grid slds-grid--vertical">
+                <div class="slds-col">
+                    <div class="logoContainer"></div>
+                </div>
+                <div class="slds-col">
+                    {!v.search}
+                </div>
+                <div class="slds-col">
+                <!-- placeholder for navigation -->
+                </div>
+                <div class="slds-col">
+                    {!v.sidebarFooter}
+                </div>
+            </div>
+        </div>
+        <div class="slds-col content">
+            {!v.body}
+        </div>
+    </div>
+</aura:component>
+
+Note: Download the "Open the Cloud Kicks logo"
+Experience Builder --> Theme panel --> Images --> Company Logo (upload the downloaded logo) --> Select --> Upload Image.
