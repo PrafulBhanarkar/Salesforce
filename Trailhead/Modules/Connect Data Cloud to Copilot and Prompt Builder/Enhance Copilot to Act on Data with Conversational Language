@@ -1,0 +1,31 @@
+Setup --> Flows --> Create Check-in Guest Event --> Unified Link 1 --> Edit Element --> Data Source: Data Cloud Object --> Data Space: default --> Object: Unified Link Individual ccid
+--> Filter Records section --> Field: SourceRecordId__c --> Value: ContactRecordId
+
+Unified Link 2 --> Edit Element --> Data Source: Data Cloud Object --> Data Space: default --> Object: Unified Link Individual ccid
+--> Filter Records section --> Field: UnifiedRecordId__c --> Value: {!Unified_Link_1.UnifiedRecordId__c} 
+--> Add Condition --> Field: ssot__DataSourceObjectId__c --> Operator: Starts With --> Value: External --> Save
+
+Reservation 1 --> Edit Element --> Data Source: Data Cloud Object --> Data Space: default --> Object: ExternalReservation
+--> Filter Records section --> Field: Contact_ID_c__c --> Value: {!Unified_Link_2.SourceRecordId__c} 
+--> Sort Order: Descending --> Sort By: Check_in_Date_c__c --> Save
+
+Event Summary --> Edit Element --> Value: Check-in date of {!Reservation_1.Check_in_Date_c__c}, check-out date of {!Reservation_1.Check_out_Date_c__c}, for room type {!Reservation_1.Room_type_c__c} --> Save --> Activate.
+
+Setup --> Einstein Setup --> Turn on Einstein: On (Turn ON switch)
+Setup --> Einstein Sales --> Turn on Sales Emails: Enabled (Turn ON switch)
+Setup --> Agents --> Einstein Copilot for Salesforce: On (Turn ON switch) // Refresh the browser
+
+Setup --> Agent Actions --> + New Agent Action --> Reference Action Type : Flow --> Reference Action: Create Check-in Guest Event --> Next --> Input: Require input --> Output: Show in conversation --> Finish
+
+Agents --> Einstein Copilot --> Open in Builder // check and verify that the Agent Builder is De-activate
+MigrationDefaultTopic --> This Topic’s Actions --> New --> Add from Asset Library --> Create Check-in Guest Event --> Finish --> Activate
+
+Sales app --> Home --> Einstein panel (Einstein icon) --> 
+          give following command to Einstein Bot:
+          Tell me about the Sofia Rodriguez contact
+          Click the link: Sofia Rodriguez.
+          
+                  give following command to Einstein Bot:
+                  Check in Sofia Rodriguez
+
+Guest Events --> Open Record --> 
