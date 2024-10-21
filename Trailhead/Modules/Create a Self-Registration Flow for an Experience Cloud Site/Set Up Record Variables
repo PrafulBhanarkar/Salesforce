@@ -1,0 +1,9 @@
+Setup --> Flows --> New Flow --> Start from Scratch (checked) --> Next --> Screen Flow --> Create --> (toggle toolbox) New Resource 
+--> Resource Type: Variable --> API Name: contactId --> Data Type: Text --> Done
+--> Resource Type: Variable --> API Name: individualId --> Data Type: Text --> Done
+--> Resource Type: Variable --> API Name: LoginFlow_UserId --> Data Type: Text --> Available for input (checked) --> Done
+--> Resource Type: Variable --> API Name: registrantsAccount --> Data Type: Text --> Done
+--> Resource Type: Variable --> API Name: UserInfo --> Data Type: Record --> Object: User --> Done
+
+--> Save --> Flow Label: Privacy Settings --> Flow API Name: Privacy_Settings --> Show Advanced --> How to Run the Flow: System Context Without Sharing - Access All Data
+--> Type: Screen Flow --> Save
