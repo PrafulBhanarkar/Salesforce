@@ -1,0 +1,5 @@
+Add Element --> Update Records --> Label: Update Contact with Individual --> API Name: Update_Contact_with_Individual 
+--> How to Find Records to Update and Set Their Values: Specify conditions to identify records, and set fields individually
+--> Object: Contact --> Condition Requirements to Update Records: All Conditions Are Met (AND) 
+--> Field: Id --> Operator: Equals --> Value: {!UserInfo.ContactId} 
+--> Set Field Values for the Contact Records --> Field: IndividualId --> Value: individualId
