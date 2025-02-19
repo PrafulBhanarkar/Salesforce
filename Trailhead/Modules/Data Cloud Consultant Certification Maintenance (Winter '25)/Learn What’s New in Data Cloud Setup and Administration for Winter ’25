@@ -1,0 +1,19 @@
+1. What changes have been made to Data Cloud Setup?
+Ans: D. A and B
+A. Data Cloud Setup navigation has been updated and reorganized.
+B. The Data Cloud Admin permission is not required before accessing Setup.
+
+2. What is the role of the external data lake object (DLO) in Data Cloud data federation?
+Ans: B. It acts as a reference to the data stored in a partner’s external platform.
+
+3. What is the main goal of refining user access to data spaces?
+Ans: A. To improve data security and align with CRM access control
+
+4. How can users be granted permission to view specific data lake objects (DLOs)?
+Ans: C. By assigning them to a permission set associated with the data spaces where the DLO lives.
+
+5. How does Platform Encryption Key Management work for Data Cloud?
+And: B. It allows the control of encryption keys with a single root key.
+
+6. What advantage do new data types provide in Data Cloud?
+Ans: C. They enhance flexibility and expand compatibility with external systems
