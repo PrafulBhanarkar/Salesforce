@@ -1,0 +1,33 @@
+Enable the checkbox and verify the email for password reset and user creation.
+
+Setup --> einstein setup --> Turn on Einstein ==> Refresh page
+Prompt Builder --> New Prompt Template --> Prompt Template Type:Field Generation --> Prompt Template Name:Quick Summary --> API Name:Quick_Summary --> Template Description:A short summary of case details
+--> Object:Case --> Object Field:Quick Summary --> Next
+
+Prompt Template Workspace : 
+Summarize the concatenation of the contents of the comment bodies of COMMENTS along with
+the text from SUBJECT, the case priority which is PRIORITY, and the case type which is TYPE.
+Keep the response to a single short paragraph.
+--> Save
+
+Model Type --> Standard --> Models --> OpenAI GPT 4 --> Prompt Template Workspace : mouse cursor in front of the word PRIORITY
+--> Resource --> Case --> Priority (delete the priority word)
+
+Prompt Template Workspace : mouse cursor in front of the word COMMENTS
+--> Resource --> Case --> CaseComments
+
+Prompt Template Workspace : mouse cursor in front of the word SUBJECT
+--> Resource --> Case --> Subject
+
+Prompt Template Workspace : mouse cursor in front of the word TYPE
+--> Resource --> Case --> CaseType
+
+Related Record --> 00001002 --> Save & Preview --> Activate
+
+
+Enable Dynamic Forms for Cases
+Sales app --> Cases --> Case number : 00001002 --> gear icon : Edit Page --> select "Record Detail" section --> Upgrade Now --> Next --> Case Layout --> Finish
+
+Case Information --> Quick Summary field --> Prompt Template:Quick Summary --> Save --> Activate --> Assign as Org Default --> Next --> Save
+
+Open Case 00001002 --> field summary --> click on Einstein --> click on "Use" --> close the Einstein tab --> Save Record. 
