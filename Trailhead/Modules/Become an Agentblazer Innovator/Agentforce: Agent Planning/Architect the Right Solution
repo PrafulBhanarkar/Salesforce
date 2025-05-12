@@ -1,0 +1,5 @@
+1. Why might an organization escalate a conversation from the AI agent to a live service rep?
+Ans: B. To comply with regulations or company policy
+
+2. Which of these statements is true about the default access and permissions of an AI agent in a Salesforce org?
+Ans: C. The AI agent has very limited permissions by default, and you must explicitly grant access to the data it needs to do its job.
