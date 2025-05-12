@@ -1,0 +1,7 @@
+1. What is required to create a field generation prompt template using Prompt Builder?
+Ans: E. A and C
+A. Template Name
+C. Object
+
+2. What type of flow do you use with a field generation prompt template?
+Ans: B. Template-Triggered Prompt Flow
