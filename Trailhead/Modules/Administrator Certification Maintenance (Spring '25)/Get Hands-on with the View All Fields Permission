@@ -1,0 +1,5 @@
+Setup --> Permission Sets --> New --> Label: View Account Fields
+                                      API Name: View_Account_Fields
+                                      Description: Permission to access all Account fields --> Save
+Object Setting --> Accounts --> edit --> Enable "View All Fields" permission.
+Manage Assignments --> Add Assignment --> Select your user --> Assign --> Done
