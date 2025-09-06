@@ -1,0 +1,5 @@
+1. Which two types of data sources can be used in the Agentforce Data Library to improve response accuracy?
+Ans: B. Custom retrievers with filters, web search data libraries
+
+2. What is the purpose of adding a custom retriever to a Field Generation prompt template in Prompt Builder?
+Ans: C. To ground prompts with real-time data for more accurate responses
