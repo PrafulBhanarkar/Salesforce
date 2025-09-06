@@ -1,0 +1,5 @@
+1. What is the Entitlement Policy object?
+Ans: A. A B2B customer gatekeeper that manages access to products and prices
+
+2. Which data model object becomes a container for commerce data held in these objects: Catalogs, Categories, Price Books, Products, Buyers, Buyer Groups, and Entitlement Policies?
+Ans: C. Store
