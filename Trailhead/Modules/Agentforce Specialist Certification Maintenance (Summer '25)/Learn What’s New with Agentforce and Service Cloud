@@ -1,0 +1,5 @@
+1. What must users do to allow an AI agent to answer questions using knowledge articles?
+Ans: C. Create a data library using knowledge articles as the source.
+
+2. What are the required steps to connect an Agentforce Service agent to a digital channel like WhatsApp or Facebook Messenger?
+Ans: B. Configure Omni-Channel, create a service deployment, and build an Omni-Channel Flow.
