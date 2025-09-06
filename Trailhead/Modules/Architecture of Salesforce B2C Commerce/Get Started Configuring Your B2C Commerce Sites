@@ -1,0 +1,5 @@
+1. What are the B2C Commerce instance types on a PIG?
+Ans: C. Development, staging, and production
+
+2. How do site and organizations relate to instances?
+Ans: A. The multiple sites on a particular instance are considered an organization.
