@@ -1,0 +1,11 @@
+1. What’s one way Agentforce helps protect access to sensitive topics and actions within an agent experience?
+Ans: B. Using filters and Customer Verification to control access based on conditions
+
+2. Which of the following is true about using the Agentforce Testing Center?
+Ans: A. You can test agents using CSV templates or have tests automatically created using gen AI.
+
+3. What’s a required step when deploying an AI agent from a sandbox to production using change sets?
+Ans: C. Ensure the orgs are connected via a deployment connection.
+
+4. When creating a test in Agentforce Testing Center, what must be included in the CSV file?
+Ans: B. At least one utterance and the API name of the expected response
