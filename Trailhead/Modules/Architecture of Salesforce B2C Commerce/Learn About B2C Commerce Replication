@@ -1,0 +1,5 @@
+1. The replication goes from a staging instance to what other instance(s)?
+Ans: B. Production and Development
+
+2. How does the import/export process differ from data replication?
+Ans: B. Replication moves data from one instance to another, once it's already in a B2C Commerce database. Import and export moves data to and from external systems.
