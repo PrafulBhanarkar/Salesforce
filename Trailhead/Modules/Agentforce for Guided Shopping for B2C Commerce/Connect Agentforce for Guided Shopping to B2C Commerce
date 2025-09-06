@@ -1,0 +1,5 @@
+1. Which of the following options defines how a Salesforce org authenticates and authorizes callouts to the OCAPI APIs?
+Ans: C. OCAPI External Credential
+
+2. Authenticating using external credentials allows for easier updates and maintenance without revealing credentials to code.
+Ans: A. True
